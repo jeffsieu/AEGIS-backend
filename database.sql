@@ -1,10 +1,11 @@
 CREATE DATABASE aegis;
 
-CREATE TABLE aegis.public.members (  
-    callsign varchar(255) NOT NULL primary key,
-    type varchar(255),
+CREATE TABLE aegis.public.users (  
+    userID varchar(255) NOT NULL primary key,
+    callsign varchar(255),
+    role varchar(255),
     squadron varchar(255),
-    prev_duty_count int
+    duty_count int
 );
 
 CREATE TABLE aegis.public.qualifications (  
@@ -21,8 +22,9 @@ CREATE TABLE aegis.public.qualifications (
     g4_cont_trainee boolean
 );
 
-CREATE TABLE aegis.public.schedule (  
-    date date,
+CREATE TABLE aegis.public.daysWithinMonth (  
+    date date primary key,
+    scheduleID varchar(255),
     a2_day varchar(255),
     a2_day_stby varchar(255),
     a2_night_stby varchar(255),
@@ -35,8 +37,14 @@ CREATE TABLE aegis.public.schedule (
     g4_cont_trainee varchar(255)
 );
 
+CREATE TABLE aegis.public.schedule (  
+    scheduleID varchar(255),
+    is_published boolean
+);
+
 CREATE TABLE aegis.public.requests (  
-    callsign varchar(255) NOT NULL primary key,
+    requestsID varchar(255) NOT NULL primary key,
+    callsign varchar(255),
     date date,
     reason varchar(255)
 );
