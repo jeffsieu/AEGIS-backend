@@ -78,6 +78,27 @@ app.delete('/delete', async (req, res) => {
   }
 })
 
+// TODO: Create a blank model for a new month
+app.post()
+
+// TODO: Check if schedule is published
+app.get()
+
+// TODO: Publish schedule
+app.post()
+
+// TODO: Cross check a user's qualification for planning
+app.get()
+
+// TODO: Add a user to the schedule
+app.post()
+
+// TODO: Change an existing user on the schedule
+app.update()
+
+// TODO: Remove a user from the schedule
+app.delete()
+
 app.listen(PORT, async () => {
   console.log(`Server listening on ${PORT}`);
   await sequelize.authenticate()
