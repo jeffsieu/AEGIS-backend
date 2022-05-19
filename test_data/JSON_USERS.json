@@ -1,0 +1,4202 @@
+[
+    {
+        "Callsign": "NANO1",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO2",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO3",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO4",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO5",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO6",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO7",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO8",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO9",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO10",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO11",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO12",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO13",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO14",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO15",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO16",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO17",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO18",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO19",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO20",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO21",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO22",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO23",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO24",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO25",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO26",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO27",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO28",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO29",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO30",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO31",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO32",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO33",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO34",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO35",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO36",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO37",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO38",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO39",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO40",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO41",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO42",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO43",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO44",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO45",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO46",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO47",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO48",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO49",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO50",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO51",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO52",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO53",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO54",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO55",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO56",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO57",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO58",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO59",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO60",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO61",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO62",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO63",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO64",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO65",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO66",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO67",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO68",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO69",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO70",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO71",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO72",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO73",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO74",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO75",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO76",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO77",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO78",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO79",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO80",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO81",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO82",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO83",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO84",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO85",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO86",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO87",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO88",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO89",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO90",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO91",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO92",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO93",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO94",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO95",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO96",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO97",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO98",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO99",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO100",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO101",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO102",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO103",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO104",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO105",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO106",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO107",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO108",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO109",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO110",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO111",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO112",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO113",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO114",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO115",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO116",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO117",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO118",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO119",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO120",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO121",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO122",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO123",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO124",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO125",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO126",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO127",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO128",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO129",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO130",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO131",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO132",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO133",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO134",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO135",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO136",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO137",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO138",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO139",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO140",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO141",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO142",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO143",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO144",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO145",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO146",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO147",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO148",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO149",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO150",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO151",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO152",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO153",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO154",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO155",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO156",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO157",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO158",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO159",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO160",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO161",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO162",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO163",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO164",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO165",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO166",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO167",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO168",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO169",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO170",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO171",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO172",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO173",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO174",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO175",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO176",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO177",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO178",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO179",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO180",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO181",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO182",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO183",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO184",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO185",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO186",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO187",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO188",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO189",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO190",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO191",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO192",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO193",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO194",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO195",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO196",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO197",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO198",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO199",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO200",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO201",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO202",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO203",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO204",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO205",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO206",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO207",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO208",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO209",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO210",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO211",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO212",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO213",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO214",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO215",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO216",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO217",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO218",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO219",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO220",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO221",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO222",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO223",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO224",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO225",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO226",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO227",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO228",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO229",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO230",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO231",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO232",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO233",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO234",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO235",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO236",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO237",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO238",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO239",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO240",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO241",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO242",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO243",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO244",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO245",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO246",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO247",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO248",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO249",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO250",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO251",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO252",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO253",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO254",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO255",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO256",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO257",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO258",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO259",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO260",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO261",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO262",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO263",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO264",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO265",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO266",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO267",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO268",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO269",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO270",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO271",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO272",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO273",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO274",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO275",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO276",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO277",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO278",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO279",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO280",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO281",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO282",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO283",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO284",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO285",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO286",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO287",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO288",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO289",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO290",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO291",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO292",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO293",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO294",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO295",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO296",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO297",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO298",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO299",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO300",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO301",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO302",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO303",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO304",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO305",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO306",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO307",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO308",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO309",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO310",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO311",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO312",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO313",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO314",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO315",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO316",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO317",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO318",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO319",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO320",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO321",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO322",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO323",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO324",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO325",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO326",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO327",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO328",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO329",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO330",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO331",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO332",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO333",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO334",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO335",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO336",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO337",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO338",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO339",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO340",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO341",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO342",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO343",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO344",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO345",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO346",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO347",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO348",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO349",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO350",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO351",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO352",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO353",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO354",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO355",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO356",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO357",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO358",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO359",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO360",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO361",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO362",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO363",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO364",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO365",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO366",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO367",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO368",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO369",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO370",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO371",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO372",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO373",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO374",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO375",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO376",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO377",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO378",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO379",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO380",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO381",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO382",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO383",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO384",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO385",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO386",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO387",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO388",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO389",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO390",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO391",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO392",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO393",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO394",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO395",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO396",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO397",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO398",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO399",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO400",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO401",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO402",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO403",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO404",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO405",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO406",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO407",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO408",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO409",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO410",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO411",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO412",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO413",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO414",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO415",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO416",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO417",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO418",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO419",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO420",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO421",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO422",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO423",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO424",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO425",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO426",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO427",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO428",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO429",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO430",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO431",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO432",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO433",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO434",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO435",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO436",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO437",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO438",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO439",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO440",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO441",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO442",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO443",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO444",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO445",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO446",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO447",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO448",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO449",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO450",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO451",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO452",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO453",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO454",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO455",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO456",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO457",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO458",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO459",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO460",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO461",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO462",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO463",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO464",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO465",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO466",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO467",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO468",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO469",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO470",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO471",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO472",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO473",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO474",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO475",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO476",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO477",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO478",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO479",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO480",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO481",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO482",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO483",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO484",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO485",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO486",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO487",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO488",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO489",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO490",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO491",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO492",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO493",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO494",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO495",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO496",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO497",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO498",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO499",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO500",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO501",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO502",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO503",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO504",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO505",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO506",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO507",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO508",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO509",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO510",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO511",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO512",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO513",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO514",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO515",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO516",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO517",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO518",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO519",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO520",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO521",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO522",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO523",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO524",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO525",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO526",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO527",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO528",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO529",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO530",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO531",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO532",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO533",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO534",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO535",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO536",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO537",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO538",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO539",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO540",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO541",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO542",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO543",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO544",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO545",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO546",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO547",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO548",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO549",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO550",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO551",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO552",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO553",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO554",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO555",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO556",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO557",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO558",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO559",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO560",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO561",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO562",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO563",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO564",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO565",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO566",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO567",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO568",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO569",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO570",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO571",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO572",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO573",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO574",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO575",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO576",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO577",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO578",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO579",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO580",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO581",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO582",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO583",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO584",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO585",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO586",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO587",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO588",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO589",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO590",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO591",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO592",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO593",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO594",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO595",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO596",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO597",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO598",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO599",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO600",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO601",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO602",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO603",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO604",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO605",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO606",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO607",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO608",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO609",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO610",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO611",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO612",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO613",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO614",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO615",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO616",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO617",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO618",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO619",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO620",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO621",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO622",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO623",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO624",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO625",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO626",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO627",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO628",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO629",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO630",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO631",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO632",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO633",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO634",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO635",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO636",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO637",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO638",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO639",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO640",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO641",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO642",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO643",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO644",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO645",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO646",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO647",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO648",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO649",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO650",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO651",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO652",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO653",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO654",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO655",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO656",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO657",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO658",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO659",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO660",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO661",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO662",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO663",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO664",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO665",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO666",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO667",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO668",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO669",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO670",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO671",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO672",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO673",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO674",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO675",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO676",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO677",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO678",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO679",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO680",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO681",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO682",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO683",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO684",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO685",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO686",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO687",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO688",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO689",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO690",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO691",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO692",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO693",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO694",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO695",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO696",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO697",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO698",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO699",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO700",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO701",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO702",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO703",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO704",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO705",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO706",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO707",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO708",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO709",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO710",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO711",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO712",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO713",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO714",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO715",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO716",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO717",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO718",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO719",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO720",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO721",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO722",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO723",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO724",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO725",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO726",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO727",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO728",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO729",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO730",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO731",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO732",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO733",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO734",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO735",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO736",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO737",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO738",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO739",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO740",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO741",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO742",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO743",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO744",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO745",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO746",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO747",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO748",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO749",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO750",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO751",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO752",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO753",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO754",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO755",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO756",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO757",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO758",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO759",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO760",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO761",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO762",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO763",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO764",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO765",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO766",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO767",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO768",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO769",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO770",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO771",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO772",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO773",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO774",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO775",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO776",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO777",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO778",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO779",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO780",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO781",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO782",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO783",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO784",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO785",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO786",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO787",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO788",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO789",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO790",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO791",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO792",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO793",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO794",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO795",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO796",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO797",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO798",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO799",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO800",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO801",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO802",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO803",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO804",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO805",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO806",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO807",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO808",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO809",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO810",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO811",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO812",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO813",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO814",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO815",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO816",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO817",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO818",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO819",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO820",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO821",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO822",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO823",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO824",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO825",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO826",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO827",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO828",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO829",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO830",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO831",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO832",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO833",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO834",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO835",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO836",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO837",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO838",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO839",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO840",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO841",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO842",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO843",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO844",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO845",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO846",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO847",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO848",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO849",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO850",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO851",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO852",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO853",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO854",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO855",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO856",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO857",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO858",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO859",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO860",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO861",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO862",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO863",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO864",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO865",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO866",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO867",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO868",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO869",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO870",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO871",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO872",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO873",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO874",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO875",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO876",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO877",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO878",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO879",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO880",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO881",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO882",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO883",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO884",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO885",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO886",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO887",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO888",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO889",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO890",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO891",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO892",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO893",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO894",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO895",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO896",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO897",
+        "Squadron": "CHICKEN"
+    },
+    {
+        "Callsign": "NANO898",
+        "Squadron": "CHICKEN",
+        "Role": "ADMIN"
+    },
+    {
+        "Callsign": "NANO899",
+        "Squadron": "CHICKEN",
+        "Role": "MEMBER"
+    },
+    {
+        "Callsign": "NANO900",
+        "Squadron": "CHICKEN"
+    }
+]
