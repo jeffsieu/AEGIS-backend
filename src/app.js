@@ -103,4 +103,8 @@ app.post('/addusers', async (req, res) => {
   // TODO: Remove a user from the schedule
   // app.delete()
 
+  app.get("/test", (_req, res) =>  {
+    res.status(200).send("Hello world")
+  })
+
   module.exports = app;

@@ -6,8 +6,8 @@ Hello World
 
 # Run Sequelize
 
-sequelize db:create
-sequelize db:migrate
+1. sequelize db:create
+2. sequelize db:migrate
 # (Not required if using Sequelize) Run Postgres in a docker container
 
 docker-compose up -d
