@@ -2,9 +2,8 @@
 
 Hello World
 
-# Install Redis
+1. Allows bulk insert up to 900 records in ~1.2s
 
-Go to https://redis.io/docs/getting-started/ to install Redis on your machine
 # Run Sequelize
 
 sequelize db:create
@@ -16,3 +15,7 @@ docker-compose up -d
 # Run API in docker container
 
 docker build -t aegis-backend .
+
+# (Pending) Install Redis
+
+Go to https://redis.io/docs/getting-started/ to install Redis on your machine

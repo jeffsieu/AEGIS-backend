@@ -1,11 +1,10 @@
-const express = require("express");
-
-const { sequelize, User } = require("../models");
-
+const { sequelize, User, Qualification } = require("../models");
 const PORT = process.env.PORT || 3000;
 
+const express = require("express");
 const app = express();
 app.use(express.json())
+
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -15,13 +14,20 @@ app.post('/addusers', async (req, res) => {
       const users = req.body.map(
         users => {
           return {
-            callsign: users.callsign,
-            squadron: users.squadron,
-            role: users.role,
-            duty_count: users.duty_count
+            callsign: users.Callsign,
+            squadron: users.Squadron,
+            role: users.Role
           }
         });
-      await User.bulkCreate(users);
+      await User.bulkCreate(users)
+
+      const qualifications = req.body.map(
+        users => {
+          return {
+            callsign: users.Callsign
+          }
+        });
+      await Qualification.bulkCreate(qualifications)
     }
 
     return res.status(200).send("Users added")
@@ -36,6 +42,17 @@ app.get('/users', async (req, res) => {
     const users = await User.findAll()
 
     return res.json(users)
+  } catch (err) {
+    console.log(err)
+    return res.status(500).json({ error: 'Something went wrong' })
+  }
+})
+
+app.get('/qualifications', async (req, res) => {
+  try {
+    const qualifications = await Qualification.findAll()
+
+    return res.json(qualifications)
   } catch (err) {
     console.log(err)
     return res.status(500).json({ error: 'Something went wrong' })

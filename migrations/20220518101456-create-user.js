@@ -11,10 +11,12 @@ module.exports = {
       userID: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
+        primaryKey: true,
       },
       callsign: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique: true,
         validate: {
           notNull: { msg: 'User must have a callsign' },
           notEmpty: { msg: 'Callsign must not be empty' },
@@ -32,19 +34,11 @@ module.exports = {
         type: DataTypes.STRING,
         allowNull: false,
         defaultValue: "MEMBER",
-        validate: {
-          notNull: { msg: 'User must have a role' },
-          notEmpty: { msg: 'Role must not be empty' },
-        },
       },
       duty_count: {
         type: DataTypes.INTEGER,
         allowNull: false,
         defaultValue: 0,
-        validate: {
-          notNull: { msg: 'User must have a duty count' },
-          notEmpty: { msg: 'Duty count must not be empty' },
-        },
       },
       createdAt: {
         allowNull: false,
