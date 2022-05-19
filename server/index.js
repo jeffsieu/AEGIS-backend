@@ -8,6 +8,8 @@ app.use(express.json())
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 
+// Takes in an array of JSON and inserts into the db
+// Throws an error if user already exist
 app.post('/addusers', async (req, res) => {
   try {
     if (req.body && Array.isArray(req.body)) {
@@ -37,6 +39,7 @@ app.post('/addusers', async (req, res) => {
   }
 })
 
+// Gets all users
 app.get('/users', async (req, res) => {
   try {
     const users = await User.findAll()
@@ -48,6 +51,7 @@ app.get('/users', async (req, res) => {
   }
 })
 
+// Gets all qualifications
 app.get('/qualifications', async (req, res) => {
   try {
     const qualifications = await Qualification.findAll()
@@ -59,6 +63,7 @@ app.get('/qualifications', async (req, res) => {
   }
 })
 
+// Truncate table
 app.delete('/delete', async (req, res) => {
   try {
     User.destroy({
