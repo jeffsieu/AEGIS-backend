@@ -2,6 +2,9 @@
 
 Hello World
 
+# Install Redis
+
+Go to https://redis.io/docs/getting-started/ to install Redis on your machine
 # Run Sequelize
 
 sequelize db:create
