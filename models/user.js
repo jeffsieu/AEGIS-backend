@@ -8,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
 
-    toJSON() {
-      return { ...this.get(), id: undefined }
+     static associate(models) {
+      // define association here
     }
   }
   User.init(
@@ -39,12 +39,12 @@ module.exports = (sequelize, DataTypes) => {
       role: {
         type: DataTypes.STRING,
         allowNull: false,
-        defaultValue: "MEMBER",
+        defaultValue: "MEMBER"
       },
       duty_count: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        defaultValue: 0,
+        defaultValue: 0
       },
     },
     {
