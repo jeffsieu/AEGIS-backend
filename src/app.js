@@ -1,14 +1,13 @@
-const { User, Qualification } = require("../models");
+const { User, Qualification } = require("../models")
 
-const express = require("express");
-// to use after deployment
-// const cors = require("cors") 
-// app.use(cors())
-const app = express();
+const express = require("express")
+const cors = require("cors") 
+const app = express()
+app.use(cors())
 app.use(express.json())
 
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({extended: true}));
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({extended: true}))
 
 // Takes in an array of JSON and inserts into the db
 // Throws an error if user already exist
@@ -100,6 +99,10 @@ app.post('/addusers', async (req, res) => {
       const user = await Qualification.findOne({
         where: { callsign },
       })
+
+      if (!user) {
+        return res.status(404).json("Requested user not found")
+      }
   
       return res.json(user)
     } catch (err) {
