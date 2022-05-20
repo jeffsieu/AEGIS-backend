@@ -1,8 +1,8 @@
 # AEGIS-backend
+Allows bulk insert up to 900 records in ~1.2s
 
-Hello World
-
-1. Allows bulk insert up to 900 records in ~1.2s
+1. npm install
+2. node ./src/index.js
 
 # Run Sequelize
 
