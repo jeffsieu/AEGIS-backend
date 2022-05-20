@@ -1,6 +1,9 @@
 const { User, Qualification } = require("../models");
 
 const express = require("express");
+// to use after deployment
+// const cors = require("cors") 
+// app.use(cors())
 const app = express();
 app.use(express.json())
 
@@ -82,8 +85,30 @@ app.post('/addusers', async (req, res) => {
     }
   })
   
-  // TODO: Cross check a user's qualification for planning
-  // app.get()
+  // Cross check a user's qualification for planning
+  // Callsign must be uppercase
+  app.get('/qualifications/:callsign', async (req, res) => {
+    // check for valid input & prevent SQL injection
+    const userQuery = req.params.callsign;
+    const onlyLettersPattern = new RegExp('^[A-Za-z]+$')
+
+    if(!userQuery.match(onlyLettersPattern)){
+      return res.status(400).json({ err: "No special characters and no numbers, please!"})
+    }
+
+    const callsign = req.params.callsign
+
+    try {
+      const user = await Qualification.findOne({
+        where: { callsign },
+      })
+  
+      return res.json(user)
+    } catch (err) {
+      console.log(err)
+      return res.status(500).json({ error: 'Something went wrong' })
+    }
+  })
 
   // TODO: Create a blank model for a new month
   // app.post()
