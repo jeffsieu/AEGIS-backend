@@ -36,7 +36,6 @@ app.post('/addusers', async (req, res) => {
   
       return res.status(200).send("Users added")
     } catch (err) {
-      console.log(err)
       return res.status(500).json(err)
     }
   })
@@ -48,8 +47,7 @@ app.post('/addusers', async (req, res) => {
   
       return res.json(users)
     } catch (err) {
-      console.log(err)
-      return res.status(500).json({ error: 'Something went wrong' })
+      return res.status(500).json(err)
     }
   })
   
@@ -60,8 +58,7 @@ app.post('/addusers', async (req, res) => {
   
       return res.json(qualifications)
     } catch (err) {
-      console.log(err)
-      return res.status(500).json({ error: 'Something went wrong' })
+      return res.status(500).json(err)
     }
   })
   
@@ -80,8 +77,7 @@ app.post('/addusers', async (req, res) => {
   
       return res.status(200).send("Records purged")
     } catch (err) {
-      console.log(err)
-      return res.status(500).json({ error: 'Something went wrong' })
+      return res.status(500).json(err)
     }
   })
   
@@ -105,8 +101,7 @@ app.post('/addusers', async (req, res) => {
   
       return res.json(user)
     } catch (err) {
-      console.log(err)
-      return res.status(500).json({ error: 'Something went wrong' })
+      return res.status(500).json(err)
     }
   })
 
