@@ -9,7 +9,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "airbnb-base",
+      "eslint:recommended",
       "plugin:security/recommended"
     ],
     "parserOptions": {
@@ -22,7 +22,9 @@
     },
     "rules": {
       "no-console": 0,
-      "no-unused-vars": 1
+      "no-unused-vars": 1,
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"]
     }
   },
   "repository": {
