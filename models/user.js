@@ -8,21 +8,17 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
 
-     static associate(models) {
-      // define association here
+     static associate({ Qualification }) {
+      this.hasMany(Qualification, { foreignKey: 'callsign', as: 'qualifications' })
     }
   }
   User.init(
     {
-      userID: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-      },
       callsign: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
+        primaryKey: true,
         validate: {
           notNull: { msg: 'User must have a callsign' },
           notEmpty: { msg: 'Callsign must not be empty' },

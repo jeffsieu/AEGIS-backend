@@ -24,7 +24,7 @@ app.post('/addusers', async (req, res) => {
             }
           });
         await User.bulkCreate(users)
-  
+
         const qualifications = req.body.map(
           users => {
             return {
@@ -43,7 +43,9 @@ app.post('/addusers', async (req, res) => {
   // Gets all users
   app.get('/users', async (req, res) => {
     try {
-      const users = await User.findAll()
+      const users = await User.findAll({
+        include: 'qualifications'
+      })
   
       return res.json(users)
     } catch (err) {

@@ -6,7 +6,6 @@ module.exports = {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
-        primaryKey: true,
         validate: {
           notNull: { msg: 'User must have a callsign' },
           notEmpty: { msg: 'Callsign must not be empty' },

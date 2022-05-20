@@ -2,14 +2,10 @@
 module.exports = {
   up: async (queryInterface, DataTypes) => {
     await queryInterface.createTable('users', {
-      userID: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true,
-      },
       callsign: {
         type: DataTypes.STRING,
         allowNull: false,
+        primaryKey: true,
         unique: true,
         validate: {
           notNull: { msg: 'User must have a callsign' },
