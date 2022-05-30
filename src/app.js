@@ -1,4 +1,4 @@
-const { User, Qualification } = require("../models")
+const { Member, Qualification } = require("../models")
 
 const express = require("express")
 const helmet = require("helmet")
@@ -12,43 +12,43 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended: true}))
 
 // Takes in an array of JSON and inserts into the db
-// Throws an error if user already exist
-app.post('/addusers', async (req, res) => {
+// Throws an error if member already exist
+app.post('/addmembers', async (req, res) => {
     try {
       if (req.body && Array.isArray(req.body)) {
-        const users = req.body.map(
-          users => {
+        const members = req.body.map(
+          members => {
             return {
-              callsign: users.Callsign,
-              squadron: users.Squadron,
-              role: users.Role
+              callsign: members.Callsign,
+              squadron: members.Squadron,
+              role: members.Role
             }
           });
-        await User.bulkCreate(users)
+        await Member.bulkCreate(members)
 
         const qualifications = req.body.map(
-          users => {
+          members => {
             return {
-              callsign: users.Callsign
+              callsign: members.Callsign
             }
           });
         await Qualification.bulkCreate(qualifications)
       }
   
-      return res.status(200).send("Users added")
+      return res.status(200).send("Members added")
     } catch (err) {
       return res.status(500).json(err)
     }
   })
   
-  // Gets all users
-  app.get('/users', async (req, res) => {
+  // Gets all members
+  app.get('/members', async (req, res) => {
     try {
-      const users = await User.findAll({
+      const members = await Member.findAll({
         include: 'qualifications'
       })
   
-      return res.json(users)
+      return res.json(members)
     } catch (err) {
       return res.status(500).json(err)
     }
@@ -68,7 +68,7 @@ app.post('/addusers', async (req, res) => {
   // Truncate all tables
   app.delete('/delete', async (req, res) => {
     try {
-      User.destroy({
+      Member.destroy({
         where: {},
         truncate: true
       })
@@ -84,7 +84,7 @@ app.post('/addusers', async (req, res) => {
     }
   })
   
-  // Cross check a user's qualification for planning
+  // Cross check a member's qualification for planning
   // Callsign must be uppercase
   app.get('/qualifications/:callsign', async (req, res) => {
     // check for valid input & prevent SQL injection
@@ -98,15 +98,15 @@ app.post('/addusers', async (req, res) => {
     const callsign = req.params.callsign
 
     try {
-      const user = await Qualification.findOne({
+      const member = await Qualification.findOne({
         where: { callsign },
       })
 
-      if (!user) {
-        return res.status(404).json("Requested user not found")
+      if (!member) {
+        return res.status(404).json("Requested member not found")
       }
   
-      return res.json(user)
+      return res.json(member)
     } catch (err) {
       return res.status(500).json(err)
     }
@@ -115,13 +115,13 @@ app.post('/addusers', async (req, res) => {
   // TODO: Create a blank model for a new month
   // app.post()
 
-  // TODO: Add a user to the schedule
+  // TODO: Add a member to the schedule
   // app.post()
 
-  // TODO: Change an existing user on the schedule
+  // TODO: Change an existing member on the schedule
   // app.update()
   
-  // TODO: Remove a user from the schedule
+  // TODO: Remove a member from the schedule
   // app.delete()
   
   // TODO: Check if schedule is published

@@ -1,7 +1,7 @@
 'use strict'
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-  class User extends Model {
+  class Member extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       this.hasMany(Qualification, { foreignKey: 'callsign', as: 'qualifications' })
     }
   }
-  User.init(
+  Member.init(
     {
       callsign: {
         type: DataTypes.STRING,
@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
         primaryKey: true,
         validate: {
-          notNull: { msg: 'User must have a callsign' },
+          notNull: { msg: 'Member must have a callsign' },
           notEmpty: { msg: 'Callsign must not be empty' },
         },
       },
@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          notNull: { msg: 'User must have a squadron' },
+          notNull: { msg: 'Member must have a squadron' },
           notEmpty: { msg: 'Squadron must not be empty' },
         },
       },
@@ -45,9 +45,9 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      tableName: 'users',
-      modelName: 'User',
+      tableName: 'members',
+      modelName: 'Member',
     }
   )
-  return User
+  return Member
 }

@@ -7,7 +7,7 @@ module.exports = {
         allowNull: false,
         unique: true,
         validate: {
-          notNull: { msg: 'User must have a callsign' },
+          notNull: { msg: 'Member must have a callsign' },
           notEmpty: { msg: 'Callsign must not be empty' },
         },
       },

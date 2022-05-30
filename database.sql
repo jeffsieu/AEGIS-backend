@@ -1,6 +1,6 @@
 CREATE DATABASE aegis;
 
-CREATE TABLE aegis.public.users (  
+CREATE TABLE aegis.public.members (  
     userID varchar(255) NOT NULL primary key,
     callsign varchar(255),
     role varchar(255),

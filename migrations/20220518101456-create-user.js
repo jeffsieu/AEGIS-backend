@@ -1,14 +1,14 @@
 'use strict'
 module.exports = {
   up: async (queryInterface, DataTypes) => {
-    await queryInterface.createTable('users', {
+    await queryInterface.createTable('members', {
       callsign: {
         type: DataTypes.STRING,
         allowNull: false,
         primaryKey: true,
         unique: true,
         validate: {
-          notNull: { msg: 'User must have a callsign' },
+          notNull: { msg: 'Member must have a callsign' },
           notEmpty: { msg: 'Callsign must not be empty' },
         },
       },
@@ -16,7 +16,7 @@ module.exports = {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          notNull: { msg: 'User must have a squadron' },
+          notNull: { msg: 'Member must have a squadron' },
           notEmpty: { msg: 'Squadron must not be empty' },
         },
       },
@@ -41,6 +41,6 @@ module.exports = {
     })
   },
   down: async (queryInterface, DataTypes) => {
-    await queryInterface.dropTable('users')
+    await queryInterface.dropTable('members')
   },
 }
