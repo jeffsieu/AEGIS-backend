@@ -1,3 +1,6 @@
+/* eslint-disable security/detect-non-literal-require */
+/* eslint-disable security/detect-non-literal-fs-filename */
+/* eslint-disable security/detect-object-injection */
 "use strict";
 
 const fs = require("fs");
