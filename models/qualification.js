@@ -1,5 +1,5 @@
-'use strict';
-const { Model } = require('sequelize');
+"use strict";
+const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
   class Qualification extends Model {
     /**
@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate({ Member }) {
-      this.belongsTo(Member, { foreignKey: 'callsign', as: 'member' })
+      this.belongsTo(Member, { foreignKey: "callsign", as: "member" });
     }
   }
   Qualification.init({
@@ -18,8 +18,8 @@ module.exports = (sequelize, DataTypes) => {
       unique: true,
       primaryKey: true,
       validate: {
-        notNull: { msg: 'Member must have a callsign' },
-        notEmpty: { msg: 'Callsign must not be empty' },
+        notNull: { msg: "Member must have a callsign" },
+        notEmpty: { msg: "Callsign must not be empty" },
       },
     },
     a2_day: {
@@ -80,8 +80,8 @@ module.exports = (sequelize, DataTypes) => {
   },
   {
     sequelize,
-    tableName: 'qualifications',
-    modelName: 'Qualification',
+    tableName: "qualifications",
+    modelName: "Qualification",
   });
   return Qualification;
 };

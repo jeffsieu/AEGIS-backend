@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 module.exports = {
   async up(queryInterface, DataTypes) {
-    await queryInterface.createTable('qualifications', {
+    await queryInterface.createTable("qualifications", {
       callsign: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
         validate: {
-          notNull: { msg: 'Member must have a callsign' },
-          notEmpty: { msg: 'Callsign must not be empty' },
+          notNull: { msg: "Member must have a callsign" },
+          notEmpty: { msg: "Callsign must not be empty" },
         },
       },
       a2_day: {
@@ -77,6 +77,6 @@ module.exports = {
     });
   },
   async down(queryInterface, DataTypes) {
-    await queryInterface.dropTable('qualifications');
+    await queryInterface.dropTable("qualifications");
   }
 };
