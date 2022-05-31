@@ -8,7 +8,7 @@ Allows bulk insert up to 900 records in ~1.2s
 
 1. sequelize db:create
 2. sequelize db:migrate
-3. (clear db) sequelize db:drop
+3. (clear db) sequelize db:drop, (rever migrate) sequelize db:migrate:undo:all
 
 # (Not required if using Sequelize) Run Postgres in a docker container
 

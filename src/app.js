@@ -1,4 +1,4 @@
-const { Member, Qualification } = require("../models")
+const { Member, Qualification, Duty } = require("../models")
 
 const express = require("express")
 const helmet = require("helmet")
@@ -33,6 +33,14 @@ app.post('/addmembers', async (req, res) => {
             }
           });
         await Qualification.bulkCreate(qualifications)
+
+        const duties = req.body.map(
+          members => {
+            return {
+              callsign: members.Callsign
+            }
+          });
+        await Duty.bulkCreate(duties)
       }
   
       return res.status(200).send("Members added")
@@ -64,6 +72,17 @@ app.post('/addmembers', async (req, res) => {
       return res.status(500).json(err)
     }
   })
+
+  // Gets all duties
+  app.get('/duties', async (req, res) => {
+    try {
+      const duties = await Duty.findAll()
+  
+      return res.json(duties)
+    } catch (err) {
+      return res.status(500).json(err)
+    }
+  })
   
   // Truncate all tables
   app.delete('/delete', async (req, res) => {
@@ -74,6 +93,11 @@ app.post('/addmembers', async (req, res) => {
       })
 
       Qualification.destroy({
+        where: {},
+        truncate: true
+      })
+
+      Duty.destroy({
         where: {},
         truncate: true
       })
