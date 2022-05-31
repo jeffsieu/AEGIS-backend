@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 module.exports = {
   async up(queryInterface, DataTypes) {
-    await queryInterface.createTable('duties', {
+    await queryInterface.createTable("duties", {
       duty_id: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4
@@ -11,8 +11,8 @@ module.exports = {
         allowNull: false,
         unique: true,
         validate: {
-          notNull: { msg: 'Member must have a callsign' },
-          notEmpty: { msg: 'Callsign must not be empty' },
+          notNull: { msg: "Member must have a callsign" },
+          notEmpty: { msg: "Callsign must not be empty" },
         },
       },
       schedule_id: {
@@ -37,7 +37,7 @@ module.exports = {
       },
     });
   },
-  async down(queryInterface, DataTypes) {
-    await queryInterface.dropTable('duties');
+  async down(queryInterface) {
+    await queryInterface.dropTable("duties");
   }
 };
