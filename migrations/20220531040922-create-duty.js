@@ -24,6 +24,9 @@ module.exports = {
         allowNull: false,
         defaultValue: "NIL",
       },
+      date: {
+        type: DataTypes.DATEONLY,
+      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATEONLY,

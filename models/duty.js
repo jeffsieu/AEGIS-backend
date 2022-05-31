@@ -37,7 +37,7 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: "NIL",
     },
     date: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
     }
   }, {
     sequelize,
