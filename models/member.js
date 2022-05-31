@@ -1,5 +1,5 @@
-"use strict";
-const { Model } = require("sequelize");
+'use strict'
+const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
   class Member extends Model {
     /**
@@ -8,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate({ Qualification, Duty }) {
-      this.hasMany(Qualification, { foreignKey: "callsign", as: "qualifications" });
-      this.hasMany(Duty, { foreignKey: "callsign", as: "duties" });
+      this.hasMany(Qualification, { foreignKey: 'callsign', as: 'qualifications' })
+      this.hasMany(Duty, { foreignKey: 'callsign', as: 'duties' })
     }
   }
   Member.init(
@@ -20,16 +20,16 @@ module.exports = (sequelize, DataTypes) => {
         unique: true,
         primaryKey: true,
         validate: {
-          notNull: { msg: "Member must have a callsign" },
-          notEmpty: { msg: "Callsign must not be empty" },
+          notNull: { msg: 'Member must have a callsign' },
+          notEmpty: { msg: 'Callsign must not be empty' },
         },
       },
       squadron: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          notNull: { msg: "Member must have a squadron" },
-          notEmpty: { msg: "Squadron must not be empty" },
+          notNull: { msg: 'Member must have a squadron' },
+          notEmpty: { msg: 'Squadron must not be empty' },
         },
       },
       role: {
@@ -45,9 +45,9 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      tableName: "members",
-      modelName: "Member",
+      tableName: 'members',
+      modelName: 'Member',
     }
-  );
-  return Member;
-};
+  )
+  return Member
+}

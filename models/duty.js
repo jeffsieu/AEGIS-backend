@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 const {
   Model
-} = require("sequelize");
+} = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Duty extends Model {
     /**
@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate({ Member }) {
-      this.belongsTo(Member, { foreignKey: "duty_id", as: "member" });
+      this.belongsTo(Member, { foreignKey: 'duty_id', as: 'member' })
     }
   }
   Duty.init({
@@ -23,8 +23,8 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        notNull: { msg: "Member must have a callsign" },
-        notEmpty: { msg: "Callsign must not be empty" },
+        notNull: { msg: 'Member must have a callsign' },
+        notEmpty: { msg: 'Callsign must not be empty' },
       },
     },
     schedule_id: {
@@ -41,8 +41,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
-    tableName: "duties",
-    modelName: "Duty",
+    tableName: 'duties',
+    modelName: 'Duty',
   });
   return Duty;
 };
