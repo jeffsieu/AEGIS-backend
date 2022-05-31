@@ -2,6 +2,10 @@
 module.exports = {
   async up(queryInterface, DataTypes) {
     await queryInterface.createTable('duties', {
+      duty_id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4
+      },
       callsign: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -10,6 +14,10 @@ module.exports = {
           notNull: { msg: 'Member must have a callsign' },
           notEmpty: { msg: 'Callsign must not be empty' },
         },
+      },
+      schedule_id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4
       },
       duty_type: {
         type: DataTypes.STRING,

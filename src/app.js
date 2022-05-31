@@ -53,7 +53,7 @@ app.post('/addmembers', async (req, res) => {
   app.get('/members', async (req, res) => {
     try {
       const members = await Member.findAll({
-        include: 'qualifications'
+        include: ['qualifications', 'duties']
       })
   
       return res.json(members)
