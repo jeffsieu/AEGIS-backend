@@ -1,4 +1,4 @@
-const { Member, Qualification, Duty } = require("../models");
+const { Member, Qualification, Duty, Schedule } = require("../models");
 
 const express = require("express");
 const helmet = require("helmet");
@@ -76,30 +76,6 @@ app.get("/duties", async (req, res) => {
   }
 });
 
-// Truncate all tables
-app.delete("/delete", async (req, res) => {
-  try {
-    Member.destroy({
-      where: {},
-      truncate: true
-    });
-
-    Qualification.destroy({
-      where: {},
-      truncate: true
-    });
-
-    Duty.destroy({
-      where: {},
-      truncate: true
-    });
-
-    return res.status(200).send("Records purged");
-  } catch (err) {
-    return res.status(500).json(err);
-  }
-});
-
 // Cross check a member's qualification for planning
 // Callsign must be uppercase
 app.get("/qualifications/:callsign", async (req, res) => {
@@ -128,8 +104,36 @@ app.get("/qualifications/:callsign", async (req, res) => {
   }
 });
 
-// TODO: Create a blank model for a new month
-// app.post()
+// Create a blank model for a new month
+app.post("/new", async (req, res) => {
+  try {
+    if (req.body && Array.isArray(req.body)) {
+      const schedules = req.body.map(
+        schedule => {
+          return {
+            month: schedule.Month
+          };
+        });
+      await Schedule.bulkCreate(schedules);
+    }
+
+    // console.log(res.body);
+
+    return res.status(200).send("Schedule created");
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.get("/schedules", async (req, res) => {
+  try {
+    const schedules = await Schedule.findAll();
+
+    return res.json(schedules);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
 
 // TODO: Add a member to the schedule
 // app.post()
@@ -145,6 +149,35 @@ app.get("/qualifications/:callsign", async (req, res) => {
 
 // TODO: Publish schedule
 // app.post()
+
+// Truncate all tables
+app.delete("/delete", async (req, res) => {
+  try {
+    Member.destroy({
+      where: {},
+      truncate: true
+    });
+
+    Qualification.destroy({
+      where: {},
+      truncate: true
+    });
+
+    Duty.destroy({
+      where: {},
+      truncate: true
+    });
+
+    Schedule.destroy({
+      where: {},
+      truncate: true
+    });
+
+    return res.status(200).send("Records purged");
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
 
 app.get("/test", (_req, res) => {
   res.status(200).send("Hello world");

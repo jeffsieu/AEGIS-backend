@@ -76,7 +76,7 @@ module.exports = {
       }
     });
   },
-  async down(queryInterface, DataTypes) {
+  async down(queryInterface) {
     await queryInterface.dropTable("qualifications");
   }
 };
