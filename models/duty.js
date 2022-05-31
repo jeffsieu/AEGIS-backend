@@ -10,18 +10,18 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate({ Member }) {
-      this.belongsTo(Member, { foreignKey: 'callsign', as: 'member' })
+      this.belongsTo(Member, { foreignKey: 'duty_id', as: 'member' })
     }
   }
   Duty.init({
     duty_id: {
       type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4
+      defaultValue: DataTypes.UUIDV4,
+      primaryKey: true
     },
     callsign: {
       type: DataTypes.STRING,
       allowNull: false,
-      primaryKey: true,
       validate: {
         notNull: { msg: 'Member must have a callsign' },
         notEmpty: { msg: 'Callsign must not be empty' },
@@ -36,6 +36,9 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       defaultValue: "NIL",
     },
+    date: {
+      type: DataTypes.DATE,
+    }
   }, {
     sequelize,
     tableName: 'duties',

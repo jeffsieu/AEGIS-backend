@@ -33,14 +33,6 @@ app.post('/addmembers', async (req, res) => {
             }
           });
         await Qualification.bulkCreate(qualifications)
-
-        const duties = req.body.map(
-          members => {
-            return {
-              callsign: members.Callsign
-            }
-          });
-        await Duty.bulkCreate(duties)
       }
   
       return res.status(200).send("Members added")
