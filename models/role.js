@@ -19,9 +19,12 @@ module.exports = (sequelize, DataTypes) => {
     role_id: {
       type: DataTypes.STRING,
       primaryKey: true,
-      // validate: {
-      //   isIn: [["A2", "G4 CONT", "G4 COMD"]]
-      // },
+      validate: {
+        isIn: {
+          args: [["A2", "G4 CONT", "G4 COMD"]],
+          msg: "Must be a valid role"
+        }
+      },
     },
   }, {
     sequelize,

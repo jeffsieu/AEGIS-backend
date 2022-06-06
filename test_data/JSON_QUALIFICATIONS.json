@@ -3598,5 +3598,17 @@
     {
         "Callsign": "DONNELL",
         "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRITNEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "NEO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "REBECCA",
+        "Role": "A2"
     }
 ]
