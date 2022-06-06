@@ -1,6 +1,7 @@
-# AEGIS-backend
-Allows bulk insert up to 900 records in ~1.2s
+# Getting Started
+https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k/edit
 
+# Set up AEGIS-backend
 1. npm install
 2. nodemon ./src/index.js
 
@@ -10,6 +11,7 @@ Allows bulk insert up to 900 records in ~1.2s
 2. sequelize db:migrate
 3. (clear db) sequelize db:drop, (rever migrate) sequelize db:migrate:undo:all
 
+## (Ignore below)
 # (Not required if using Sequelize) Run Postgres in a docker container
 
 docker-compose up -d

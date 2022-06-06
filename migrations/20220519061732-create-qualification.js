@@ -6,7 +6,6 @@ module.exports = {
       callsign: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
         validate: {
           notNull: { msg: "Member must have a callsign" },
           notEmpty: { msg: "Callsign must not be empty" },
@@ -15,9 +14,9 @@ module.exports = {
       role_id: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-          isIn: [["A2", "G4 CONT", "G4 COMD"]]
-        },
+        // validate: {
+        //   isIn: [["A2", "G4 CONT", "G4 COMD"]]
+        // },
       },
       createdAt: {
         allowNull: false,

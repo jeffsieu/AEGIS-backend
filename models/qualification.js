@@ -8,16 +8,13 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate({ Role }) {
-      this.hasOne(Role, { foreignKey: "role_id", as: "role" })
+    static associate() {
     }
   }
   Qualification.init({
     callsign: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
-      primaryKey: true,
       validate: {
         notNull: { msg: "Member must have a callsign" },
         notEmpty: { msg: "Callsign must not be empty" },
@@ -26,9 +23,9 @@ module.exports = (sequelize, DataTypes) => {
     role_id: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isIn: [["A2", "G4 CONT", "G4 COMD"]]
-      },
+      // validate: {
+      //   isIn: [["A2", "G4 CONT", "G4 COMD"]]
+      // },
     },
   },
   {

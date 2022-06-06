@@ -5,9 +5,9 @@ module.exports = {
     await queryInterface.createTable("Roles", {
       role_id: {
         type: DataTypes.STRING,
-        validate: {
-          isIn: [["A2", "G4 CONT", "G4 COMD"]]
-        },
+        // validate: {
+        //   isIn: [["A2", "G4 CONT", "G4 COMD"]]
+        // },
       },
       createdAt: {
         allowNull: false,

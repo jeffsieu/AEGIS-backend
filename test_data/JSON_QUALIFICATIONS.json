@@ -1,0 +1,3602 @@
+[
+    {
+        "Callsign": "BRITNEY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "NEO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "REBECCA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DELANEY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "NASH",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HASSAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BAYLEY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "RYLEIGH",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TRISTON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MARGO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KRISTYN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ARIC",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ROBERTO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MACY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MARI",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JAIME",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DENZEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRAYAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KENDYL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ARMANI",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRYANNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "GARRET",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JOANA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TANNER",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SAVION",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ERNESTO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MARTINA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRYON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TAMYA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KRISTIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ROLANDO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TREVIN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DOMENIC",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "AMINA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JOVANNI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "STEFANIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HOLLY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SKYLAR",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JOLENE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALEXZANDER",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "HANNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "PHOENIX",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ROXANNE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DEANTE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DARREN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CARSON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "NATALY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BREANNA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ROSA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JALON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ALEXANDRE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "NASIR",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "OMARI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LIZET",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SHEILA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ALAYSIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHEMAR",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KARI",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "PERLA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DALLIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JOHNATHAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANDERSON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "NOA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "IMMANUEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ZAYNE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRET",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KEONA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DALLAS",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "YADIRA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MASON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DESTINY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ADRIANNA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ALLYSA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SKYE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JULIETTE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ZACHARIAH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CESAR",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DAVION",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MEAGAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KADEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALEJANDRA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "GILBERT",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JULIANNE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DENVER",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DESHAWN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KESHAWN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LEE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CLAUDIO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "AYESHA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "VARUN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KRYSTEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JEFFREY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "YUSUF",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SAMUEL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ROCHELLE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "EAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KARIME",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "GISSELL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JESSE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ISIAH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAYLEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TREYVON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "EDEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LEONARD",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "NESTOR",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DREW",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MADELYNN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRANDAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LEANN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CORINA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRIZA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ARACELY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MACIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ISHMAEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "NAKIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SOPHIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GEORGINA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "AMIYAH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAVEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CLARE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "STEWART",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ROSEMARY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DANIKA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CHASE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHYANNE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KENDRICK",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "WILFREDO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KEELEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JANIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MAGALI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SABINA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JORDYN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANNALIESE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "GIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "AIMEE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TYANNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JENA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "PARKER",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BAYLOR",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LEIGH",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "AJAY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ORLANDO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "RAELYNN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JOHNATHON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TRE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHAY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LANE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRIELLE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CLARENCE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GRISELDA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JUDITH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JENIFER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALANIS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SHANYA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DAVONTE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MAEGAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MARIANNE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JELANI",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRIANA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MIGUEL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "RIANA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CLAYTON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DAWN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DEMETRIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KYNDAL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "GISSELLE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ANTHONY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HEIDY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CALE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MACEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JOSE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DEVON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MADELINE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CHASTITY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KAMRON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TYQUAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KANE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LELAND",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TYRIQUE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DEVANTE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RIVER",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "REYNALDO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KYA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CAROLYN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JERROD",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAYLENE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "GEMMA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JOYCE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CHANDLER",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MICHAEL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ALEXIS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAZMINE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MARINA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CORINNE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MARCELLUS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JADEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "FREDERICK",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SAVANAH",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANNABELLA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "AMYA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SELINA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LONDON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JOSELUIS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KENDELL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MAHOGANY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JALYN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SANDY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANIKA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CORY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KAILEY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "NYA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "EMELIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DEVONTAE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRANDT",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MERCEDEZ",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "IBRAHIM",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KILLIAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "QUINTIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MEKHI",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SARINA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ELEXIS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "EDMUND",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TANYA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ANAYA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KAYCEE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JESSIE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ANNAMARIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MARCEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JAYLIN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHANIYA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KATELYN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "AUSTEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "FIDEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SHAMAR",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LUCY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRADY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KURTIS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "IRVIN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LUCAS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "URIAH",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RAEGAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SOMMER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DIAMOND",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "HASAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "QUINN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ADELAIDE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SERENITY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DEVONTA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CHYNA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JALEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SONJA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAYLYNN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BONNIE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAIDYN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GRIFFIN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "AMERICA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LEIF",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DAYANARA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ARIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JUSTIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "WILLOW",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "XZAVIER",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAILENE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "STANLEY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MOHAMMED",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "IZAIAH",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MICHAELA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CAMERON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CARLO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "STACIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LYLE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "AMELIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SYMONE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DESMOND",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MADELYNE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAMAAL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DAVID",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "RAFAEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JULIO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JAJUAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LORENZO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DAYANA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANGEL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LILIAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALESHA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LEONEL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BIANCA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALISON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ALICE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MARTIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JORDAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MAKAYLA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MATTHEW",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DILLAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CECIL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAZMYN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SALMA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CRISTINA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRADFORD",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BLAYNE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DRAVEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LARA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "RAYMOND",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DAYNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "RAEKWON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DESTINEE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MAX",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KEVIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JODIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BELEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KATHERINE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TRENTEN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SALVATORE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CORBIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ERIC",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CLIFFORD",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KASEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GARRETT",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KALI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LEIGHA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KORY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DANDRE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DANIELLA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LOREN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ALEX",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DEONDRE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BLANCA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "FREDRICK",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BERNARDO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "STUART",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KAIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "RAMIRO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LAYTON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ELEANOR",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BILLY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CLIFTON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MIREYA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MYKALA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANIYAH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MARIBEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "PAIGE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "OCTAVIO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LEXIS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KENNA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "EDGAR",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BOWEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GUNNAR",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LIZETH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "RENE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MILENA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRODY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LEXI",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LANDEN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MEGHAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JOEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MYA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KELLEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JONAS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ISIS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DONALD",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KARL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KELSEY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DAPHNE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ANGELIQUE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CHANA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BILL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRISSA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BETHANIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DARIUS",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DAREN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TAVIAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "FLETCHER",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRANDON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DEMETRIUS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DARIANA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "PARIS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MICAYLA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "XIOMARA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CHRISTOPHER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DEAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "QUINTEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ABRIANNA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "REBEKAH",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KERRY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JARVIS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALEXA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DAMION",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CALEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BLAISE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "COLLEEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "RAVEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KARLEY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CATALINA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TYREK",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TRENT",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JASE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRANDEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "RYLEE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KELLY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DAYNE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JORGE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LUIS",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CITLALI",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CAILYN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JAIDEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KEELY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ENOCH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CHAUNCEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BLAZE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "WILSON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "NELLY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ZACKERY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SHAYNE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JASMIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CLINTON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SANTINO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DYMOND",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "IVANA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JAMARI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MAKENZIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DAWSON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ARIANNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MATEO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "FREDDIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANISSA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRIAR",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JADYN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANAHI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LEIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "FRANCESCA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DALTON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LEIGHTON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ROBIN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KENAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "NICOLLE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KATERINA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ZAKARY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "REECE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAZMIN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TOMMY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "EVERARDO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CONSTANCE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JAMAL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "VIVIANA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "AURORA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "EZEKIEL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "HEATHER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KIERA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DORIAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JERMAINE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TYRON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RAQUEL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CLARA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "AMY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ABBY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KATELIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "PEYTON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRAYDEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ILEANA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAMEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LAISHA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "PRINCE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KRISTIAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "AYLEEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "GWENDOLYN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SHANICE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "YOSEF",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KOLTON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LILA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CAIN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "REGINALD",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "PIERRE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "AMARI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHERMAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "PRANAV",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MATHEW",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CHRISTIAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ROSARIO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LESLY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KRISTOPHER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BENNY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "COREY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MIKEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JIM",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SHYANN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "AMAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DAKOTA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ROHAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MARSHALL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DEVIN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MIRACLE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHIANN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KELLIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MACKENZIE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ARELY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ANAIS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SKYLA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KAI",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "VALENTIN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CIERA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ISSAC",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DANTE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ALIYAH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ALISA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DOROTHY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DAMON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ESTEFANI",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KODY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "EILEEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "NIKOLAS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LIANA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KATE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TIARRA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ANNEMARIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MERCY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "AYLA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "RIYA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LILLIANA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "REGAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "EDUARDO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KIERRA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "FALLON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KAYLE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ULYSSES",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LANEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HAILIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "HADLEY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ANDREAS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HOLLIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "FINN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JACQUES",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRAULIO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DALIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SANA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DUSTIN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MELINA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CHANEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HANAH",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "NALLELY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DEANGELO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SALENA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JADE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KIYA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "PAUL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SHANNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DENNIS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ZAIRA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "GERARD",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAQUELIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DONAVON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JEDIDIAH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ERVIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "AUBREY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BABYGIRL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KERRIGAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DAYSHA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SHLOMO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KRISTOFER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "STACY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "NATASHA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KENNEDY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TRISTEN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CHERYL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CHELSIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CRISTOBAL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KALA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CAYLIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BETSY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JARRET",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHAMYA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KRISTINE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MONTANA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHEKINAH",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "AMBERLY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DOMINIQUE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BERNARD",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LYNDSAY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "GREGORY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JEWEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALIVIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TYRESE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CHEYENNE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TAVION",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RAYNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "COLBY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TRISTA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KELSI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "GENE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALONZO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "GLORIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ESTER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KEITH",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TYLER",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JASON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SIMONE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MICHELE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MADALYNN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAKOB",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KAYLA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MARISELA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LATRELL",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ALEXANDRIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DEVYN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "EVERETT",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MAKALA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRYN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KALEE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ANNETTE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRENNA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANGELICA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MCKENZIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MACAYLA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TESS",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BENITO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JANELLE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DAISHA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DASIA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MARJORIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RYAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ROSALINDA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ANITA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "GALEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DEJON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MALCOLM",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ASTRID",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ERIK",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DAHLIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RODERICK",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ANGELO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ARLENE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ASHER",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ROCKY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LUCA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JENSEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRENTON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LIZA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "NICHOLE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KAITLYNN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "VICTOR",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "STEPHANIE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DEWAYNE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALEXCIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DAMIAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAEDEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SEAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRIDGET",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DWIGHT",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KEYARA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CAITLIN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "HAZEL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SIERRA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KALLI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SEBASTIEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CIERRA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LUCIANO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "OLIVER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SKYLER",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TANISHA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRAEDEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ABBIGAIL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JESSI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CARL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CECELIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JOSIE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "FREDDY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "EMERALD",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JALIN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ALANA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DELIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "STEVIE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRIONNA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HAYDEN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ATHENA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KAYLEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MARCANTHONY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ILANA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DIXIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DARYL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CORTEZ",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DARIEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "WINSTON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CHELSEA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRITTNEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MISTY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "THERESA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CAMRON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CONRAD",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LORA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "GRAYSON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MAKENZI",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "EDWARD",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KENDRA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "PIERCE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LYRIC",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KEVEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CEDRICK",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "WADE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DAQUAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ZANDER",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LANCE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "REESE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SPENCER",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DEANNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ELLIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DARIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KAREN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KALE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KATIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ALLI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ADITYA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DERRICK",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RYLAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "AHMAD",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JOSEPH",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MAKAELA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JEFF",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GORDON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANGELES",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TIFFANY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DUSTY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JEREMY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MEREDITH",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LONNIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANTON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "GUADALUPE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MADILYNN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RYLAND",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "QUENTIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MORIAH",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TYE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LINDSAY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "REAGAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRYLEE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LAWSON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CHYANNE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CALLISTA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DEVEN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "LARS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "HENRY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "BRIAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ROWAN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "VALERIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAKE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAZLYN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "NAUTICA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KIRK",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "COLTON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "VALENTINA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "NIKO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ITZEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ERYKAH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TINA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "YASMIN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "AISHA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LAYLA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BAILEE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MARY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SARAH",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ALIANA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "HELEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CHRIS",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JUDY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MATTEO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "EFRAIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JESENIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "LESLIE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ROSEMARIE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KATHRYN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DASHAWN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DENISE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JEREMIAH",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRENDON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "IVAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "WESLEY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "EBONY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRANDI",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "IRMA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JUNIOR",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BRIDGER",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ALEXANDREA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "WILLIAM",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ZACK",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ROMAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ABRAHAM",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "VERNON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MEG",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ROYCE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ISRAEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "PAULA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JALYNN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAMARCUS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "GIOVANNA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JAKAYLA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GRANT",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CHAZ",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "AVERY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ISABELA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TRINITY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "XIMENA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "NICOLETTE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "WESTON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SHANE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "BREANN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KATY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "CAROLINA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "REUBEN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "JORDEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "NATHAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ROGELIO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CONNER",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DEJAH",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "RODRIGO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DARRIAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JIMMY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "NYASIA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "RUTH",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TAYLER",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DEONTE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KATHRINE",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DWAYNE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DONTE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "DION",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DAYLON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HOUSTON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "VIOLET",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DANNY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CARLIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SALLY",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "LINA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GABRIEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BREANA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "HUDSON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "TREVON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TARA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TIANA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ANGELA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KAYLYNN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MARVIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ADRIEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ALECIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KATLIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "SYDNEY",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ANDREA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "COLE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MARION",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ROMEO",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "EMANI",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JOE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "HELENA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SANTIAGO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JOSELIN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "COLT",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "ALYSE",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "JAYCE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CELIA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "IAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ROXANA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "MILES",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "RICARDO",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ANNELISE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TRUMAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KADIN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "VAUGHN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "BRAEDON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MARKELL",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "RAMON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "EMERSON",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "TERRY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DRAKE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "XANDER",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "DORA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "GRETCHEN",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ASA",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KACEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "ELENA",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "ISAAK",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "SIDNEY",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "KAMERON",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "CAIDEN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "JOAN",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "EDGARDO",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "TRINITI",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "KRISTI",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "MITCHEL",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "HERMAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "MADDISON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "HATTIE",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "SUSAN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "REMINGTON",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "CORNELIUS",
+        "Role": "G4 COMD"
+    },
+    {
+        "Callsign": "KATLYN",
+        "Role": "A2"
+    },
+    {
+        "Callsign": "IZABELLA",
+        "Role": "G4 CONT"
+    },
+    {
+        "Callsign": "DONNELL",
+        "Role": "G4 COMD"
+    }
+]

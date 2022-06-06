@@ -10,8 +10,8 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate({ Qualification, Duty }) {
-      this.belongsTo(Qualification, { foreignKey: "role_id", as: "role" });
+    static associate({ Member, Duty }) {
+      this.belongsToMany(Member, { through: "Qualification",  foreignKey: "role_id", as: "role" });
       this.hasMany(Duty, { foreignKey: "role_id", as: "roles" })
     }
   }
@@ -19,9 +19,9 @@ module.exports = (sequelize, DataTypes) => {
     role_id: {
       type: DataTypes.STRING,
       primaryKey: true,
-      validate: {
-        isIn: [["A2", "G4 CONT", "G4 COMD"]]
-      },
+      // validate: {
+      //   isIn: [["A2", "G4 CONT", "G4 COMD"]]
+      // },
     },
   }, {
     sequelize,

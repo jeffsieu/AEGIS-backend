@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const { Member, Qualification, Duty, Schedule } = require("../models");
+const { Member, Qualification, Duty,  Role, Schedule } = require("../models");
 
 const express = require("express");
 const helmet = require("helmet");
@@ -11,6 +11,19 @@ app.use(cors());
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Gets all members
+app.get("/members", async (req, res) => {
+  try {
+    const members = await Member.findAll({
+      include: ["roles", "duties"]
+    });
+
+    return res.json(members);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
 
 // Takes in an array of JSON and inserts into the db
 // Throws an error if member already exist
@@ -33,36 +46,40 @@ app.post("/addmembers", async (req, res) => {
   }
 });
 
-// Gets all members
-app.get("/members", async (req, res) => {
-  try {
-    const members = await Member.findAll({
-      include: ["duties"]
-    });
-
-    return res.json(members);
-  } catch (err) {
-    return res.status(500).json(err);
-  }
-});
-
 // Gets all qualifications
 app.get("/qualifications", async (req, res) => {
   try {
-    const qualifications = await Qualification.findAll();
+    const roles = await Role.findAll();
 
-    return res.json(qualifications);
+    return res.json(roles);
   } catch (err) {
     return res.status(500).json(err);
   }
 });
 
-// Gets all duties
-app.get("/duties", async (req, res) => {
+// Takes in an array of JSON and inserts into the db
+// Throws an error if qualification already exist
+app.post("/addqualifications", async (req, res) => {
   try {
-    const duties = await Duty.findAll();
+    if (req.body && Array.isArray(req.body)) {
+      const qualifications = req.body.map(
+        qualifications => {
+          return {
+            callsign: qualifications.Callsign,
+            role_id: qualifications.Role
+          };
+        });
+      await Qualification.bulkCreate(qualifications);
 
-    return res.json(duties);
+      const roles = req.body.map(
+        qualifications => {
+          return {
+            role_id: qualifications.Role
+          };
+        });
+      await Role.bulkCreate(roles);
+    }
+    return res.status(200).send("Qualification added");
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -91,6 +108,26 @@ app.get("/qualifications/:callsign", async (req, res) => {
     }
 
     return res.json(member);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+// Gets all duties
+app.get("/duties", async (req, res) => {
+  try {
+    const duties = await Duty.findAll();
+
+    return res.json(duties);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});// Gets all duties
+app.get("/duties", async (req, res) => {
+  try {
+    const duties = await Duty.findAll();
+
+    return res.json(duties);
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -152,6 +189,11 @@ app.delete("/delete", async (req, res) => {
     });
 
     Qualification.destroy({
+      where: {},
+      truncate: true
+    });
+
+    Role.destroy({
       where: {},
       truncate: true
     });
