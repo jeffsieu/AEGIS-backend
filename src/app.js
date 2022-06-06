@@ -49,7 +49,7 @@ app.post("/addmembers", async (req, res) => {
 // Gets all qualifications
 app.get("/qualifications", async (req, res) => {
   try {
-    const roles = await Role.findAll();
+    const roles = await Qualification.findAll();
 
     return res.json(roles);
   } catch (err) {
@@ -99,7 +99,7 @@ app.get("/qualifications/:callsign", async (req, res) => {
   const callsign = req.params.callsign;
 
   try {
-    const member = await Qualification.findOne({
+    const member = await Qualification.findAll({
       where: { callsign },
     });
 

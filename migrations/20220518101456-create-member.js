@@ -6,7 +6,6 @@ module.exports = {
       callsign: {
         type: DataTypes.STRING,
         allowNull: false,
-        primaryKey: true,
         unique: true,
         validate: {
           notNull: { msg: "Member must have a callsign" },
