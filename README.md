@@ -1,25 +1,25 @@
-# Getting Started
-https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k/edit
+## Getting Started
+https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 
-# Set up AEGIS-backend
+## Set up AEGIS-backend
 1. npm install
 2. nodemon ./src/index.js
 
-# Run Sequelize
+## Run Sequelize
 
 1. sequelize db:create
 2. sequelize db:migrate
 3. (clear db) sequelize db:drop, (rever migrate) sequelize db:migrate:undo:all
 
-## (Ignore below)
-# (Not required if using Sequelize) Run Postgres in a docker container
+# IGNORE BELOW
+## (Not required if using Sequelize) Run Postgres in a docker container
 
 docker-compose up -d
 
-# Run API in docker container
+## Run API in docker container
 
 docker build -t aegis-backend .
 
-# (Pending) Install Redis
+## (Pending) Install Redis
 
 Go to https://redis.io/docs/getting-started/ to install Redis on your machine
