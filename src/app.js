@@ -7,7 +7,13 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(helmet());
-app.use(cors());
+
+var corsOptions = {
+  origin: 'http://localhost:3000',
+  optionsSuccessStatus: 200 // For legacy browser support
+}
+
+app.use(cors(corsOptions));
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -27,7 +33,7 @@ app.get("/members", async (req, res) => {
 
 // Takes in an array of JSON and inserts into the db
 // Throws an error if member already exist
-app.post("/addmembers", async (req, res) => {
+app.post("/members/new", async (req, res) => {
   try {
     if (req.body && Array.isArray(req.body)) {
       const members = req.body.map(
@@ -59,7 +65,7 @@ app.get("/qualifications", async (req, res) => {
 
 // Takes in an array of JSON and inserts into the db
 // Throws an error if qualification already exist
-app.post("/addqualifications", async (req, res) => {
+app.post("/qualifications/new", async (req, res) => {
   try {
     if (req.body && Array.isArray(req.body)) {
       const qualifications = req.body.map(
@@ -122,20 +128,32 @@ app.get("/duties", async (req, res) => {
   } catch (err) {
     return res.status(500).json(err);
   }
-});// Gets all duties
-app.get("/duties", async (req, res) => {
-  try {
-    const duties = await Duty.findAll();
+});
 
-    return res.json(duties);
+// Add duty
+app.post("/duties/new", async (req, res) => {
+  try {
+    if (req.body && Array.isArray(req.body)) {
+      const duty = req.body.map(
+        duty => {
+          return {
+            callsign: duty.Callsign,
+            role_id: duty.Role
+          };
+        });
+      await Duty.bulkCreate(duty);
+    }
+    return res.status(200).send("Duty added");
   } catch (err) {
     return res.status(500).json(err);
   }
 });
 
-// TODO
+// TODO: Gets individual's duties
+// app.get()
+
 // Create a blank model for a new month
-app.post("/new", async (req, res) => {
+app.post("/schedules/new", async (req, res) => {
   try {
     if (req.body && Array.isArray(req.body)) {
       const schedules = req.body.map(
@@ -146,9 +164,7 @@ app.post("/new", async (req, res) => {
         });
       await Schedule.bulkCreate(schedules);
     }
-
-    // console.log(res.body);
-
+    
     return res.status(200).send("Schedule created");
   } catch (err) {
     return res.status(500).json(err);
@@ -160,6 +176,34 @@ app.get("/schedules", async (req, res) => {
     const schedules = await Schedule.findAll();
 
     return res.json(schedules);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+// TODO: Get specific month's schedule
+// What format to take?
+app.get("/schedules/:month", async (req, res) => {
+  // check for valid input & prevent SQL injection
+  const userQuery = req.params.month;
+  const onlyLettersPattern = new RegExp("^[A-Za-z]+$");
+
+  if (!userQuery.match(onlyLettersPattern)) {
+    return res.status(400).json({ err: "No special characters and no numbers, please!" });
+  }
+
+  const month = req.params.month;
+
+  try {
+    const schedule = await Qualification.findAll({
+      where: { month },
+    });
+
+    if (!schedule) {
+      return res.status(404).json("Requested schedule not found");
+    }
+
+    return res.json(schedule);
   } catch (err) {
     return res.status(500).json(err);
   }
