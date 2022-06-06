@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 module.exports = {
   async up(queryInterface, DataTypes) {
@@ -19,10 +20,11 @@ module.exports = {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4
       },
-      duty_type: {
+      role_id: {
         type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: "NIL",
+        validate: {
+          isIn: [["A2", "G4 CONT", "G4 COMD"]]
+        },
       },
       date: {
         type: DataTypes.DATEONLY,

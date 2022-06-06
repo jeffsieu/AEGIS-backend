@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
@@ -7,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate({ Member }) {
-      this.belongsTo(Member, { foreignKey: "callsign", as: "member" });
+    static associate({ Role }) {
+      this.hasOne(Role, { foreignKey: "role_id", as: "role" })
     }
   }
   Qualification.init({
@@ -22,60 +23,12 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: { msg: "Callsign must not be empty" },
       },
     },
-    a2_day: {
-      type: DataTypes.BOOLEAN,
+    role_id: {
+      type: DataTypes.STRING,
       allowNull: false,
-      defaultValue: false,
-    },
-    a2_day_stby: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    a2_night: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    a2_night_stby: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    a2_trainee: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    g4_comd: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    g4_comd_stby: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    g4_comd_trainee: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    g4_cont: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    g4_cont_stby: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
-    },
-    g4_cont_trainee: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: false,
+      validate: {
+        isIn: [["A2", "G4 CONT", "G4 COMD"]]
+      },
     },
   },
   {

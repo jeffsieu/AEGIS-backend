@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 module.exports = {
   async up(queryInterface, DataTypes) {
@@ -7,7 +8,7 @@ module.exports = {
         defaultValue: DataTypes.UUIDV4
       },
       month: {
-        type: DataTypes.STRING,
+        type: DataTypes.DATE,
         allowNull: false,
         unique: true,
         validate: {

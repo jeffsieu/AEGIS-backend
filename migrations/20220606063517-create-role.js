@@ -1,27 +1,25 @@
-'use strict';
+/* eslint-disable no-undef */
+"use strict";
 module.exports = {
-  async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Roles', {
-      id: {
-        allowNull: false,
-        autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER
-      },
+  async up(queryInterface, DataTypes) {
+    await queryInterface.createTable("Roles", {
       role_id: {
-        type: Sequelize.STRING
+        type: DataTypes.STRING,
+        validate: {
+          isIn: [["A2", "G4 CONT", "G4 COMD"]]
+        },
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: DataTypes.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: DataTypes.DATE
       }
     });
   },
-  async down(queryInterface, Sequelize) {
+  async down(queryInterface) {
     await queryInterface.dropTable('Roles');
   }
 };

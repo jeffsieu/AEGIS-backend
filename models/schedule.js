@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 const {
   Model
@@ -20,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true
     },
     month: {
-      type: DataTypes.STRING,
+      type: DataTypes.DATE,
       allowNull: false,
       unique: true,
       validate: {

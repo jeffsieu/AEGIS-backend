@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 const { Model } = require("sequelize");
 module.exports = (sequelize, DataTypes) => {
@@ -32,15 +33,10 @@ module.exports = (sequelize, DataTypes) => {
           notEmpty: { msg: "Squadron must not be empty" },
         },
       },
-      role: {
+      type: {
         type: DataTypes.STRING,
         allowNull: false,
         defaultValue: "MEMBER"
-      },
-      duty_count: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        defaultValue: 0
       },
     },
     {

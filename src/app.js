@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const { Member, Qualification, Duty, Schedule } = require("../models");
 
 const express = require("express");
@@ -25,16 +26,7 @@ app.post("/addmembers", async (req, res) => {
           };
         });
       await Member.bulkCreate(members);
-
-      const qualifications = req.body.map(
-        members => {
-          return {
-            callsign: members.Callsign
-          };
-        });
-      await Qualification.bulkCreate(qualifications);
     }
-
     return res.status(200).send("Members added");
   } catch (err) {
     return res.status(500).json(err);
@@ -45,7 +37,7 @@ app.post("/addmembers", async (req, res) => {
 app.get("/members", async (req, res) => {
   try {
     const members = await Member.findAll({
-      include: ["qualifications", "duties"]
+      include: ["duties"]
     });
 
     return res.json(members);
@@ -104,6 +96,7 @@ app.get("/qualifications/:callsign", async (req, res) => {
   }
 });
 
+// TODO
 // Create a blank model for a new month
 app.post("/new", async (req, res) => {
   try {

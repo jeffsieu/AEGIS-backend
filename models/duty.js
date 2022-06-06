@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 "use strict";
 const {
   Model
@@ -9,9 +10,10 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate({ Member }) {
-      this.belongsTo(Member, { foreignKey: "duty_id", as: "member" });
-      this.belongsTo(Member, { foreignKey: "schedule_id", as: "schedule" });
+    static associate({ Member, Schedule, Role }) {
+      this.belongsToMany(Member, { through: "Qualification", foreignKey: "callsign", as: "member" });
+      this.belongsTo(Schedule, { foreignKey: "schedule_id", as: "schedule" });
+      this.belongsTo(Role, { foreignKey: "role_id", as: "role" });
     }
   }
   Duty.init({
@@ -32,10 +34,11 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4
     },
-    duty_type: {
+    role_id: {
       type: DataTypes.STRING,
-      allowNull: false,
-      defaultValue: "NIL",
+      validate: {
+        isIn: [["A2", "G4 CONT", "G4 COMD"]]
+      },
     },
     date: {
       type: DataTypes.DATEONLY,

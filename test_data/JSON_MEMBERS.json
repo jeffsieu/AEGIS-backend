@@ -2,12 +2,12 @@
     {
         "Callsign": "BRITNEY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "NEO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "REBECCA",
@@ -16,12 +16,12 @@
     {
         "Callsign": "DELANEY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "NASH",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HASSAN",
@@ -30,12 +30,12 @@
     {
         "Callsign": "BAYLEY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "RYLEIGH",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TRISTON",
@@ -44,12 +44,12 @@
     {
         "Callsign": "MARGO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KRISTYN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ARIC",
@@ -58,12 +58,12 @@
     {
         "Callsign": "ROBERTO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MACY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MARI",
@@ -72,12 +72,12 @@
     {
         "Callsign": "JAIME",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DENZEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRAYAN",
@@ -86,12 +86,12 @@
     {
         "Callsign": "KENDYL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ARMANI",
@@ -100,12 +100,12 @@
     {
         "Callsign": "BRYANNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "GARRET",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JOANA",
@@ -114,12 +114,12 @@
     {
         "Callsign": "TANNER",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SAVION",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ERNESTO",
@@ -128,12 +128,12 @@
     {
         "Callsign": "MARTINA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRYON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TAMYA",
@@ -142,12 +142,12 @@
     {
         "Callsign": "BEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KRISTIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ROLANDO",
@@ -156,12 +156,12 @@
     {
         "Callsign": "TREVIN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DOMENIC",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "AMINA",
@@ -170,12 +170,12 @@
     {
         "Callsign": "JOVANNI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "STEFANIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HOLLY",
@@ -184,12 +184,12 @@
     {
         "Callsign": "SKYLAR",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JOLENE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALEXZANDER",
@@ -198,12 +198,12 @@
     {
         "Callsign": "HANNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "PHOENIX",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ROXANNE",
@@ -212,12 +212,12 @@
     {
         "Callsign": "DEANTE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DARREN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CARSON",
@@ -226,12 +226,12 @@
     {
         "Callsign": "NATALY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BREANNA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ROSA",
@@ -240,12 +240,12 @@
     {
         "Callsign": "JALON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ALEXANDRE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "NASIR",
@@ -254,12 +254,12 @@
     {
         "Callsign": "OMARI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LIZET",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SHEILA",
@@ -268,12 +268,12 @@
     {
         "Callsign": "ALAYSIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHEMAR",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KARI",
@@ -282,12 +282,12 @@
     {
         "Callsign": "PERLA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DALLIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JOHNATHAN",
@@ -296,12 +296,12 @@
     {
         "Callsign": "ANDERSON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "NOA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "IMMANUEL",
@@ -310,12 +310,12 @@
     {
         "Callsign": "ZAYNE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRET",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KEONA",
@@ -324,12 +324,12 @@
     {
         "Callsign": "DALLAS",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "YADIRA",
@@ -338,12 +338,12 @@
     {
         "Callsign": "MASON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DESTINY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ADRIANNA",
@@ -352,12 +352,12 @@
     {
         "Callsign": "ALLYSA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SKYE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JULIETTE",
@@ -366,12 +366,12 @@
     {
         "Callsign": "ZACHARIAH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CESAR",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DAVION",
@@ -380,12 +380,12 @@
     {
         "Callsign": "MEAGAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KADEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALEJANDRA",
@@ -394,12 +394,12 @@
     {
         "Callsign": "GILBERT",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JULIANNE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DENVER",
@@ -408,12 +408,12 @@
     {
         "Callsign": "DESHAWN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KESHAWN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LEE",
@@ -422,12 +422,12 @@
     {
         "Callsign": "CLAUDIO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "AYESHA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "VARUN",
@@ -436,12 +436,12 @@
     {
         "Callsign": "KRYSTEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JEFFREY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "YUSUF",
@@ -450,12 +450,12 @@
     {
         "Callsign": "SAMUEL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ROCHELLE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "EAN",
@@ -464,12 +464,12 @@
     {
         "Callsign": "KARIME",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "GISSELL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JESSE",
@@ -478,12 +478,12 @@
     {
         "Callsign": "ISIAH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAYLEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TREYVON",
@@ -492,12 +492,12 @@
     {
         "Callsign": "EDEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LEONARD",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "NESTOR",
@@ -506,12 +506,12 @@
     {
         "Callsign": "DREW",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MADELYNN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRANDAN",
@@ -520,12 +520,12 @@
     {
         "Callsign": "LEANN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CORINA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRIZA",
@@ -534,12 +534,12 @@
     {
         "Callsign": "ARACELY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MACIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ISHMAEL",
@@ -548,12 +548,12 @@
     {
         "Callsign": "NAKIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SOPHIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GEORGINA",
@@ -562,12 +562,12 @@
     {
         "Callsign": "AMIYAH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAVEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CLARE",
@@ -576,12 +576,12 @@
     {
         "Callsign": "STEWART",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ROSEMARY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DANIKA",
@@ -590,12 +590,12 @@
     {
         "Callsign": "CHASE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHYANNE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KENDRICK",
@@ -604,12 +604,12 @@
     {
         "Callsign": "WILFREDO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KEELEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JANIA",
@@ -618,12 +618,12 @@
     {
         "Callsign": "MAGALI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SABINA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JORDYN",
@@ -632,12 +632,12 @@
     {
         "Callsign": "ANNALIESE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "GIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "AIMEE",
@@ -646,12 +646,12 @@
     {
         "Callsign": "TYANNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JENA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "PARKER",
@@ -660,12 +660,12 @@
     {
         "Callsign": "BAYLOR",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LEIGH",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "AJAY",
@@ -674,12 +674,12 @@
     {
         "Callsign": "ORLANDO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "RAELYNN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JOHNATHON",
@@ -688,12 +688,12 @@
     {
         "Callsign": "TRE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHAY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LANE",
@@ -702,12 +702,12 @@
     {
         "Callsign": "BRIELLE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CLARENCE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GRISELDA",
@@ -716,12 +716,12 @@
     {
         "Callsign": "JUDITH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JENIFER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALANIS",
@@ -730,12 +730,12 @@
     {
         "Callsign": "SHANYA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DAVONTE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MAEGAN",
@@ -744,12 +744,12 @@
     {
         "Callsign": "MARIANNE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JELANI",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRIANA",
@@ -758,12 +758,12 @@
     {
         "Callsign": "MIGUEL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "RIANA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CLAYTON",
@@ -772,12 +772,12 @@
     {
         "Callsign": "DAWN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DEMETRIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KYNDAL",
@@ -786,12 +786,12 @@
     {
         "Callsign": "GISSELLE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ANTHONY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HEIDY",
@@ -800,12 +800,12 @@
     {
         "Callsign": "CALE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MACEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JOSE",
@@ -814,12 +814,12 @@
     {
         "Callsign": "DEVON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MADELINE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CHASTITY",
@@ -828,12 +828,12 @@
     {
         "Callsign": "KAMRON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TYQUAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KANE",
@@ -842,12 +842,12 @@
     {
         "Callsign": "LELAND",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TYRIQUE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DEVANTE",
@@ -856,12 +856,12 @@
     {
         "Callsign": "RIVER",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "REYNALDO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KYA",
@@ -870,12 +870,12 @@
     {
         "Callsign": "CAROLYN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JERROD",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAYLENE",
@@ -884,12 +884,12 @@
     {
         "Callsign": "GEMMA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JOYCE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CHANDLER",
@@ -898,12 +898,12 @@
     {
         "Callsign": "MICHAEL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ALEXIS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAZMINE",
@@ -912,12 +912,12 @@
     {
         "Callsign": "MARINA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CORINNE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MARCELLUS",
@@ -926,12 +926,12 @@
     {
         "Callsign": "JADEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "FREDERICK",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SAVANAH",
@@ -940,12 +940,12 @@
     {
         "Callsign": "ANNABELLA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "AMYA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SELINA",
@@ -954,12 +954,12 @@
     {
         "Callsign": "LONDON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JOSELUIS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KENDELL",
@@ -968,12 +968,12 @@
     {
         "Callsign": "MAHOGANY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JALYN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SANDY",
@@ -982,12 +982,12 @@
     {
         "Callsign": "ANIKA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CORY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KAILEY",
@@ -996,12 +996,12 @@
     {
         "Callsign": "NYA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "EMELIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DEVONTAE",
@@ -1010,12 +1010,12 @@
     {
         "Callsign": "BRANDT",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MERCEDEZ",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "IBRAHIM",
@@ -1024,12 +1024,12 @@
     {
         "Callsign": "KILLIAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "QUINTIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MEKHI",
@@ -1038,12 +1038,12 @@
     {
         "Callsign": "SARINA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ELEXIS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "EDMUND",
@@ -1052,12 +1052,12 @@
     {
         "Callsign": "TANYA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ANAYA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KAYCEE",
@@ -1066,12 +1066,12 @@
     {
         "Callsign": "JESSIE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ANNAMARIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MARCEL",
@@ -1080,12 +1080,12 @@
     {
         "Callsign": "JAYLIN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHANIYA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KATELYN",
@@ -1094,12 +1094,12 @@
     {
         "Callsign": "AUSTEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "FIDEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SHAMAR",
@@ -1108,12 +1108,12 @@
     {
         "Callsign": "LUCY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRADY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KURTIS",
@@ -1122,12 +1122,12 @@
     {
         "Callsign": "IRVIN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LUCAS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "URIAH",
@@ -1136,12 +1136,12 @@
     {
         "Callsign": "RAEGAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SOMMER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DIAMOND",
@@ -1150,12 +1150,12 @@
     {
         "Callsign": "HASAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "QUINN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ADELAIDE",
@@ -1164,12 +1164,12 @@
     {
         "Callsign": "SERENITY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DEVONTA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CHYNA",
@@ -1178,12 +1178,12 @@
     {
         "Callsign": "JALEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SONJA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAYLYNN",
@@ -1192,12 +1192,12 @@
     {
         "Callsign": "BONNIE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAIDYN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GRIFFIN",
@@ -1206,12 +1206,12 @@
     {
         "Callsign": "AMERICA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LEIF",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DAYANARA",
@@ -1220,12 +1220,12 @@
     {
         "Callsign": "ARIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JUSTIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "WILLOW",
@@ -1234,12 +1234,12 @@
     {
         "Callsign": "XZAVIER",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAILENE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "STANLEY",
@@ -1248,12 +1248,12 @@
     {
         "Callsign": "MOHAMMED",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "IZAIAH",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MICHAELA",
@@ -1262,12 +1262,12 @@
     {
         "Callsign": "CAMERON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CARLO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "STACIE",
@@ -1276,12 +1276,12 @@
     {
         "Callsign": "LYLE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "AMELIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SYMONE",
@@ -1290,12 +1290,12 @@
     {
         "Callsign": "DESMOND",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MADELYNE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAMAAL",
@@ -1304,12 +1304,12 @@
     {
         "Callsign": "DAVID",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "RAFAEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JULIO",
@@ -1318,12 +1318,12 @@
     {
         "Callsign": "JAJUAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LORENZO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DAYANA",
@@ -1332,12 +1332,12 @@
     {
         "Callsign": "ANGEL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LILIAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALESHA",
@@ -1346,12 +1346,12 @@
     {
         "Callsign": "LEONEL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BIANCA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALISON",
@@ -1360,12 +1360,12 @@
     {
         "Callsign": "ALICE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MARTIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JORDAN",
@@ -1374,12 +1374,12 @@
     {
         "Callsign": "MAKAYLA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MATTHEW",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DILLAN",
@@ -1388,12 +1388,12 @@
     {
         "Callsign": "CECIL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAZMYN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SALMA",
@@ -1402,12 +1402,12 @@
     {
         "Callsign": "CRISTINA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRADFORD",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BLAYNE",
@@ -1416,12 +1416,12 @@
     {
         "Callsign": "DRAVEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LARA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "RAYMOND",
@@ -1430,12 +1430,12 @@
     {
         "Callsign": "DAYNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "RAEKWON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DESTINEE",
@@ -1444,12 +1444,12 @@
     {
         "Callsign": "MAX",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KEVIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JODIE",
@@ -1458,12 +1458,12 @@
     {
         "Callsign": "BELEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KATHERINE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TRENTEN",
@@ -1472,12 +1472,12 @@
     {
         "Callsign": "SALVATORE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CORBIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ERIC",
@@ -1486,12 +1486,12 @@
     {
         "Callsign": "CLIFFORD",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KASEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GARRETT",
@@ -1500,12 +1500,12 @@
     {
         "Callsign": "KALI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LEIGHA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALAN",
@@ -1514,12 +1514,12 @@
     {
         "Callsign": "KORY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DANDRE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DANIELLA",
@@ -1528,12 +1528,12 @@
     {
         "Callsign": "LOREN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ALEX",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DEONDRE",
@@ -1542,12 +1542,12 @@
     {
         "Callsign": "BLANCA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "FREDRICK",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BERNARDO",
@@ -1556,12 +1556,12 @@
     {
         "Callsign": "STUART",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KAIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "RAMIRO",
@@ -1570,12 +1570,12 @@
     {
         "Callsign": "LAYTON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ELEANOR",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BILLY",
@@ -1584,12 +1584,12 @@
     {
         "Callsign": "CLIFTON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MIREYA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MYKALA",
@@ -1598,12 +1598,12 @@
     {
         "Callsign": "ANIYAH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MARIBEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "PAIGE",
@@ -1612,12 +1612,12 @@
     {
         "Callsign": "OCTAVIO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LEXIS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KENNA",
@@ -1626,12 +1626,12 @@
     {
         "Callsign": "EDGAR",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BOWEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GUNNAR",
@@ -1640,12 +1640,12 @@
     {
         "Callsign": "LIZETH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "RENE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MILENA",
@@ -1654,12 +1654,12 @@
     {
         "Callsign": "BRODY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LEXI",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LANDEN",
@@ -1668,12 +1668,12 @@
     {
         "Callsign": "MEGHAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JOEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MYA",
@@ -1682,12 +1682,12 @@
     {
         "Callsign": "KELLEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JONAS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ISIS",
@@ -1696,12 +1696,12 @@
     {
         "Callsign": "DONALD",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KARL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KELSEY",
@@ -1710,12 +1710,12 @@
     {
         "Callsign": "DAPHNE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ANGELIQUE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CHANA",
@@ -1724,12 +1724,12 @@
     {
         "Callsign": "BILL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRISSA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BETHANIE",
@@ -1738,12 +1738,12 @@
     {
         "Callsign": "DARIUS",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DAREN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TAVIAN",
@@ -1752,12 +1752,12 @@
     {
         "Callsign": "FLETCHER",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRANDON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DEMETRIUS",
@@ -1766,12 +1766,12 @@
     {
         "Callsign": "DARIANA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "PARIS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MICAYLA",
@@ -1780,12 +1780,12 @@
     {
         "Callsign": "XIOMARA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CHRISTOPHER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DEAN",
@@ -1794,12 +1794,12 @@
     {
         "Callsign": "QUINTEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ABRIANNA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "REBEKAH",
@@ -1808,12 +1808,12 @@
     {
         "Callsign": "KERRY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JARVIS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALEXA",
@@ -1822,12 +1822,12 @@
     {
         "Callsign": "DAMION",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CALEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BLAISE",
@@ -1836,12 +1836,12 @@
     {
         "Callsign": "COLLEEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "RAVEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KARLEY",
@@ -1850,12 +1850,12 @@
     {
         "Callsign": "CATALINA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TYREK",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TRENT",
@@ -1864,12 +1864,12 @@
     {
         "Callsign": "JASE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRANDEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "RYLEE",
@@ -1878,12 +1878,12 @@
     {
         "Callsign": "KELLY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DAYNE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JORGE",
@@ -1892,12 +1892,12 @@
     {
         "Callsign": "LUIS",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CITLALI",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CAILYN",
@@ -1906,12 +1906,12 @@
     {
         "Callsign": "JAIDEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KEELY",
@@ -1920,12 +1920,12 @@
     {
         "Callsign": "ENOCH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CHAUNCEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BLAZE",
@@ -1934,12 +1934,12 @@
     {
         "Callsign": "WILSON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "NELLY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ZACKERY",
@@ -1948,12 +1948,12 @@
     {
         "Callsign": "SHAYNE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JASMIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CLINTON",
@@ -1962,12 +1962,12 @@
     {
         "Callsign": "SANTINO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DYMOND",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "IVANA",
@@ -1976,12 +1976,12 @@
     {
         "Callsign": "JAMARI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MAKENZIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DAWSON",
@@ -1990,12 +1990,12 @@
     {
         "Callsign": "ARIANNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MATEO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "FREDDIE",
@@ -2004,12 +2004,12 @@
     {
         "Callsign": "ANISSA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRIAR",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JADYN",
@@ -2018,12 +2018,12 @@
     {
         "Callsign": "ANAHI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LEIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "FRANCESCA",
@@ -2032,12 +2032,12 @@
     {
         "Callsign": "DALTON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LEIGHTON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ROBIN",
@@ -2046,12 +2046,12 @@
     {
         "Callsign": "KENAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "NICOLLE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KATERINA",
@@ -2060,12 +2060,12 @@
     {
         "Callsign": "ZAKARY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "REECE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAZMIN",
@@ -2074,12 +2074,12 @@
     {
         "Callsign": "TOMMY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "EVERARDO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CONSTANCE",
@@ -2088,12 +2088,12 @@
     {
         "Callsign": "JAMAL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "VIVIANA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "AURORA",
@@ -2102,12 +2102,12 @@
     {
         "Callsign": "EZEKIEL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "HEATHER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KIERA",
@@ -2116,12 +2116,12 @@
     {
         "Callsign": "DORIAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JERMAINE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TYRON",
@@ -2130,12 +2130,12 @@
     {
         "Callsign": "RAQUEL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CLARA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "AMY",
@@ -2144,12 +2144,12 @@
     {
         "Callsign": "ABBY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KATELIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "PEYTON",
@@ -2158,12 +2158,12 @@
     {
         "Callsign": "BRAYDEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ILEANA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAMEL",
@@ -2172,12 +2172,12 @@
     {
         "Callsign": "LAISHA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "PRINCE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KRISTIAN",
@@ -2186,12 +2186,12 @@
     {
         "Callsign": "AYLEEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "GWENDOLYN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SHANICE",
@@ -2200,12 +2200,12 @@
     {
         "Callsign": "YOSEF",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KOLTON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LILA",
@@ -2214,12 +2214,12 @@
     {
         "Callsign": "CAIN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "REGINALD",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "PIERRE",
@@ -2228,12 +2228,12 @@
     {
         "Callsign": "AMARI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHERMAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "PRANAV",
@@ -2242,12 +2242,12 @@
     {
         "Callsign": "MATHEW",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CHRISTIAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ROSARIO",
@@ -2256,12 +2256,12 @@
     {
         "Callsign": "LESLY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KRISTOPHER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BENNY",
@@ -2270,12 +2270,12 @@
     {
         "Callsign": "COREY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MIKEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JIM",
@@ -2284,12 +2284,12 @@
     {
         "Callsign": "SHYANN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "AMAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DAKOTA",
@@ -2298,12 +2298,12 @@
     {
         "Callsign": "ROHAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MARSHALL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DEVIN",
@@ -2312,12 +2312,12 @@
     {
         "Callsign": "MIRACLE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHIANN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KELLIE",
@@ -2326,12 +2326,12 @@
     {
         "Callsign": "MACKENZIE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ARELY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ANAIS",
@@ -2340,12 +2340,12 @@
     {
         "Callsign": "SKYLA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KAI",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "VALENTIN",
@@ -2354,12 +2354,12 @@
     {
         "Callsign": "CIERA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ISSAC",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DANTE",
@@ -2368,12 +2368,12 @@
     {
         "Callsign": "ALIYAH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ALISA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DOROTHY",
@@ -2382,12 +2382,12 @@
     {
         "Callsign": "DAMON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ESTEFANI",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KODY",
@@ -2396,12 +2396,12 @@
     {
         "Callsign": "EILEEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "NIKOLAS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LIANA",
@@ -2410,12 +2410,12 @@
     {
         "Callsign": "KATE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TIARRA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ANNEMARIE",
@@ -2424,12 +2424,12 @@
     {
         "Callsign": "MERCY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "AYLA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "RIYA",
@@ -2438,12 +2438,12 @@
     {
         "Callsign": "LILLIANA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "REGAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "EDUARDO",
@@ -2452,12 +2452,12 @@
     {
         "Callsign": "KIERRA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "FALLON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KAYLE",
@@ -2466,12 +2466,12 @@
     {
         "Callsign": "ULYSSES",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LANEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HAILIE",
@@ -2480,12 +2480,12 @@
     {
         "Callsign": "HADLEY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ANDREAS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HOLLIE",
@@ -2494,12 +2494,12 @@
     {
         "Callsign": "FINN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JACQUES",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRAULIO",
@@ -2508,12 +2508,12 @@
     {
         "Callsign": "DALIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SANA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DUSTIN",
@@ -2522,12 +2522,12 @@
     {
         "Callsign": "MELINA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CHANEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HANAH",
@@ -2536,12 +2536,12 @@
     {
         "Callsign": "NALLELY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DEANGELO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SALENA",
@@ -2550,12 +2550,12 @@
     {
         "Callsign": "JADE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KIYA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "PAUL",
@@ -2564,12 +2564,12 @@
     {
         "Callsign": "SHANNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DENNIS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ZAIRA",
@@ -2578,12 +2578,12 @@
     {
         "Callsign": "GERARD",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAQUELIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DONAVON",
@@ -2592,12 +2592,12 @@
     {
         "Callsign": "JEDIDIAH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ERVIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "AUBREY",
@@ -2606,12 +2606,12 @@
     {
         "Callsign": "BABYGIRL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KERRIGAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DAYSHA",
@@ -2620,12 +2620,12 @@
     {
         "Callsign": "SHLOMO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KRISTOFER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "STACY",
@@ -2634,12 +2634,12 @@
     {
         "Callsign": "NATASHA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KENNEDY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TRISTEN",
@@ -2648,12 +2648,12 @@
     {
         "Callsign": "CHERYL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CHELSIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CRISTOBAL",
@@ -2662,12 +2662,12 @@
     {
         "Callsign": "KALA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CAYLIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BETSY",
@@ -2676,12 +2676,12 @@
     {
         "Callsign": "JARRET",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHAMYA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KRISTINE",
@@ -2690,12 +2690,12 @@
     {
         "Callsign": "MONTANA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHEKINAH",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "AMBERLY",
@@ -2704,12 +2704,12 @@
     {
         "Callsign": "DOMINIQUE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BERNARD",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LYNDSAY",
@@ -2718,12 +2718,12 @@
     {
         "Callsign": "GREGORY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JEWEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALIVIA",
@@ -2732,12 +2732,12 @@
     {
         "Callsign": "TYRESE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CHEYENNE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TAVION",
@@ -2746,12 +2746,12 @@
     {
         "Callsign": "RAYNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "COLBY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TRISTA",
@@ -2760,12 +2760,12 @@
     {
         "Callsign": "KELSI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "GENE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALONZO",
@@ -2774,12 +2774,12 @@
     {
         "Callsign": "GLORIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ESTER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KEITH",
@@ -2788,12 +2788,12 @@
     {
         "Callsign": "TYLER",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JASON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SIMONE",
@@ -2802,12 +2802,12 @@
     {
         "Callsign": "MICHELE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MADALYNN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAKOB",
@@ -2816,12 +2816,12 @@
     {
         "Callsign": "TIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KAYLA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MARISELA",
@@ -2830,12 +2830,12 @@
     {
         "Callsign": "LATRELL",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ALEXANDRIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DEVYN",
@@ -2844,12 +2844,12 @@
     {
         "Callsign": "EVERETT",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MAKALA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRYN",
@@ -2858,12 +2858,12 @@
     {
         "Callsign": "KALEE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ANNETTE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRENNA",
@@ -2872,12 +2872,12 @@
     {
         "Callsign": "ANGELICA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MCKENZIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MACAYLA",
@@ -2886,12 +2886,12 @@
     {
         "Callsign": "TESS",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BENITO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JANELLE",
@@ -2900,12 +2900,12 @@
     {
         "Callsign": "DAISHA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DASIA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MARJORIE",
@@ -2914,12 +2914,12 @@
     {
         "Callsign": "RYAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ROSALINDA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ANITA",
@@ -2928,12 +2928,12 @@
     {
         "Callsign": "GALEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DEJON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MALCOLM",
@@ -2942,12 +2942,12 @@
     {
         "Callsign": "ASTRID",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ERIK",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DAHLIA",
@@ -2956,12 +2956,12 @@
     {
         "Callsign": "RODERICK",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ANGELO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ARLENE",
@@ -2970,12 +2970,12 @@
     {
         "Callsign": "ASHER",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ROCKY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LUCA",
@@ -2984,12 +2984,12 @@
     {
         "Callsign": "JENSEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRENTON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LIZA",
@@ -2998,12 +2998,12 @@
     {
         "Callsign": "NICHOLE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KAITLYNN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "VICTOR",
@@ -3012,12 +3012,12 @@
     {
         "Callsign": "STEPHANIE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DEWAYNE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALEXCIA",
@@ -3026,12 +3026,12 @@
     {
         "Callsign": "DAMIAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAEDEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SEAN",
@@ -3040,12 +3040,12 @@
     {
         "Callsign": "BRIDGET",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DWIGHT",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KEYARA",
@@ -3054,12 +3054,12 @@
     {
         "Callsign": "CAITLIN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "HAZEL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SIERRA",
@@ -3068,12 +3068,12 @@
     {
         "Callsign": "KALLI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SEBASTIEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CIERRA",
@@ -3082,12 +3082,12 @@
     {
         "Callsign": "LUCIANO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "OLIVER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SKYLER",
@@ -3096,12 +3096,12 @@
     {
         "Callsign": "TANISHA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRAEDEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ABBIGAIL",
@@ -3110,12 +3110,12 @@
     {
         "Callsign": "JESSI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CARL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CECELIA",
@@ -3124,12 +3124,12 @@
     {
         "Callsign": "JOSIE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "FREDDY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "EMERALD",
@@ -3138,12 +3138,12 @@
     {
         "Callsign": "JALIN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ALANA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DELIA",
@@ -3152,12 +3152,12 @@
     {
         "Callsign": "STEVIE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRIONNA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HAYDEN",
@@ -3166,12 +3166,12 @@
     {
         "Callsign": "ATHENA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KAYLEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MARCANTHONY",
@@ -3180,12 +3180,12 @@
     {
         "Callsign": "ILANA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DIXIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DARYL",
@@ -3194,12 +3194,12 @@
     {
         "Callsign": "CORTEZ",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DARIEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "WINSTON",
@@ -3208,12 +3208,12 @@
     {
         "Callsign": "CHELSEA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRITTNEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MISTY",
@@ -3222,12 +3222,12 @@
     {
         "Callsign": "THERESA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CAMRON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CONRAD",
@@ -3236,12 +3236,12 @@
     {
         "Callsign": "LORA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "GRAYSON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MAKENZI",
@@ -3250,12 +3250,12 @@
     {
         "Callsign": "EDWARD",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KENDRA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "PIERCE",
@@ -3264,12 +3264,12 @@
     {
         "Callsign": "LYRIC",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KEVEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CEDRICK",
@@ -3278,12 +3278,12 @@
     {
         "Callsign": "WADE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DAQUAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ZANDER",
@@ -3292,12 +3292,12 @@
     {
         "Callsign": "LANCE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "REESE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SPENCER",
@@ -3306,12 +3306,12 @@
     {
         "Callsign": "DEANNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ELLIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DARIA",
@@ -3320,12 +3320,12 @@
     {
         "Callsign": "KAREN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KALE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KATIE",
@@ -3334,12 +3334,12 @@
     {
         "Callsign": "ALLI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ADITYA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DERRICK",
@@ -3348,12 +3348,12 @@
     {
         "Callsign": "RYLAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "AHMAD",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JOSEPH",
@@ -3362,12 +3362,12 @@
     {
         "Callsign": "MAKAELA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JEFF",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GORDON",
@@ -3376,12 +3376,12 @@
     {
         "Callsign": "ANGELES",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TIFFANY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DUSTY",
@@ -3390,12 +3390,12 @@
     {
         "Callsign": "JEREMY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MEREDITH",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LONNIE",
@@ -3404,12 +3404,12 @@
     {
         "Callsign": "ANTON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "GUADALUPE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MADILYNN",
@@ -3418,12 +3418,12 @@
     {
         "Callsign": "RYLAND",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "QUENTIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MORIAH",
@@ -3432,12 +3432,12 @@
     {
         "Callsign": "TYE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LINDSAY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "REAGAN",
@@ -3446,12 +3446,12 @@
     {
         "Callsign": "BRYLEE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LAWSON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CHYANNE",
@@ -3460,12 +3460,12 @@
     {
         "Callsign": "CALLISTA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DEVEN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "LARS",
@@ -3474,12 +3474,12 @@
     {
         "Callsign": "HENRY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "BRIAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ROWAN",
@@ -3488,12 +3488,12 @@
     {
         "Callsign": "VALERIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAKE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAZLYN",
@@ -3502,12 +3502,12 @@
     {
         "Callsign": "NAUTICA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KIRK",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "COLTON",
@@ -3516,12 +3516,12 @@
     {
         "Callsign": "VALENTINA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "NIKO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ITZEL",
@@ -3530,12 +3530,12 @@
     {
         "Callsign": "ERYKAH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TINA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "YASMIN",
@@ -3544,12 +3544,12 @@
     {
         "Callsign": "AISHA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LAYLA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BAILEE",
@@ -3558,12 +3558,12 @@
     {
         "Callsign": "MARY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SARAH",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ALIANA",
@@ -3572,12 +3572,12 @@
     {
         "Callsign": "HELEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CHRIS",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JUDY",
@@ -3586,12 +3586,12 @@
     {
         "Callsign": "MATTEO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "EFRAIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JESENIA",
@@ -3600,12 +3600,12 @@
     {
         "Callsign": "LESLIE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ROSEMARIE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KATHRYN",
@@ -3614,12 +3614,12 @@
     {
         "Callsign": "DASHAWN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DENISE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JEREMIAH",
@@ -3628,12 +3628,12 @@
     {
         "Callsign": "BRENDON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "IVAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "WESLEY",
@@ -3642,12 +3642,12 @@
     {
         "Callsign": "ANNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "EBONY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRANDI",
@@ -3656,12 +3656,12 @@
     {
         "Callsign": "IRMA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JUNIOR",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BRIDGER",
@@ -3670,12 +3670,12 @@
     {
         "Callsign": "ALEXANDREA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "WILLIAM",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ZACK",
@@ -3684,12 +3684,12 @@
     {
         "Callsign": "ROMAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ABRAHAM",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "VERNON",
@@ -3698,12 +3698,12 @@
     {
         "Callsign": "MEG",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ROYCE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ISRAEL",
@@ -3712,12 +3712,12 @@
     {
         "Callsign": "PAULA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JALYNN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAMARCUS",
@@ -3726,12 +3726,12 @@
     {
         "Callsign": "GIOVANNA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JAKAYLA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GRANT",
@@ -3740,12 +3740,12 @@
     {
         "Callsign": "CHAZ",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "AVERY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ISABELA",
@@ -3754,12 +3754,12 @@
     {
         "Callsign": "TRINITY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "XIMENA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "NICOLETTE",
@@ -3768,12 +3768,12 @@
     {
         "Callsign": "WESTON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SHANE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "BREANN",
@@ -3782,12 +3782,12 @@
     {
         "Callsign": "KATY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "CAROLINA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "REUBEN",
@@ -3796,12 +3796,12 @@
     {
         "Callsign": "JORDEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "NATHAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ROGELIO",
@@ -3810,12 +3810,12 @@
     {
         "Callsign": "CONNER",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DEJAH",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "RODRIGO",
@@ -3824,12 +3824,12 @@
     {
         "Callsign": "DARRIAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JIMMY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "NYASIA",
@@ -3838,12 +3838,12 @@
     {
         "Callsign": "RUTH",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TAYLER",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DEONTE",
@@ -3852,12 +3852,12 @@
     {
         "Callsign": "KATHRINE",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DWAYNE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DONTE",
@@ -3866,12 +3866,12 @@
     {
         "Callsign": "DION",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DAYLON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HOUSTON",
@@ -3880,12 +3880,12 @@
     {
         "Callsign": "VIOLET",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DANNY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CARLIE",
@@ -3894,12 +3894,12 @@
     {
         "Callsign": "SALLY",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "LINA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GABRIEL",
@@ -3908,12 +3908,12 @@
     {
         "Callsign": "BREANA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "HUDSON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "TREVON",
@@ -3922,12 +3922,12 @@
     {
         "Callsign": "TARA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TIANA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ANGELA",
@@ -3936,12 +3936,12 @@
     {
         "Callsign": "KAYLYNN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MARVIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ADRIEL",
@@ -3950,12 +3950,12 @@
     {
         "Callsign": "ALECIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KATLIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "SYDNEY",
@@ -3964,12 +3964,12 @@
     {
         "Callsign": "ANDREA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "COLE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MARION",
@@ -3978,12 +3978,12 @@
     {
         "Callsign": "ROMEO",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "EMANI",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JOE",
@@ -3992,12 +3992,12 @@
     {
         "Callsign": "HELENA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SANTIAGO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JOSELIN",
@@ -4006,12 +4006,12 @@
     {
         "Callsign": "COLT",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "ALYSE",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "JAYCE",
@@ -4020,12 +4020,12 @@
     {
         "Callsign": "CELIA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "IAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ROXANA",
@@ -4034,12 +4034,12 @@
     {
         "Callsign": "MILES",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "RICARDO",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ANNELISE",
@@ -4048,12 +4048,12 @@
     {
         "Callsign": "TRUMAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KADIN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "VAUGHN",
@@ -4062,12 +4062,12 @@
     {
         "Callsign": "BRAEDON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MARKELL",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "RAMON",
@@ -4076,12 +4076,12 @@
     {
         "Callsign": "EMERSON",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "TERRY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DRAKE",
@@ -4090,12 +4090,12 @@
     {
         "Callsign": "XANDER",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "DORA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "GRETCHEN",
@@ -4104,12 +4104,12 @@
     {
         "Callsign": "ASA",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KACEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "ELENA",
@@ -4118,12 +4118,12 @@
     {
         "Callsign": "ISAAK",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "SIDNEY",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "KAMERON",
@@ -4132,12 +4132,12 @@
     {
         "Callsign": "CAIDEN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "JOAN",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "EDGARDO",
@@ -4146,12 +4146,12 @@
     {
         "Callsign": "TRINITI",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "KRISTI",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "MITCHEL",
@@ -4160,12 +4160,12 @@
     {
         "Callsign": "HERMAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "MADDISON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "HATTIE",
@@ -4174,12 +4174,12 @@
     {
         "Callsign": "SUSAN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "REMINGTON",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "CORNELIUS",
@@ -4188,12 +4188,12 @@
     {
         "Callsign": "KATLYN",
         "Squadron": "CHICKEN",
-        "Role": "ADMIN"
+        "Type": "ADMIN"
     },
     {
         "Callsign": "IZABELLA",
         "Squadron": "CHICKEN",
-        "Role": "MEMBER"
+        "Type": "MEMBER"
     },
     {
         "Callsign": "DONNELL",
