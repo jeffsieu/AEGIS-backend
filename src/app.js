@@ -138,7 +138,9 @@ app.post("/duties/new", async (req, res) => {
         duty => {
           return {
             callsign: duty.Callsign,
-            role_id: duty.Role
+            role_id: duty.Role,
+            schedule_id: duty.Month,
+            date: duty.Date
           };
         });
       await Duty.bulkCreate(duty);
@@ -149,6 +151,12 @@ app.post("/duties/new", async (req, res) => {
   }
 });
 
+// TODO: Change an existing member for a duty
+// app.update()
+
+// TODO: Remove a member from the duty
+// app.delete()
+
 // TODO: Gets individual's duties
 // app.get()
 
@@ -156,13 +164,13 @@ app.post("/duties/new", async (req, res) => {
 app.post("/schedules/new", async (req, res) => {
   try {
     if (req.body && Array.isArray(req.body)) {
-      const schedules = req.body.map(
+      const schedule = req.body.map(
         schedule => {
           return {
-            month: schedule.Month
+            schedule_id: schedule.Month
           };
         });
-      await Schedule.bulkCreate(schedules);
+      await Schedule.bulkCreate(schedule);
     }
     
     return res.status(200).send("Schedule created");
@@ -173,7 +181,9 @@ app.post("/schedules/new", async (req, res) => {
 
 app.get("/schedules", async (req, res) => {
   try {
-    const schedules = await Schedule.findAll();
+    const schedules = await Schedule.findAll({
+      include: ["duties"]
+    });
 
     return res.json(schedules);
   } catch (err) {
@@ -208,15 +218,6 @@ app.get("/schedules/:month", async (req, res) => {
     return res.status(500).json(err);
   }
 });
-
-// TODO: Add a member to the schedule
-// app.post()
-
-// TODO: Change an existing member on the schedule
-// app.update()
-
-// TODO: Remove a member from the schedule
-// app.delete()
 
 // TODO: Check if schedule is published
 // app.get()

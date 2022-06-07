@@ -11,19 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate({ Duty }) {
-      this.hasMany(Duty, { foreignKey: "schedule_id", as: "schedules" });
+      this.hasMany(Duty, { foreignKey: "schedule_id", as: "duties" });
     }
   }
   Schedule.init({
     schedule_id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
-      primaryKey: true
-    },
-    month: {
       type: DataTypes.DATEONLY,
       allowNull: false,
-      unique: true,
+      primaryKey: true,
       validate: {
         notNull: { msg: "Schedule must have a month" },
         notEmpty: { msg: "Month must not be empty" },

@@ -31,8 +31,12 @@ module.exports = (sequelize, DataTypes) => {
       },
     },
     schedule_id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+      validate: {
+        notNull: { msg: "Schedule must have a month" },
+        notEmpty: { msg: "Month must not be empty" },
+      },
     },
     role_id: {
       type: DataTypes.STRING,

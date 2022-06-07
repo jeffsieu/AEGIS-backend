@@ -4,13 +4,9 @@ module.exports = {
   async up(queryInterface, DataTypes) {
     await queryInterface.createTable("Schedules", {
       schedule_id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4
-      },
-      month: {
-        type: DataTypes.DATE,
+        type: DataTypes.DATEONLY,
         allowNull: false,
-        unique: true,
+        primaryKey: true,
         validate: {
           notNull: { msg: "Schedule must have a month" },
           notEmpty: { msg: "Month must not be empty" },
@@ -22,11 +18,11 @@ module.exports = {
       },
       createdAt: {
         allowNull: false,
-        type: DataTypes.DATEONLY
+        type: DataTypes.DATE
       },
       updatedAt: {
         allowNull: false,
-        type: DataTypes.DATEONLY
+        type: DataTypes.DATE
       }
     });
   },
