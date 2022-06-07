@@ -218,11 +218,11 @@ app.get("/schedules", async (req, res) => {
   }
 });
 
-// TODO: Get specific month's schedule
-// What format to take?
+// Get specific month's schedule
 app.get("/schedules/:month", async (req, res) => {
   // check for valid input & prevent SQL injection
   const userQuery = req.params.month;
+  // takes the form DD-MM-YYYY
   const onlyValidDate = new RegExp("^(0?[1-9]|[12][0-9]|3[01])[-](0?[1-9]|1[012])[-]\\d{4}$");
 
   if (!userQuery.match(onlyValidDate)) {
