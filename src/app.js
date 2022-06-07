@@ -130,6 +130,33 @@ app.get("/duties", async (req, res) => {
   }
 });
 
+// Gets a specific member's duties
+app.get("/duties/:callsign", async (req, res) => {
+  // check for valid input & prevent SQL injection
+  const userQuery = req.params.callsign;
+  const onlyLettersPattern = new RegExp("^[A-Za-z]+$");
+
+  if (!userQuery.match(onlyLettersPattern)) {
+    return res.status(400).json({ err: "No special characters and no numbers, please!" });
+  }
+
+  const callsign = req.params.callsign;
+
+  try {
+    const member = await Duty.findAll({
+      where: { callsign },
+    });
+
+    if (!member) {
+      return res.status(404).json("Requested member not found");
+    }
+
+    return res.json(member);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
 // Add duty
 app.post("/duties/new", async (req, res) => {
   try {
@@ -196,17 +223,17 @@ app.get("/schedules", async (req, res) => {
 app.get("/schedules/:month", async (req, res) => {
   // check for valid input & prevent SQL injection
   const userQuery = req.params.month;
-  const onlyLettersPattern = new RegExp("^[A-Za-z]+$");
+  const onlyValidDate = new RegExp("^(0?[1-9]|[12][0-9]|3[01])[-](0?[1-9]|1[012])[-]\\d{4}$");
 
-  if (!userQuery.match(onlyLettersPattern)) {
-    return res.status(400).json({ err: "No special characters and no numbers, please!" });
+  if (!userQuery.match(onlyValidDate)) {
+    return res.status(400).json({ err: "Only valid date please!" });
   }
 
-  const month = req.params.month;
+  const schedule_id = req.params.month;
 
   try {
-    const schedule = await Qualification.findAll({
-      where: { month },
+    const schedule = await Schedule.findAll({
+      where: { schedule_id },
     });
 
     if (!schedule) {
