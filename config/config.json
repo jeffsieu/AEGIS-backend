@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "mssql",
+    "username": "sa",
     "password": "mysecretpassword",
     "database": "aegis",
     "host": "127.0.0.1",

@@ -1,15 +1,12 @@
-version: '2'
-
-networks:
-  network-tier:
-    driver: host
+version: '3.9'
 
 services:
-  postgresql:
-    image: postgres:latest
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_DB: aegis
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
     ports:
-      - "5432:5432"
+      - 1433:1433
+    volumes:
+      - ~/apps/mssql/data:/var/lib/mssqlql/data
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=mysecretpassword
