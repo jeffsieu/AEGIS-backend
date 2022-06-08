@@ -6,7 +6,7 @@ services:
     ports:
       - 1433:1433
     volumes:
-      - ~/apps/mssql/data:/var/lib/mssqlql/data
+      - "./data-mssql:/var/opt/mssql/data"
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=mysecretpassword
+      - SA_PASSWORD=SecPassw0rd123

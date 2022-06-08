@@ -178,11 +178,43 @@ app.post("/duties/new", async (req, res) => {
   }
 });
 
-// TODO: Change an existing member for a duty
-// app.update()
+// Change an existing member's duty
+app.put("/duties/update/:callsign", async (req, res) => {
+  const callsign = req.params.callsign
+  console.log(req.body)
+  const { new_callsign } = req.body.Callsign
 
-// TODO: Remove a member from the duty
-// app.delete()
+  try {
+    const duty = await Duty.findOne(
+      {where: { callsign }}
+    )
+
+    duty.callsign = new_callsign
+
+    await duty.save()
+
+    return res.status(200).send("Member changed for duty")
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+})
+
+// Remove a member from the duty
+app.delete("/duties/delete/:callsign", async (req, res) => {
+  const callsign = req.params.callsign
+
+  try {
+    const duty = await Duty.findOne(
+      {where: { callsign }}
+    )
+
+    await duty.destroy()
+
+    return res.status(200).send("Member removed from duty");
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+})
 
 // TODO: Gets individual's duties
 // app.get()

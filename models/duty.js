@@ -24,11 +24,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     callsign: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        notNull: { msg: "Member must have a callsign" },
-        notEmpty: { msg: "Callsign must not be empty" },
-      },
+      // allowNull: false,
+      // validate: {
+      //   notNull: { msg: "Member must have a callsign" },
+      //   notEmpty: { msg: "Callsign must not be empty" },
+      // },
     },
     schedule_id: {
       type: DataTypes.DATEONLY,

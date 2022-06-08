@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "sa",
-    "password": "mysecretpassword",
-    "database": "aegis",
+    "password": "SecPassw0rd123",
+    "database": "master",
     "host": "127.0.0.1",
     "dialect": "mssql"
   },
