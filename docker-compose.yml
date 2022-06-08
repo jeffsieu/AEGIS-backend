@@ -9,4 +9,4 @@ services:
       - "./data-mssql:/var/opt/mssql/data"
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=SecPassw0rd123
+      - SA_PASSWORD=Secr3tPassw0rd123
