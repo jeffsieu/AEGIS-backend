@@ -14,7 +14,7 @@ https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 
 ## Reverse migration on Sequelize
 
-'sequelize db:migrate:undo:all'
+`sequelize db:migrate:undo:all`
 
 ## Stopping Docker
 
