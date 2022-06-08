@@ -33,10 +33,13 @@ app.get("/members", async (req, res) => {
 
 // Takes in an array of JSON and inserts into the db
 // Throws an error if member already exist
-app.post("/members/new", async (req, res) => {
+app.post("/members", async (req, res) => {
   try {
     if (req.body && Array.isArray(req.body)) {
-      const members = req.body.map(
+      let reqBody = JSON.parse(JSON.stringify(req.body, function(a, b) {
+        return typeof b === "string" ? b.toUpperCase() : b
+      }));
+      const members = reqBody.map(
         members => {
           return {
             callsign: members.Callsign,
@@ -45,8 +48,9 @@ app.post("/members/new", async (req, res) => {
           };
         });
       await Member.bulkCreate(members);
+      return res.status(200).send("Members added");
     }
-    return res.status(200).send("Members added");
+    return res.status(404).send("JSON format error")
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -65,10 +69,14 @@ app.get("/qualifications", async (req, res) => {
 
 // Takes in an array of JSON and inserts into the db
 // Throws an error if qualification already exist
-app.post("/qualifications/new", async (req, res) => {
+app.post("/qualifications", async (req, res) => {
   try {
     if (req.body && Array.isArray(req.body)) {
-      const qualifications = req.body.map(
+      let reqBody = JSON.parse(JSON.stringify(req.body, function(a, b) {
+        return typeof b === "string" ? b.toUpperCase() : b
+      }));
+
+      const qualifications = reqBody.map(
         qualifications => {
           return {
             callsign: qualifications.Callsign,
@@ -84,8 +92,10 @@ app.post("/qualifications/new", async (req, res) => {
           };
         });
       await Role.bulkCreate(roles);
+      
+      return res.status(200).send("Qualification added");
     }
-    return res.status(200).send("Qualification added");
+    return res.status(404).send("JSON format error")
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -130,6 +140,75 @@ app.get("/duties", async (req, res) => {
   }
 });
 
+// Add duty
+app.post("/duties", async (req, res) => {
+  try {
+    if (req.body && Array.isArray(req.body)) {
+      let reqBody = JSON.parse(JSON.stringify(req.body, function(a, b) {
+        return typeof b === "string" ? b.toUpperCase() : b
+      }));
+
+      const duty = reqBody.map(
+        duty => {
+          return {
+            callsign: duty.Callsign,
+            role_id: duty.Role,
+            schedule_id: duty.Month,
+            date: duty.Date
+          };
+        });
+      await Duty.bulkCreate(duty);
+
+      return res.status(200).send("Duty added");
+    }
+    return res.status(404).send("JSON format error")
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+// Change an existing member's duty
+app.put("/duties/update/:uuid", async (req, res) => {
+  const duty_id = req.params.uuid
+
+  let reqBody = JSON.parse(JSON.stringify(req.body, function(a, b) {
+    return typeof b === "string" ? b.toUpperCase() : b
+  }));
+
+  const { Callsign } = reqBody
+
+  try {
+    const duty = await Duty.findOne(
+      {where: { duty_id }}
+    )
+
+    duty.callsign = Callsign
+
+    await duty.save()
+
+    return res.status(200).send("Member changed for duty")
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+})
+
+// Remove a member from the duty
+app.delete("/duties/delete/:callsign", async (req, res) => {
+  const callsign = req.params.callsign
+
+  try {
+    const duty = await Duty.findOne(
+      {where: { callsign }}
+    )
+
+    await duty.destroy()
+
+    return res.status(200).send("Member removed from duty");
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+})
+
 // Gets a specific member's duties
 app.get("/duties/:callsign", async (req, res) => {
   // check for valid input & prevent SQL injection
@@ -157,70 +236,8 @@ app.get("/duties/:callsign", async (req, res) => {
   }
 });
 
-// Add duty
-app.post("/duties/new", async (req, res) => {
-  try {
-    if (req.body && Array.isArray(req.body)) {
-      const duty = req.body.map(
-        duty => {
-          return {
-            callsign: duty.Callsign,
-            role_id: duty.Role,
-            schedule_id: duty.Month,
-            date: duty.Date
-          };
-        });
-      await Duty.bulkCreate(duty);
-    }
-    return res.status(200).send("Duty added");
-  } catch (err) {
-    return res.status(500).json(err);
-  }
-});
-
-// Change an existing member's duty
-app.put("/duties/update/:callsign", async (req, res) => {
-  const callsign = req.params.callsign
-  console.log(req.body)
-  const { new_callsign } = req.body.Callsign
-
-  try {
-    const duty = await Duty.findOne(
-      {where: { callsign }}
-    )
-
-    duty.callsign = new_callsign
-
-    await duty.save()
-
-    return res.status(200).send("Member changed for duty")
-  } catch (err) {
-    return res.status(500).json(err);
-  }
-})
-
-// Remove a member from the duty
-app.delete("/duties/delete/:callsign", async (req, res) => {
-  const callsign = req.params.callsign
-
-  try {
-    const duty = await Duty.findOne(
-      {where: { callsign }}
-    )
-
-    await duty.destroy()
-
-    return res.status(200).send("Member removed from duty");
-  } catch (err) {
-    return res.status(500).json(err);
-  }
-})
-
-// TODO: Gets individual's duties
-// app.get()
-
 // Create a blank model for a new month
-app.post("/schedules/new", async (req, res) => {
+app.post("/schedules", async (req, res) => {
   try {
     if (req.body && Array.isArray(req.body)) {
       const schedule = req.body.map(
