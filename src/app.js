@@ -41,7 +41,7 @@ app.post("/members/new", async (req, res) => {
           return {
             callsign: members.Callsign,
             squadron: members.Squadron,
-            role: members.Role
+            type: members.Type
           };
         });
       await Member.bulkCreate(members);
