@@ -10,11 +10,11 @@ https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 
 ## Stopping Sequelize
 
-1. (reverse migrate) sequelize db:migrate:undo:all
+(reverse migrate) 'sequelize db:migrate:undo:all'
 
 ## Stopping Docker
 
-1. docker-compose down
+'docker-compose down'
 ## Run API in Docker container
 
-docker build -t aegis-backend .
+'docker build -t aegis-backend .'
