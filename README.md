@@ -1,16 +1,20 @@
 # Getting Started
 https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 
-# Set up AEGIS-backend
+## Requirements
+1. NodeJS
+2. Docker 
+
+## Set up AEGIS-backend
 1. `npm install`
 2. `docker-compose up -d`
 3. `sequelize db:create`
 4. `sequelize db:migrate`
 5. `nodemon ./src/index.js`
 
-## Stopping Sequelize
+## Reverse migration on Sequelize
 
-(reverse migrate) 'sequelize db:migrate:undo:all'
+'sequelize db:migrate:undo:all'
 
 ## Stopping Docker
 
