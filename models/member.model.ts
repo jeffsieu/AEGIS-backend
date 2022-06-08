@@ -2,6 +2,7 @@ import {
   AllowNull,
   BelongsToMany,
   Column,
+  DataType,
   HasMany,
   Model,
   Table,
@@ -16,7 +17,12 @@ import Qualification from './qualification.model';
 export default class Member extends Model<Member> {
   @AllowNull(false)
   @Unique
-  @Column
+  @Column({
+    type: DataType.STRING,
+    validate: {
+      notEmpty: { msg: "Callsign must not be empty" },
+    },
+  })
   callsign!: string;
 
   @AllowNull(false)
