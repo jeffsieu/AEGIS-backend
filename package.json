@@ -7,32 +7,6 @@
     "start": "nodemon src/index.ts",
     "test": "jest src/app.test.ts"
   },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:security/recommended"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 8,
-      "sourceType": "module"
-    },
-    "env": {
-      "node": true,
-      "es6": true
-    },
-    "rules": {
-      "no-console": 0,
-      "no-unused-vars": 1,
-      "semi": [
-        "error",
-        "always"
-      ],
-      "quotes": [
-        "error",
-        "double"
-      ]
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gjlam95/AEGIS-backend.git"
