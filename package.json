@@ -2,9 +2,9 @@
   "name": "aegis-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node server/index.ts",
+    "start": "nodemon src/index.ts",
     "test": "jest src/app.test.ts"
   },
   "eslintConfig": {
