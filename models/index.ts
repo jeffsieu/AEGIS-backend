@@ -13,7 +13,6 @@ const environment: Environment =
   (process.env.NODE_ENV as Environment) || 'development';
 
 type Config = typeof configJson[Environment] & {
-  password: string | undefined;
   dialect: Dialect;
 };
 
@@ -22,7 +21,7 @@ const config: Config = configJson[environment] as Config;
 const sequelize = new Sequelize(
   config.database,
   config.username,
-  config.password,
+  config.password ?? undefined,
   {
     host: config.host,
     dialect: config.dialect,

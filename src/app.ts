@@ -271,4 +271,12 @@ app.delete('/delete', async (req, res) => {
   }
 });
 
+app.get('/test', async (req, res) => {
+  try {
+    return res.status(200).send('Hello world');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
 export default app;
