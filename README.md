@@ -9,7 +9,7 @@ https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 1. `npm install`
 2. `docker-compose up -d`
 3. `sequelize db:create`
-4. `nodemon ./src/index.ts`
+4. `node ./src/index.ts`
 
 ## Stopping Docker
 
