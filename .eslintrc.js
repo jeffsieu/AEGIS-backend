@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 module.exports = {
     "env": {
-        "browser": true,
-        "es2021": true
+        "node": true,
+        "es6": true
     },
     "extends": [
         "eslint:recommended",
@@ -13,5 +13,15 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-    }
-}
+        "no-console": 0,
+        "no-unused-vars": 1,
+        "semi": [
+          "error",
+          "always"
+        ],
+        "quotes": [
+          "error",
+          "double"
+        ]
+    },
+};
