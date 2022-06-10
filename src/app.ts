@@ -22,22 +22,70 @@ app.use(helmet());
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Gets all members
 app.get('/members', async (req, res) => {
   try {
-    const members = await Member.findAll();
-    return res.json(members);
+    const includeRoles = req.query.includeRoles;
+    const includeDuties = req.query.includeDuties;
+    const include = [];
+    if (includeRoles) {
+      include.push('roles');
+    }
+    if (includeDuties) {
+      include.push('duties');
+    }
+
+    const members = await Member.findAll({
+      include: include,
+    });
+    return res.status(200).json(members);
   } catch (err) {
     return res.status(500).json(err);
   }
 });
 
-// Takes in an array of JSON and inserts into the db
-// Throws an error if member already exist
 app.post('/members', async (req, res) => {
   try {
     const member = await Member.create(req.body);
     return res.status(200).send('Member added');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.put('/members/:callsign', async (req, res) => {
+  try {
+    const callsign = req.params.callsign;
+    const member = await Member.findOne({
+      where: { callsign },
+    });
+    if (!member) {
+      return res.status(404).send('Member not found');
+    }
+    await member.update(req.body);
+    return res.status(200).send('Member updated');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.put('/members/:callsign/roles', async (req, res) => {
+  try {
+    const callsign = req.params.callsign;
+    const member = await Member.findOne({
+      where: { callsign },
+    });
+    if (!member) {
+      return res.status(404).send('Member not found');
+    }
+    const roles = await Role.findAll({
+      where: {
+        name: {
+          [Op.in]: req.body,
+        },
+      },
+    });
+    await member.$set('roles', roles);
+    return res.status(200).send('Member updated');
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -262,7 +310,6 @@ app.get('/schedules/:month', async (req, res) => {
 app.delete('/delete', async (req, res) => {
   try {
     sequelize.sync({ force: true });
-
     return res.status(200).send('Records purged');
   } catch (err) {
     return res.status(500).json(err);

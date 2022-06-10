@@ -29,9 +29,7 @@ const sequelize = new Sequelize(
 );
 
 sequelize.addModels([__dirname + '/**/*.model.ts']);
-
-sequelize.drop();
-sequelize.sync({ force: true });
+sequelize.sync();
 
 export default sequelize;
 export { Duty, Member, Role, Qualification, Schedule };
