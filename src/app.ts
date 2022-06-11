@@ -1,6 +1,8 @@
 import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
+import dayjs, { Dayjs } from 'dayjs';
+
 const app = express();
 import bodyParser from 'body-parser';
 import sequelize, {
@@ -28,10 +30,10 @@ app.get('/members', async (req, res) => {
     const includeDuties = req.query.includeDuties;
     const include = [];
     if (includeRoles) {
-      include.push('roles');
+      include.push(Role);
     }
     if (includeDuties) {
-      include.push('duties');
+      include.push(Duty);
     }
 
     const members = await Member.findAll({
@@ -86,6 +88,38 @@ app.put('/members/:callsign/roles', async (req, res) => {
     });
     await member.$set('roles', roles);
     return res.status(200).send('Member updated');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.get('/members/availability/:month', async (req, res) => {
+  try {
+    const month = req.params.month;
+    const dayjsMonth = dayjs(month);
+    const startDate = dayjsMonth.startOf('month').format('YYYY-MM-DD');
+    const endDate = dayjsMonth.endOf('month').format('YYYY-MM-DD');
+
+    // Include calculated duty count
+    const members = await Member.findAll({
+      include: [Role],
+      attributes: {
+        include: [
+          [
+            sequelize.literal(
+              '(SELECT COUNT(*) FROM "Duties" WHERE "Duties"."memberId" = Member.id AND "Duties"."date" BETWEEN \'' +
+                startDate +
+                "' AND '" +
+                endDate +
+                "')"
+            ),
+            'dutyCount',
+          ],
+        ],
+      },
+    });
+
+    return res.status(200).json(members);
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -246,7 +280,9 @@ app.put('/duties/:dutyId', async (req, res) => {
 // Create a blank model for a new month
 app.post('/schedules', async (req, res) => {
   try {
-    const schedule = await Schedule.create(req.body);
+    const schedule = await Schedule.create(req.body, {
+      include: [Duty],
+    });
     return res.status(200).send('Schedule created');
   } catch (err) {
     return res.status(500).json(err);
@@ -256,7 +292,7 @@ app.post('/schedules', async (req, res) => {
 app.get('/schedules', async (req, res) => {
   try {
     const schedules = await Schedule.findAll({
-      include: ['duties'],
+      include: [Duty],
     });
 
     return res.json(schedules);
@@ -265,14 +301,46 @@ app.get('/schedules', async (req, res) => {
   }
 });
 
-// Get specific month's schedule
+// Return months within the next 12 months that have not yet been planned
+app.get('/schedules/months', async (req, res) => {
+  try {
+    const startDate = dayjs().startOf('month');
+    const endDate = startDate.clone().add(12, 'month');
+
+    const plannedMonths = (
+      await Schedule.findAll({
+        attributes: ['month'],
+        group: ['month'],
+        where: {
+          month: {
+            [Op.gte]: startDate.toDate(),
+            [Op.lte]: endDate.toDate(),
+          },
+        },
+      })
+    ).map((schedule) => dayjs(schedule.month));
+
+    const months: Dayjs[] = [];
+
+    for (let i = 0; i < 12; i++) {
+      const date = startDate.add(i, 'month');
+      if (!plannedMonths.some((month) => month.isSame(date, 'month'))) {
+        months.push(date);
+      }
+    }
+
+    return res.json(months.map((month) => month.format('YYYY-MM-DD')));
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+// Get specific month's schedules
 app.get('/schedules/:month', async (req, res) => {
   // check for valid input & prevent SQL injection
   const userQuery = req.params.month;
-  // takes the form DD-MM-YYYY
-  const onlyValidDate = new RegExp(
-    '^(0?[1-9]|[12][0-9]|3[01])[-](0?[1-9]|1[012])[-]\\d{4}$'
-  );
+  // takes the form YYYY-MM
+  const onlyValidDate = new RegExp('^\\d{4}[-](0?[1-9]|1[012])$');
 
   if (!userQuery.match(onlyValidDate)) {
     return res.status(400).json({ err: 'Only valid date please!' });
@@ -283,6 +351,7 @@ app.get('/schedules/:month', async (req, res) => {
 
   try {
     const schedule = await Schedule.findAll({
+      include: [Duty],
       where: {
         month: {
           [Op.eq]: scheduleMonth,

@@ -19,7 +19,7 @@ export default class Duty extends Model<Duty> {
   @BelongsTo(() => Member)
   member!: Member;
 
-  @AllowNull(false)
+  @AllowNull(true)
   @ForeignKey(() => Member)
   @Column
   memberId!: number;
