@@ -39,6 +39,7 @@ app.get('/members', async (req, res) => {
 
     const members = await Member.findAll({
       include: include,
+      order: [['callsign', 'ASC']],
     });
     return res.status(200).json(members);
   } catch (err) {
@@ -55,15 +56,18 @@ app.post('/members', async (req, res) => {
   }
 });
 
-app.put('/members/:callsign', async (req, res) => {
+app.put('/members/:id', async (req, res) => {
   try {
-    const callsign = req.params.callsign;
-    const member = await Member.findOne({
-      where: { callsign },
-    });
-    if (!member) {
-      return res.status(404).send('Member not found');
+    const result: Member | Response = await getMemberWithId(
+      res,
+      req.params.id
+    );
+
+    if (!(result instanceof Member)) {
+      return result;
     }
+
+    const member = result;
     await member.update(req.body);
     return res.status(200).send('Member updated');
   } catch (err) {
@@ -71,15 +75,18 @@ app.put('/members/:callsign', async (req, res) => {
   }
 });
 
-app.put('/members/:callsign/roles', async (req, res) => {
+app.put('/members/:id/roles', async (req, res) => {
   try {
-    const callsign = req.params.callsign;
-    const member = await Member.findOne({
-      where: { callsign },
-    });
-    if (!member) {
-      return res.status(404).send('Member not found');
+    const result: Member | Response = await getMemberWithId(
+      res,
+      req.params.id
+    );
+
+    if (!(result instanceof Member)) {
+      return result;
     }
+
+    const member = result;
     const roles = await Role.findAll({
       where: {
         name: {
@@ -108,7 +115,7 @@ app.get('/members/availability/:month', async (req, res) => {
         include: [
           [
             sequelize.literal(
-              '(SELECT COUNT(*) FROM "Duties" WHERE "Duties"."memberId" = Member.id AND "Duties"."date" BETWEEN \'' +
+              '(SELECT COUNT(*) FROM "Duties" WHERE "Duties"."memberId" = "Member".id AND "Duties"."date" BETWEEN \'' +
                 startDate +
                 "' AND '" +
                 endDate +
@@ -120,8 +127,31 @@ app.get('/members/availability/:month', async (req, res) => {
       },
     });
 
-    return res.status(200).json(members);
+    const relevantRequests = await Request.findAll({
+      where: {
+        startDate: {
+          [Op.lte]: endDate,
+        },
+        endDate: {
+          [Op.gte]: startDate,
+        },
+      },
+    });
+
+    const membersWithRequests = members.map((member) => {
+      const memberWithRequests = member.get({ plain: true });
+      const requests = relevantRequests.filter(
+        (request) => request.memberId === member.id
+      );
+      memberWithRequests.requests = requests;
+      return memberWithRequests;
+    });
+
+    console.log(membersWithRequests);
+
+    return res.status(200).json(membersWithRequests);
   } catch (err) {
+    console.log(err);
     return res.status(500).json(err);
   }
 });
@@ -147,25 +177,25 @@ app.post('/qualifications', async (req, res) => {
   }
 });
 
-async function getMemberWithCallsign(
+async function getMemberWithId(
   res: Response,
-  callsign: string
+  id: string
 ): Promise<Member | Response> {
   // check for valid input & prevent SQL injection
-  const onlyLettersPattern = new RegExp('^[A-Za-z]+$');
+  const onlyDigitsPattern = /^\d+$/;
 
-  if (!callsign.match(onlyLettersPattern)) {
+  if (!id.match(onlyDigitsPattern)) {
     return res
       .status(400)
-      .json({ err: 'No special characters and no numbers, please!' });
+      .json({ err: 'Member id must be a numbers.' });
   }
 
   const member: Member | null = await Member.findOne({
-    where: { callsign },
+    where: { id },
   });
 
   if (!member) {
-    return res.status(404).json('No member with given callsign');
+    return res.status(404).json('No member with given id');
   }
 
   return member;
@@ -173,11 +203,11 @@ async function getMemberWithCallsign(
 
 // Cross check a member's qualification for planning
 // Callsign must be uppercase
-app.get('/qualifications/:callsign', async (req, res) => {
+app.get('/qualifications/:id', async (req, res) => {
   try {
-    const result: Member | Response = await getMemberWithCallsign(
+    const result: Member | Response = await getMemberWithId(
       res,
-      req.params.callsign
+      req.params.id
     );
 
     if (!(result instanceof Member)) {
@@ -230,7 +260,7 @@ app.get('/duties', async (req, res) => {
 // Gets a specific member's duties
 app.get('/duties/:callsign', async (req, res) => {
   try {
-    const result: Member | Response = await getMemberWithCallsign(
+    const result: Member | Response = await getMemberWithId(
       res,
       req.params.callsign
     );
