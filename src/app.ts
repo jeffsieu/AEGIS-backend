@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { Response } from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import dayjs, { Dayjs } from 'dayjs';
@@ -11,6 +11,7 @@ import sequelize, {
   Role,
   Duty,
   Schedule,
+  Request,
 } from '../models';
 import { Op } from 'sequelize';
 
@@ -146,29 +147,44 @@ app.post('/qualifications', async (req, res) => {
   }
 });
 
-// Cross check a member's qualification for planning
-// Callsign must be uppercase
-app.get('/qualifications/:callsign', async (req, res) => {
+async function getMemberWithCallsign(
+  res: Response,
+  callsign: string
+): Promise<Member | Response> {
   // check for valid input & prevent SQL injection
-  const userQuery = req.params.callsign;
   const onlyLettersPattern = new RegExp('^[A-Za-z]+$');
 
-  if (!userQuery.match(onlyLettersPattern)) {
+  if (!callsign.match(onlyLettersPattern)) {
     return res
       .status(400)
       .json({ err: 'No special characters and no numbers, please!' });
   }
 
-  const callsign = req.params.callsign;
+  const member: Member | null = await Member.findOne({
+    where: { callsign },
+  });
 
+  if (!member) {
+    return res.status(404).json('No member with given callsign');
+  }
+
+  return member;
+}
+
+// Cross check a member's qualification for planning
+// Callsign must be uppercase
+app.get('/qualifications/:callsign', async (req, res) => {
   try {
-    const member: Member | null = await Member.findOne({
-      where: { callsign: callsign },
-    });
+    const result: Member | Response = await getMemberWithCallsign(
+      res,
+      req.params.callsign
+    );
 
-    if (!member) {
-      return res.status(404).json('No member with given callsign');
+    if (!(result instanceof Member)) {
+      return result;
     }
+
+    const member = result;
 
     const qualifications = Qualification.findAll({
       where: {
@@ -213,26 +229,17 @@ app.get('/duties', async (req, res) => {
 
 // Gets a specific member's duties
 app.get('/duties/:callsign', async (req, res) => {
-  // check for valid input & prevent SQL injection
-  const userQuery = req.params.callsign;
-  const onlyLettersPattern = new RegExp('^[A-Za-z]+$');
-
-  if (!userQuery.match(onlyLettersPattern)) {
-    return res
-      .status(400)
-      .json({ err: 'No special characters and no numbers, please!' });
-  }
-
-  const callsign = req.params.callsign;
-
   try {
-    const member = await Member.findOne({
-      where: { callsign: callsign },
-    });
+    const result: Member | Response = await getMemberWithCallsign(
+      res,
+      req.params.callsign
+    );
 
-    if (!member) {
-      return res.status(404).json('No member with given callsign');
+    if (!(result instanceof Member)) {
+      return result;
     }
+
+    const member = result;
 
     const duties = Duty.findAll({
       where: {
@@ -375,10 +382,53 @@ app.get('/schedules/:month', async (req, res) => {
 // TODO: Publish schedule
 // app.post()
 
+app.get('/requests', async (req, res) => {
+  try {
+    const memberId = req.query.memberId;
+
+    const requests = await Request.findAll({
+      include: [Member],
+      where:
+        memberId !== undefined
+          ? {
+              memberId: +memberId,
+            }
+          : undefined,
+    });
+    return res.json(requests);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.get('/requests/:id', async (req, res) => {
+  try {
+    const id = req.params.id;
+    const requests = await Request.findOne({
+      where: {
+        id: +id,
+      },
+    });
+
+    return res.json(requests);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.post('/requests/batch', async (req, res) => {
+  try {
+    const requests = await Request.bulkCreate(req.body);
+    return res.status(200).send('Requests added');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
 // Truncate all tables
 app.delete('/delete', async (req, res) => {
   try {
-    sequelize.sync({ force: true });
+    await sequelize.sync({ force: true });
     return res.status(200).send('Records purged');
   } catch (err) {
     return res.status(500).json(err);

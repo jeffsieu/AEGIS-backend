@@ -12,6 +12,7 @@ import {
 import Role from './role.model';
 import Duty from './duty.model';
 import Qualification from './qualification.model';
+import Request from './request.model';
 
 @Table
 export default class Member extends Model<Member> {
@@ -20,7 +21,7 @@ export default class Member extends Model<Member> {
   @Column({
     type: DataType.STRING,
     validate: {
-      notEmpty: { msg: "Callsign must not be empty" },
+      notEmpty: { msg: 'Callsign must not be empty' },
     },
   })
   callsign!: string;
@@ -38,4 +39,7 @@ export default class Member extends Model<Member> {
 
   @HasMany(() => Duty)
   duties!: Duty[];
+
+  @HasMany(() => Request)
+  requests!: Request[];
 }
