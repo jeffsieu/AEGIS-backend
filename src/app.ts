@@ -373,15 +373,8 @@ app.get('/schedules/months', async (req, res) => {
 });
 
 // Get specific month's schedules
+// Input must be YYYY-MM-01
 app.get('/schedules/:month', async (req, res) => {
-  // check for valid input & prevent SQL injection
-  const userQuery = req.params.month;
-  // takes the form YYYY-MM
-  const onlyValidDate = new RegExp('^\\d{4}[-](0?[1-9]|1[012])$');
-
-  if (!userQuery.match(onlyValidDate)) {
-    return res.status(400).json({ err: 'Only valid date please!' });
-  }
 
   const scheduleMonth = new Date(req.params.month);
   scheduleMonth.setDate(1);
