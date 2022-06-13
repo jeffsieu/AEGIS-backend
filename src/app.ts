@@ -49,7 +49,7 @@ app.get('/members', async (req, res) => {
 
 app.post('/members', async (req, res) => {
   try {
-    const member = await Member.create(req.body);
+    await Member.create(req.body);
     return res.status(200).send('Member added');
   } catch (err) {
     return res.status(500).json(err);
@@ -170,7 +170,7 @@ app.get('/qualifications', async (req, res) => {
 // Throws an error if qualification already exist
 app.post('/qualifications', async (req, res) => {
   try {
-    const qualification = await Qualification.create(req.body);
+    await Qualification.create(req.body);
     return res.status(200).send('Qualification added');
   } catch (err) {
     return res.status(500).json(err);
@@ -239,7 +239,7 @@ app.get('/roles', async (req, res) => {
 
 app.post('/roles', async (req, res) => {
   try {
-    const role = await Role.create(req.body);
+    await Role.create(req.body);
     return res.status(200).send('Role added');
   } catch (err) {
     return res.status(500).json(err);
@@ -286,7 +286,7 @@ app.get('/duties/:callsign', async (req, res) => {
 // Add duty
 app.post('/duties', async (req, res) => {
   try {
-    const duty = await Duty.create(req.body);
+    await Duty.create(req.body);
     return res.status(200).send('Duty added');
   } catch (err) {
     return res.status(500).json(err);

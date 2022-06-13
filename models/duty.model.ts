@@ -35,6 +35,8 @@ export default class Duty extends Model<Duty> {
   @BelongsTo(() => Schedule)
   schedule!: Schedule;
 
+  @AllowNull(false)
   @ForeignKey(() => Schedule)
+  @Column
   scheduleId!: number;
 }
