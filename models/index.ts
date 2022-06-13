@@ -7,6 +7,7 @@ import Member from './member.model';
 import Qualification from './qualification.model';
 import Role from './role.model';
 import Schedule from './schedule.model';
+import Request from './request.model';
 
 type Environment = keyof typeof configJson;
 const environment: Environment =
@@ -29,9 +30,7 @@ const sequelize = new Sequelize(
 );
 
 sequelize.addModels([__dirname + '/**/*.model.ts']);
-
-sequelize.drop();
-sequelize.sync({ force: true });
+sequelize.sync();
 
 export default sequelize;
-export { Duty, Member, Role, Qualification, Schedule };
+export { Duty, Member, Role, Qualification, Schedule, Request };

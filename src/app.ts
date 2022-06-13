@@ -1,6 +1,8 @@
-import express from 'express';
+import express, { Response } from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
+import dayjs, { Dayjs } from 'dayjs';
+
 const app = express();
 import bodyParser from 'body-parser';
 import sequelize, {
@@ -9,6 +11,7 @@ import sequelize, {
   Role,
   Duty,
   Schedule,
+  Request,
 } from '../models';
 import { Op } from 'sequelize';
 
@@ -22,23 +25,133 @@ app.use(helmet());
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Gets all members
 app.get('/members', async (req, res) => {
   try {
-    const members = await Member.findAll();
-    return res.json(members);
+    const includeRoles = req.query.includeRoles;
+    const includeDuties = req.query.includeDuties;
+    const include = [];
+    if (includeRoles) {
+      include.push(Role);
+    }
+    if (includeDuties) {
+      include.push(Duty);
+    }
+
+    const members = await Member.findAll({
+      include: include,
+      order: [['callsign', 'ASC']],
+    });
+    return res.status(200).json(members);
   } catch (err) {
     return res.status(500).json(err);
   }
 });
 
-// Takes in an array of JSON and inserts into the db
-// Throws an error if member already exist
 app.post('/members', async (req, res) => {
   try {
     await Member.create(req.body);
     return res.status(200).send('Member added');
   } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.put('/members/:id', async (req, res) => {
+  try {
+    const result: Member | Response = await getMemberWithId(
+      res,
+      req.params.id
+    );
+
+    if (!(result instanceof Member)) {
+      return result;
+    }
+
+    const member = result;
+    await member.update(req.body);
+    return res.status(200).send('Member updated');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.put('/members/:id/roles', async (req, res) => {
+  try {
+    const result: Member | Response = await getMemberWithId(
+      res,
+      req.params.id
+    );
+
+    if (!(result instanceof Member)) {
+      return result;
+    }
+
+    const member = result;
+    const roles = await Role.findAll({
+      where: {
+        name: {
+          [Op.in]: req.body,
+        },
+      },
+    });
+    await member.$set('roles', roles);
+    return res.status(200).send('Member updated');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.get('/members/availability/:month', async (req, res) => {
+  try {
+    const month = req.params.month;
+    const dayjsMonth = dayjs(month);
+    const startDate = dayjsMonth.startOf('month').format('YYYY-MM-DD');
+    const endDate = dayjsMonth.endOf('month').format('YYYY-MM-DD');
+
+    // Include calculated duty count
+    const members = await Member.findAll({
+      include: [Role],
+      attributes: {
+        include: [
+          [
+            sequelize.literal(
+              '(SELECT COUNT(*) FROM "Duties" WHERE "Duties"."memberId" = "Member".id AND "Duties"."date" BETWEEN \'' +
+                startDate +
+                "' AND '" +
+                endDate +
+                "')"
+            ),
+            'dutyCount',
+          ],
+        ],
+      },
+    });
+
+    const relevantRequests = await Request.findAll({
+      where: {
+        startDate: {
+          [Op.lte]: endDate,
+        },
+        endDate: {
+          [Op.gte]: startDate,
+        },
+      },
+    });
+
+    const membersWithRequests = members.map((member) => {
+      const memberWithRequests = member.get({ plain: true });
+      const requests = relevantRequests.filter(
+        (request) => request.memberId === member.id
+      );
+      memberWithRequests.requests = requests;
+      return memberWithRequests;
+    });
+
+    console.log(membersWithRequests);
+
+    return res.status(200).json(membersWithRequests);
+  } catch (err) {
+    console.log(err);
     return res.status(500).json(err);
   }
 });
@@ -64,29 +177,44 @@ app.post('/qualifications', async (req, res) => {
   }
 });
 
-// Cross check a member's qualification for planning
-// Callsign must be uppercase
-app.get('/qualifications/:callsign', async (req, res) => {
+async function getMemberWithId(
+  res: Response,
+  id: string
+): Promise<Member | Response> {
   // check for valid input & prevent SQL injection
-  const userQuery = req.params.callsign;
-  const onlyLettersPattern = new RegExp('^[A-Za-z]+$');
+  const onlyDigitsPattern = /^\d+$/;
 
-  if (!userQuery.match(onlyLettersPattern)) {
+  if (!id.match(onlyDigitsPattern)) {
     return res
       .status(400)
-      .json({ err: 'No special characters and no numbers, please!' });
+      .json({ err: 'Member id must be a numbers.' });
   }
 
-  const callsign = req.params.callsign;
+  const member: Member | null = await Member.findOne({
+    where: { id },
+  });
 
+  if (!member) {
+    return res.status(404).json('No member with given id');
+  }
+
+  return member;
+}
+
+// Cross check a member's qualification for planning
+// Callsign must be uppercase
+app.get('/qualifications/:id', async (req, res) => {
   try {
-    const member: Member | null = await Member.findOne({
-      where: { callsign: callsign },
-    });
+    const result: Member | Response = await getMemberWithId(
+      res,
+      req.params.id
+    );
 
-    if (!member) {
-      return res.status(404).json('No member with given callsign');
+    if (!(result instanceof Member)) {
+      return result;
     }
+
+    const member = result;
 
     const qualifications = Qualification.findAll({
       where: {
@@ -131,26 +259,17 @@ app.get('/duties', async (req, res) => {
 
 // Gets a specific member's duties
 app.get('/duties/:callsign', async (req, res) => {
-  // check for valid input & prevent SQL injection
-  const userQuery = req.params.callsign;
-  const onlyLettersPattern = new RegExp('^[A-Za-z]+$');
-
-  if (!userQuery.match(onlyLettersPattern)) {
-    return res
-      .status(400)
-      .json({ err: 'No special characters and no numbers, please!' });
-  }
-
-  const callsign = req.params.callsign;
-
   try {
-    const member = await Member.findOne({
-      where: { callsign: callsign },
-    });
+    const result: Member | Response = await getMemberWithId(
+      res,
+      req.params.callsign
+    );
 
-    if (!member) {
-      return res.status(404).json('No member with given callsign');
+    if (!(result instanceof Member)) {
+      return result;
     }
+
+    const member = result;
 
     const duties = Duty.findAll({
       where: {
@@ -198,7 +317,9 @@ app.put('/duties/:dutyId', async (req, res) => {
 // Create a blank model for a new month
 app.post('/schedules', async (req, res) => {
   try {
-    await Schedule.create(req.body);
+    const schedule = await Schedule.create(req.body, {
+      include: [Duty],
+    });
     return res.status(200).send('Schedule created');
   } catch (err) {
     return res.status(500).json(err);
@@ -208,7 +329,7 @@ app.post('/schedules', async (req, res) => {
 app.get('/schedules', async (req, res) => {
   try {
     const schedules = await Schedule.findAll({
-      include: ['duties'],
+      include: [Duty],
     });
 
     return res.json(schedules);
@@ -217,7 +338,42 @@ app.get('/schedules', async (req, res) => {
   }
 });
 
-// Get specific month's schedule
+// Return months within the next 12 months that have not yet been planned
+app.get('/schedules/months', async (req, res) => {
+  try {
+    const startDate = dayjs().startOf('month');
+    const endDate = startDate.clone().add(12, 'month');
+
+    const plannedMonths = (
+      await Schedule.findAll({
+        attributes: ['month'],
+        group: ['month'],
+        where: {
+          month: {
+            [Op.gte]: startDate.toDate(),
+            [Op.lte]: endDate.toDate(),
+          },
+        },
+      })
+    ).map((schedule) => dayjs(schedule.month));
+
+    const months: Dayjs[] = [];
+
+    for (let i = 0; i < 12; i++) {
+      const date = startDate.add(i, 'month');
+      if (!plannedMonths.some((month) => month.isSame(date, 'month'))) {
+        months.push(date);
+      }
+    }
+
+    return res.json(months.map((month) => month.format('YYYY-MM-DD')));
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+// Get specific month's schedules
+// Input must be YYYY-MM-01
 app.get('/schedules/:month', async (req, res) => {
 
   const scheduleMonth = new Date(req.params.month);
@@ -225,6 +381,7 @@ app.get('/schedules/:month', async (req, res) => {
 
   try {
     const schedule = await Schedule.findAll({
+      include: [Duty],
       where: {
         month: {
           [Op.eq]: scheduleMonth,
@@ -248,11 +405,53 @@ app.get('/schedules/:month', async (req, res) => {
 // TODO: Publish schedule
 // app.post()
 
+app.get('/requests', async (req, res) => {
+  try {
+    const memberId = req.query.memberId;
+
+    const requests = await Request.findAll({
+      include: [Member],
+      where:
+        memberId !== undefined
+          ? {
+              memberId: +memberId,
+            }
+          : undefined,
+    });
+    return res.json(requests);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.get('/requests/:id', async (req, res) => {
+  try {
+    const id = req.params.id;
+    const requests = await Request.findOne({
+      where: {
+        id: +id,
+      },
+    });
+
+    return res.json(requests);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.post('/requests/batch', async (req, res) => {
+  try {
+    const requests = await Request.bulkCreate(req.body);
+    return res.status(200).send('Requests added');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
 // Truncate all tables
 app.delete('/delete', async (req, res) => {
   try {
-    sequelize.sync({ force: true });
-
+    await sequelize.sync({ force: true });
     return res.status(200).send('Records purged');
   } catch (err) {
     return res.status(500).json(err);
