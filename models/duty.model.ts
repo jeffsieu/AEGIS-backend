@@ -5,6 +5,7 @@ import {
   Model,
   ForeignKey,
   AllowNull,
+  DataType,
 } from 'sequelize-typescript';
 import Member from './member.model';
 import Role from './role.model';
