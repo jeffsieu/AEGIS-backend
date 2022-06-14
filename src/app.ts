@@ -72,7 +72,7 @@ app.get('/members', async (req, res) => {
 app.post('/members', 
 body('callsign').isAlpha(), 
 body('squadron').isAlphanumeric('en-US', {ignore: ' '}), 
-body('type').isIn(['member', 'admin', 'MEMBER', 'ADMIN']), 
+body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']), 
 async (req, res) => {
   try {
     const errors = validationResult(req);
@@ -90,7 +90,7 @@ async (req, res) => {
 app.put('/members/:id', 
 body('callsign').isAlpha(), 
 body('squadron').isAlphanumeric('en-US', {ignore: ' '}), 
-body('type').isIn(['member', 'admin', 'MEMBER', 'ADMIN']), 
+body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']), 
 async (req, res) => {
   try {
     const errors = validationResult(req);
