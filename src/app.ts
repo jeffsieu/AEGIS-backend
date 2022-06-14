@@ -25,6 +25,28 @@ app.use(helmet());
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+async function getMemberWithId(
+  res: Response,
+  id: string
+): Promise<Member | Response> {
+  // check for valid input & prevent SQL injection
+  const onlyDigitsPattern = /^\d+$/;
+
+  if (!id.match(onlyDigitsPattern)) {
+    return res.status(400).json({ err: 'Member id must be a number' });
+  }
+
+  const member: Member | null = await Member.findOne({
+    where: { id },
+  });
+
+  if (!member) {
+    return res.status(404).json('No member with given id');
+  }
+
+  return member;
+}
+
 app.get('/members', async (req, res) => {
   try {
     const includeRoles = req.query.includeRoles;
@@ -209,28 +231,6 @@ async (req, res) => {
     return res.status(500).json(err);
   }
 });
-
-async function getMemberWithId(
-  res: Response,
-  id: string
-): Promise<Member | Response> {
-  // check for valid input & prevent SQL injection
-  const onlyDigitsPattern = /^\d+$/;
-
-  if (!id.match(onlyDigitsPattern)) {
-    return res.status(400).json({ err: 'Member id must be a number' });
-  }
-
-  const member: Member | null = await Member.findOne({
-    where: { id },
-  });
-
-  if (!member) {
-    return res.status(404).json('No member with given id');
-  }
-
-  return member;
-}
 
 // Cross check a member's qualification for planning
 // Callsign must be uppercase
@@ -556,7 +556,7 @@ async (req, res) => {
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-    
+
     const id = req.params?.id;
     const requests = await Request.findOne({
       where: {
