@@ -450,9 +450,6 @@ app.put('/schedules/:month', async (req, res) => {
   }
 });
 
-// TODO: Publish schedule
-// app.post()
-
 app.get('/requests', async (req, res) => {
   try {
     const memberId = req.query.memberId;
