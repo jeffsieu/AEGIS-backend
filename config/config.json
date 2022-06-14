@@ -7,17 +7,17 @@
     "dialect": "mssql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
+    "username": "sa",
+    "password": "Secr3tPassw0rd123",
+    "database": "master",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mssql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
+    "username": "sa",
+    "password": "Secr3tPassw0rd123",
+    "database": "master",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mssql"
   }
 }
