@@ -49,8 +49,8 @@ app.get('/members', async (req, res) => {
 
 app.post('/members', async (req, res) => {
   try {
-    await Member.create(req.body);
-    return res.status(200).send('Member added');
+    const member = await Member.create(req.body);
+    return res.status(200).json(member.id);
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -58,10 +58,7 @@ app.post('/members', async (req, res) => {
 
 app.put('/members/:id', async (req, res) => {
   try {
-    const result: Member | Response = await getMemberWithId(
-      res,
-      req.params.id
-    );
+    const result: Member | Response = await getMemberWithId(res, req.params.id);
 
     if (!(result instanceof Member)) {
       return result;
@@ -77,10 +74,7 @@ app.put('/members/:id', async (req, res) => {
 
 app.put('/members/:id/roles', async (req, res) => {
   try {
-    const result: Member | Response = await getMemberWithId(
-      res,
-      req.params.id
-    );
+    const result: Member | Response = await getMemberWithId(res, req.params.id);
 
     if (!(result instanceof Member)) {
       return result;
@@ -147,8 +141,6 @@ app.get('/members/availability/:month', async (req, res) => {
       return memberWithRequests;
     });
 
-    console.log(membersWithRequests);
-
     return res.status(200).json(membersWithRequests);
   } catch (err) {
     console.log(err);
@@ -185,9 +177,7 @@ async function getMemberWithId(
   const onlyDigitsPattern = /^\d+$/;
 
   if (!id.match(onlyDigitsPattern)) {
-    return res
-      .status(400)
-      .json({ err: 'Member id must be a numbers.' });
+    return res.status(400).json({ err: 'Member id must be a numbers.' });
   }
 
   const member: Member | null = await Member.findOne({
@@ -205,10 +195,7 @@ async function getMemberWithId(
 // Callsign must be uppercase
 app.get('/qualifications/:id', async (req, res) => {
   try {
-    const result: Member | Response = await getMemberWithId(
-      res,
-      req.params.id
-    );
+    const result: Member | Response = await getMemberWithId(res, req.params.id);
 
     if (!(result instanceof Member)) {
       return result;
@@ -328,8 +315,15 @@ app.post('/schedules', async (req, res) => {
 
 app.get('/schedules', async (req, res) => {
   try {
+    const isPublished = req.query.isPublished;
     const schedules = await Schedule.findAll({
       include: [Duty],
+      where:
+        isPublished !== undefined
+          ? {
+              isPublished: isPublished === 'true',
+            }
+          : {},
     });
 
     return res.json(schedules);
@@ -375,7 +369,6 @@ app.get('/schedules/months', async (req, res) => {
 // Get specific month's schedules
 // Input must be YYYY-MM-01
 app.get('/schedules/:month', async (req, res) => {
-
   const scheduleMonth = new Date(req.params.month);
   scheduleMonth.setDate(1);
 
@@ -395,6 +388,64 @@ app.get('/schedules/:month', async (req, res) => {
 
     return res.json(schedule);
   } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
+app.put('/schedules/:month', async (req, res) => {
+  // check for valid input & prevent SQL injection
+  const userQuery = req.params.month;
+  // takes the form YYYY-MM
+  const onlyValidDate = new RegExp('^\\d{4}[-](0?[1-9]|1[012])$');
+
+  if (!userQuery.match(onlyValidDate)) {
+    return res.status(400).json({ err: 'Only valid date please!' });
+  }
+
+  const scheduleMonth = new Date(req.params.month);
+  scheduleMonth.setDate(1);
+
+  try {
+    const schedules = await Schedule.findAll({
+      where: {
+        month: {
+          [Op.eq]: scheduleMonth,
+        },
+      },
+    });
+
+    if (schedules.length === 0) {
+      return res.status(404).json('Requested schedule not found');
+    }
+
+    await Schedule.update(req.body, {
+      where: {
+        month: {
+          [Op.eq]: scheduleMonth,
+        },
+      },
+    });
+
+    for (const schedule of schedules) {
+      const duties = await Duty.findAll({
+        where: {
+          scheduleId: schedule.id,
+        },
+      });
+
+      for (const duty of duties) {
+        duty.memberId = req.body.duties.find(
+          (d: any) =>
+            d.roleId === duty.roleId &&
+            dayjs(duty.date).isSame(duty.date, 'month')
+        )!.memberId;
+        await duty.save();
+      }
+    }
+
+    return res.status(200).send('Schedule updated');
+  } catch (err) {
+    console.log(err);
     return res.status(500).json(err);
   }
 });
