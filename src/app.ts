@@ -298,9 +298,6 @@ app.put('/duties/:dutyId', async (req, res) => {
   }
 });
 
-// TODO: Gets individual's duties
-// app.get()
-
 // Create a blank model for a new month
 app.post('/schedules', async (req, res) => {
   try {
