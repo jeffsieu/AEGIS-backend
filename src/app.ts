@@ -2,7 +2,7 @@ import express, { Response } from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import dayjs, { Dayjs } from 'dayjs';
-import { body, validationResult } from 'express-validator';
+import { body, param, validationResult } from 'express-validator';
 import bodyParser from 'body-parser';
 import sequelize, {
   Member,
@@ -50,7 +50,7 @@ app.get('/members', async (req, res) => {
 app.post('/members', 
 body('callsign').isAlpha(), 
 body('squadron').isAlphanumeric('en-US', {ignore: ' '}), 
-body('type').isIn(['MEMBER', 'ADMIN']), 
+body('type').isIn(['member', 'admin', 'MEMBER', 'ADMIN']), 
 async (req, res) => {
   try {
     const errors = validationResult(req);
@@ -65,9 +65,18 @@ async (req, res) => {
   }
 });
 
-app.put('/members/:id', async (req, res) => {
+app.put('/members/:id', 
+body('callsign').isAlpha(), 
+body('squadron').isAlphanumeric('en-US', {ignore: ' '}), 
+body('type').isIn(['member', 'admin', 'MEMBER', 'ADMIN']), 
+async (req, res) => {
   try {
-    const result: Member | Response = await getMemberWithId(res, req.params.id);
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    const result: Member | Response = await getMemberWithId(res, req.params?.id);
 
     if (!(result instanceof Member)) {
       return result;
@@ -82,9 +91,16 @@ app.put('/members/:id', async (req, res) => {
   }
 });
 
-app.put('/members/:id/roles', async (req, res) => {
+app.put('/members/:id/roles', 
+body('name').isAlphanumeric('en-US', {ignore: ' '}),  
+async (req, res) => {
   try {
-    const result: Member | Response = await getMemberWithId(res, req.params.id);
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    const result: Member | Response = await getMemberWithId(res, req.params?.id);
 
     if (!(result instanceof Member)) {
       return result;
@@ -105,9 +121,16 @@ app.put('/members/:id/roles', async (req, res) => {
   }
 });
 
-app.get('/members/availability/:month', async (req, res) => {
+app.get('/members/availability/:month', 
+param('month').isDate(), 
+async (req, res) => {
   try {
-    const month = req.params.month;
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    
+    const month = req.params?.month;
     const dayjsMonth = dayjs(month);
     const startDate = dayjsMonth.startOf('month').format('YYYY-MM-DD');
     const endDate = dayjsMonth.endOf('month').format('YYYY-MM-DD');
@@ -171,8 +194,8 @@ app.get('/qualifications', async (req, res) => {
 // Takes in an array of JSON and inserts into the db
 // Throws an error if qualification already exist
 app.post('/qualifications', 
-body('memberId').isNumeric(), 
-body('roleId').isNumeric(), 
+body('memberId').isNumeric({no_symbols: true}), 
+body('roleId').isNumeric({no_symbols: true}), 
 async (req, res) => {
   try {
     const errors = validationResult(req);
@@ -297,9 +320,9 @@ app.get('/duties/:callsign', async (req, res) => {
 
 // Add duty
 app.post('/duties', 
-body('memberId').isNumeric(), 
-body('scheduleId').isNumeric(), 
-body('roleId').isNumeric(), 
+body('memberId').isNumeric({no_symbols: true}), 
+body('scheduleId').isNumeric({no_symbols: true}), 
+body('roleId').isNumeric({no_symbols: true}), 
 body('date').isDate(), 
 async (req, res) => {
   try {
@@ -316,8 +339,20 @@ async (req, res) => {
 });
 
 // Change an existing member's duty
-app.put('/duties/:dutyId', async (req, res) => {
-  const dutyId = req.params.dutyId;
+app.put('/duties/:dutyId', 
+param('dutyId').isNumeric({no_symbols: true}), 
+body('memberId').isNumeric({no_symbols: true}), 
+body('scheduleId').isNumeric({no_symbols: true}), 
+body('roleId').isNumeric({no_symbols: true}), 
+body('date').isDate(), 
+async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  
+  }
+
+  const dutyId = req.params?.dutyId;
   const newDuty = req.body;
 
   try {
@@ -407,8 +442,15 @@ app.get('/schedules/months', async (req, res) => {
 
 // Get specific month's schedules
 // Input must be YYYY-MM-01
-app.get('/schedules/:month', async (req, res) => {
-  const scheduleMonth = new Date(req.params.month);
+app.get('/schedules/:month', 
+param('month').isDate(),
+async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
+  
+  const scheduleMonth = new Date(req.params?.month);
   scheduleMonth.setDate(1);
 
   try {
@@ -431,17 +473,15 @@ app.get('/schedules/:month', async (req, res) => {
   }
 });
 
-app.put('/schedules/:month', async (req, res) => {
-  // check for valid input & prevent SQL injection
-  const userQuery = req.params.month;
-  // takes the form YYYY-MM
-  const onlyValidDate = new RegExp('^\\d{4}[-](0?[1-9]|1[012])$');
-
-  if (!userQuery.match(onlyValidDate)) {
-    return res.status(400).json({ err: 'Only valid date please!' });
+app.put('/schedules/:month', 
+param('month').isDate(),
+async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
   }
 
-  const scheduleMonth = new Date(req.params.month);
+  const scheduleMonth = new Date(req.params?.month);
   scheduleMonth.setDate(1);
 
   try {
@@ -508,9 +548,16 @@ app.get('/requests', async (req, res) => {
   }
 });
 
-app.get('/requests/:id', async (req, res) => {
+app.get('/requests/:id', 
+param('id').isNumeric({no_symbols: true}), 
+async (req, res) => {
   try {
-    const id = req.params.id;
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    
+    const id = req.params?.id;
     const requests = await Request.findOne({
       where: {
         id: +id,
