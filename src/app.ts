@@ -304,7 +304,7 @@ app.put('/duties/:dutyId', async (req, res) => {
 // Create a blank model for a new month
 app.post('/schedules', async (req, res) => {
   try {
-    const schedule = await Schedule.create(req.body, {
+    await Schedule.create(req.body, {
       include: [Duty],
     });
     return res.status(200).send('Schedule created');
@@ -450,9 +450,6 @@ app.put('/schedules/:month', async (req, res) => {
   }
 });
 
-// TODO: Check if schedule is published
-// app.get()
-
 // TODO: Publish schedule
 // app.post()
 
@@ -492,7 +489,7 @@ app.get('/requests/:id', async (req, res) => {
 
 app.post('/requests/batch', async (req, res) => {
   try {
-    const requests = await Request.bulkCreate(req.body);
+    await Request.bulkCreate(req.body);
     return res.status(200).send('Requests added');
   } catch (err) {
     return res.status(500).json(err);

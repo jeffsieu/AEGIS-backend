@@ -5,6 +5,7 @@ import {
   Model,
   ForeignKey,
   AllowNull,
+  DataType,
 } from 'sequelize-typescript';
 import Member from './member.model';
 import Role from './role.model';
@@ -13,7 +14,7 @@ import Schedule from './schedule.model';
 @Table
 export default class Duty extends Model<Duty> {
   @AllowNull(false)
-  @Column
+  @Column(DataType.DATEONLY)
   date!: Date;
 
   @BelongsTo(() => Member)
