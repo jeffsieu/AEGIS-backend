@@ -438,7 +438,7 @@ app.put('/schedules/:month', async (req, res) => {
           (d: any) =>
             d.roleId === duty.roleId &&
             dayjs(duty.date).isSame(duty.date, 'month')
-        )!.memberId;
+        )?.memberId ?? null;
         await duty.save();
       }
     }
