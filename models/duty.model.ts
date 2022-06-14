@@ -13,7 +13,7 @@ import Schedule from './schedule.model';
 @Table
 export default class Duty extends Model<Duty> {
   @AllowNull(false)
-  @Column
+  @Column(DataType.DATEONLY)
   date!: Date;
 
   @BelongsTo(() => Member)

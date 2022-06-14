@@ -399,9 +399,6 @@ app.get('/schedules/:month', async (req, res) => {
   }
 });
 
-// TODO: Check if schedule is published
-// app.get()
-
 // TODO: Publish schedule
 // app.post()
 
