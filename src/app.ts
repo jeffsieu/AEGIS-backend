@@ -243,7 +243,7 @@ app.get('/roles', async (req, res) => {
 });
 
 app.post('/roles', 
-body('name').isAlpha(),  
+body('name').isAlphanumeric('en-US', {ignore: ' '}),  
 async (req, res) => {
   try {
     const errors = validationResult(req);
@@ -334,8 +334,7 @@ app.put('/duties/:dutyId', async (req, res) => {
 });
 
 // Create a blank model for a new month
-app.post('/schedules', 
-body('isPublished').isBoolean(), 
+app.post('/schedules',  
 body('month').isDate(), 
 async (req, res) => {
   try {
