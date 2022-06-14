@@ -2,8 +2,7 @@ import express, { Response } from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import dayjs, { Dayjs } from 'dayjs';
-
-const app = express();
+import { body, validationResult } from 'express-validator';
 import bodyParser from 'body-parser';
 import sequelize, {
   Member,
@@ -15,6 +14,7 @@ import sequelize, {
 } from '../models';
 import { Op } from 'sequelize';
 
+const app = express();
 const corsOptions = {
   origin: 'http://localhost:3000',
   optionsSuccessStatus: 200, // For legacy browser support
@@ -47,8 +47,17 @@ app.get('/members', async (req, res) => {
   }
 });
 
-app.post('/members', async (req, res) => {
+app.post('/members', 
+body('callsign').isAlpha(), 
+body('squadron').isAlphanumeric('en-US', {ignore: ' '}), 
+body('type').isIn(['MEMBER', 'ADMIN']), 
+async (req, res) => {
   try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
     const member = await Member.create(req.body);
     return res.status(200).json(member.id);
   } catch (err) {
@@ -65,6 +74,7 @@ app.put('/members/:id', async (req, res) => {
     }
 
     const member = result;
+    
     await member.update(req.body);
     return res.status(200).send('Member updated');
   } catch (err) {
@@ -160,8 +170,16 @@ app.get('/qualifications', async (req, res) => {
 
 // Takes in an array of JSON and inserts into the db
 // Throws an error if qualification already exist
-app.post('/qualifications', async (req, res) => {
+app.post('/qualifications', 
+body('memberId').isNumeric(), 
+body('roleId').isNumeric(), 
+async (req, res) => {
   try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
     await Qualification.create(req.body);
     return res.status(200).send('Qualification added');
   } catch (err) {
@@ -224,8 +242,15 @@ app.get('/roles', async (req, res) => {
   }
 });
 
-app.post('/roles', async (req, res) => {
+app.post('/roles', 
+body('name').isAlpha(),  
+async (req, res) => {
   try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
     await Role.create(req.body);
     return res.status(200).send('Role added');
   } catch (err) {
@@ -271,8 +296,18 @@ app.get('/duties/:callsign', async (req, res) => {
 });
 
 // Add duty
-app.post('/duties', async (req, res) => {
+app.post('/duties', 
+body('memberId').isNumeric(), 
+body('scheduleId').isNumeric(), 
+body('roleId').isNumeric(), 
+body('date').isDate(), 
+async (req, res) => {
   try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    
     await Duty.create(req.body);
     return res.status(200).send('Duty added');
   } catch (err) {
@@ -299,8 +334,16 @@ app.put('/duties/:dutyId', async (req, res) => {
 });
 
 // Create a blank model for a new month
-app.post('/schedules', async (req, res) => {
+app.post('/schedules', 
+body('isPublished').isBoolean(), 
+body('month').isDate(), 
+async (req, res) => {
   try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
     await Schedule.create(req.body, {
       include: [Duty],
     });
@@ -481,6 +524,7 @@ app.get('/requests/:id', async (req, res) => {
   }
 });
 
+// Not required in MVP
 app.post('/requests/batch', async (req, res) => {
   try {
     await Request.bulkCreate(req.body);
