@@ -177,7 +177,7 @@ async function getMemberWithId(
   const onlyDigitsPattern = /^\d+$/;
 
   if (!id.match(onlyDigitsPattern)) {
-    return res.status(400).json({ err: 'Member id must be a numbers.' });
+    return res.status(400).json({ err: 'Member id must be a number' });
   }
 
   const member: Member | null = await Member.findOne({
