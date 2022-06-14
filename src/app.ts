@@ -49,8 +49,8 @@ app.get('/members', async (req, res) => {
 
 app.post('/members', async (req, res) => {
   try {
-    await Member.create(req.body);
-    return res.status(200).send('Member added');
+    const member = await Member.create(req.body);
+    return res.status(200).json(member.id);
   } catch (err) {
     return res.status(500).json(err);
   }
