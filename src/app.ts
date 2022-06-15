@@ -114,7 +114,7 @@ async (req, res) => {
 });
 
 app.put('/members/:id/roles', 
-body('name').isAlphanumeric('en-US', {ignore: ' '}),  
+param('id').isNumeric(),  
 async (req, res) => {
   try {
     const errors = validationResult(req);
@@ -516,7 +516,7 @@ async (req, res) => {
         duty.memberId = req.body.duties.find(
           (d: any) =>
             d.roleId === duty.roleId &&
-            dayjs(duty.date).isSame(duty.date, 'month')
+            dayjs(d.date).isSame(duty.date, 'day')
         )?.memberId ?? null;
         await duty.save();
       }
