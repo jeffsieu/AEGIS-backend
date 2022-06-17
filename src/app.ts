@@ -2,7 +2,7 @@ import express, { Response } from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
 import dayjs, { Dayjs } from 'dayjs';
-import { body, param, validationResult } from 'express-validator';
+import { body, param, query, validationResult } from 'express-validator';
 import bodyParser from 'body-parser';
 import sequelize, {
   Member,
@@ -13,6 +13,7 @@ import sequelize, {
   Request,
 } from '../models';
 import { Op } from 'sequelize';
+import { Fn } from 'sequelize/types/utils';
 
 const app = express();
 const corsOptions = {
@@ -69,60 +70,68 @@ app.get('/members', async (req, res) => {
   }
 });
 
-app.post('/members', 
-body('callsign').isAlpha(), 
-body('squadron').isAlphanumeric('en-US', {ignore: ' '}), 
-body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']), 
-async (req, res) => {
-  try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
+app.post(
+  '/members',
+  body('callsign').isAlpha(),
+  body('squadron').isAlphanumeric('en-US', { ignore: ' ' }),
+  body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']),
+  async (req, res) => {
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
 
-    const member = await Member.create(req.body);
-    return res.status(200).json(member.id);
-  } catch (err) {
-    return res.status(500).json(err);
+      const member = await Member.create(req.body);
+      return res.status(200).json(member.id);
+    } catch (err) {
+      return res.status(500).json(err);
+    }
   }
-});
+);
 
-app.put('/members/:id', 
-body('callsign').isAlpha(), 
-body('squadron').isAlphanumeric('en-US', {ignore: ' '}), 
-body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']), 
-async (req, res) => {
-  try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+app.put(
+  '/members/:id',
+  body('callsign').isAlpha(),
+  body('squadron').isAlphanumeric('en-US', { ignore: ' ' }),
+  body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']),
+  async (req, res) => {
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
+
+      const result: Member | Response = await getMemberWithId(
+        res,
+        req.params?.id
+      );
+
+      if (!(result instanceof Member)) {
+        return result;
+      }
+
+      const member = result;
+
+      await member.update(req.body);
+      return res.status(200).send('Member updated');
+    } catch (err) {
+      return res.status(500).json(err);
     }
-
-    const result: Member | Response = await getMemberWithId(res, req.params?.id);
-
-    if (!(result instanceof Member)) {
-      return result;
-    }
-
-    const member = result;
-    
-    await member.update(req.body);
-    return res.status(200).send('Member updated');
-  } catch (err) {
-    return res.status(500).json(err);
   }
-});
+);
 
-app.put('/members/:id/roles', 
-param('id').isNumeric(),  
-async (req, res) => {
+app.put('/members/:id/roles', param('id').isNumeric(), async (req, res) => {
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
 
-    const result: Member | Response = await getMemberWithId(res, req.params?.id);
+    const result: Member | Response = await getMemberWithId(
+      res,
+      req.params?.id
+    );
 
     if (!(result instanceof Member)) {
       return result;
@@ -143,65 +152,67 @@ async (req, res) => {
   }
 });
 
-app.get('/members/availability/:month', 
-param('month').isDate(), 
-async (req, res) => {
-  try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-    
-    const month = req.params?.month;
-    const dayjsMonth = dayjs(month);
-    const startDate = dayjsMonth.startOf('month').format('YYYY-MM-DD');
-    const endDate = dayjsMonth.endOf('month').format('YYYY-MM-DD');
+app.get(
+  '/members/availability/:month',
+  param('month').isDate(),
+  async (req, res) => {
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
 
-    // Include calculated duty count
-    const members = await Member.findAll({
-      include: [Role],
-      attributes: {
-        include: [
-          [
-            sequelize.literal(
-              '(SELECT COUNT(*) FROM "Duties" WHERE "Duties"."memberId" = "Member".id AND "Duties"."date" BETWEEN \'' +
-                startDate +
-                "' AND '" +
-                endDate +
-                "')"
-            ),
-            'dutyCount',
+      const month = req.params?.month;
+      const dayjsMonth = dayjs(month);
+      const startDate = dayjsMonth.startOf('month').format('YYYY-MM-DD');
+      const endDate = dayjsMonth.endOf('month').format('YYYY-MM-DD');
+
+      // Include calculated duty count
+      const members = await Member.findAll({
+        include: [Role],
+        attributes: {
+          include: [
+            [
+              sequelize.literal(
+                '(SELECT COUNT(*) FROM "Duties" WHERE "Duties"."memberId" = "Member".id AND "Duties"."date" BETWEEN \'' +
+                  startDate +
+                  "' AND '" +
+                  endDate +
+                  "')"
+              ),
+              'dutyCount',
+            ],
           ],
-        ],
-      },
-    });
-
-    const relevantRequests = await Request.findAll({
-      where: {
-        startDate: {
-          [Op.lte]: endDate,
         },
-        endDate: {
-          [Op.gte]: startDate,
+      });
+
+      const relevantRequests = await Request.findAll({
+        where: {
+          startDate: {
+            [Op.lte]: endDate,
+          },
+          endDate: {
+            [Op.gte]: startDate,
+          },
         },
-      },
-    });
+      });
 
-    const membersWithRequests = members.map((member) => {
-      const memberWithRequests = member.get({ plain: true });
-      const requests = relevantRequests.filter(
-        (request) => request.memberId === member.id
-      );
-      memberWithRequests.requests = requests;
-      return memberWithRequests;
-    });
+      const membersWithRequests = members.map((member) => {
+        const memberWithRequests = member.get({ plain: true });
+        const requests = relevantRequests.filter(
+          (request) => request.memberId === member.id
+        );
+        memberWithRequests.requests = requests;
+        return memberWithRequests;
+      });
 
-    return res.status(200).json(membersWithRequests);
-  } catch (err) {
-    console.log(err);
-    return res.status(500).json(err);
+      return res.status(200).json(membersWithRequests);
+    } catch (err) {
+      console.log(err);
+      return res.status(500).json(err);
+    }
   }
-});
+);
 
 // Gets all qualifications
 app.get('/qualifications', async (req, res) => {
@@ -215,22 +226,24 @@ app.get('/qualifications', async (req, res) => {
 
 // Takes in an array of JSON and inserts into the db
 // Throws an error if qualification already exist
-app.post('/qualifications', 
-body('memberId').isNumeric({no_symbols: true}), 
-body('roleId').isNumeric({no_symbols: true}), 
-async (req, res) => {
-  try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
+app.post(
+  '/qualifications',
+  body('memberId').isNumeric({ no_symbols: true }),
+  body('roleId').isNumeric({ no_symbols: true }),
+  async (req, res) => {
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
 
-    await Qualification.create(req.body);
-    return res.status(200).send('Qualification added');
-  } catch (err) {
-    return res.status(500).json(err);
+      await Qualification.create(req.body);
+      return res.status(200).send('Qualification added');
+    } catch (err) {
+      return res.status(500).json(err);
+    }
   }
-});
+);
 
 // Cross check a member's qualification for planning
 // Callsign must be uppercase
@@ -265,21 +278,23 @@ app.get('/roles', async (req, res) => {
   }
 });
 
-app.post('/roles', 
-body('name').isAlphanumeric('en-US', {ignore: ' '}),  
-async (req, res) => {
-  try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
+app.post(
+  '/roles',
+  body('name').isAlphanumeric('en-US', { ignore: ' ' }),
+  async (req, res) => {
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
 
-    await Role.create(req.body);
-    return res.status(200).send('Role added');
-  } catch (err) {
-    return res.status(500).json(err);
+      await Role.create(req.body);
+      return res.status(200).send('Role added');
+    } catch (err) {
+      return res.status(500).json(err);
+    }
   }
-});
+);
 
 // Gets all duties
 app.get('/duties', async (req, res) => {
@@ -319,59 +334,60 @@ app.get('/duties/:callsign', async (req, res) => {
 });
 
 // Add duty
-app.post('/duties', 
-body('memberId').isNumeric({no_symbols: true}), 
-body('scheduleId').isNumeric({no_symbols: true}), 
-body('roleId').isNumeric({no_symbols: true}), 
-body('date').isDate(), 
-async (req, res) => {
-  try {
+app.post(
+  '/duties',
+  body('memberId').isNumeric({ no_symbols: true }),
+  body('scheduleId').isNumeric({ no_symbols: true }),
+  body('roleId').isNumeric({ no_symbols: true }),
+  body('date').isDate(),
+  async (req, res) => {
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
+
+      await Duty.create(req.body);
+      return res.status(200).send('Duty added');
+    } catch (err) {
+      return res.status(500).json(err);
+    }
+  }
+);
+
+// Change an existing member's duty
+app.put(
+  '/duties/:dutyId',
+  param('dutyId').isNumeric({ no_symbols: true }),
+  body('memberId').isNumeric({ no_symbols: true }),
+  body('scheduleId').isNumeric({ no_symbols: true }),
+  body('roleId').isNumeric({ no_symbols: true }),
+  body('date').isDate(),
+  async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-    
-    await Duty.create(req.body);
-    return res.status(200).send('Duty added');
-  } catch (err) {
-    return res.status(500).json(err);
+
+    const dutyId = req.params?.dutyId;
+    const newDuty = req.body;
+
+    try {
+      await Duty.update(newDuty, {
+        where: {
+          id: dutyId,
+        },
+      });
+
+      return res.status(200).send('Duty updated');
+    } catch (err) {
+      return res.status(500).json(err);
+    }
   }
-});
-
-// Change an existing member's duty
-app.put('/duties/:dutyId', 
-param('dutyId').isNumeric({no_symbols: true}), 
-body('memberId').isNumeric({no_symbols: true}), 
-body('scheduleId').isNumeric({no_symbols: true}), 
-body('roleId').isNumeric({no_symbols: true}), 
-body('date').isDate(), 
-async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
-  
-  }
-
-  const dutyId = req.params?.dutyId;
-  const newDuty = req.body;
-
-  try {
-    await Duty.update(newDuty, {
-      where: {
-        id: dutyId,
-      },
-    });
-
-    return res.status(200).send('Duty updated');
-  } catch (err) {
-    return res.status(500).json(err);
-  }
-});
+);
 
 // Create a blank model for a new month
-app.post('/schedules',  
-body('month').isDate(), 
-async (req, res) => {
+app.post('/schedules', body('month').isDate(), async (req, res) => {
   try {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -387,24 +403,33 @@ async (req, res) => {
   }
 });
 
-app.get('/schedules', async (req, res) => {
-  try {
-    const isPublished = req.query.isPublished;
-    const schedules = await Schedule.findAll({
-      include: [Duty],
-      where:
-        isPublished !== undefined
-          ? {
-              isPublished: isPublished === 'true',
-            }
-          : {},
-    });
+app.get(
+  '/schedules',
+  query('isPublished').isBoolean().optional(),
+  async (req, res) => {
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
 
-    return res.json(schedules);
-  } catch (err) {
-    return res.status(500).json(err);
+      const isPublished = req.query!.isPublished;
+      const schedules = await Schedule.findAll({
+        include: [Duty],
+        where:
+          isPublished !== undefined
+            ? {
+                isPublished: isPublished === 'true',
+              }
+            : {},
+      });
+
+      return res.json(schedules);
+    } catch (err) {
+      return res.status(500).json(err);
+    }
   }
-});
+);
 
 // Return months within the next 12 months that have not yet been planned
 app.get('/schedules/months', async (req, res) => {
@@ -442,40 +467,48 @@ app.get('/schedules/months', async (req, res) => {
 
 // Get specific month's schedules
 // Input must be YYYY-MM-01
-app.get('/schedules/:month', 
-param('month').isDate(),
-async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
-  }
-  
-  const scheduleMonth = new Date(req.params?.month);
-  scheduleMonth.setDate(1);
-
-  try {
-    const schedule = await Schedule.findAll({
-      include: [Duty],
-      where: {
-        month: {
-          [Op.eq]: scheduleMonth,
-        },
-      },
-    });
-
-    if (!schedule) {
-      return res.status(404).json('Requested schedule not found');
+app.get(
+  '/schedules/:month',
+  param('month').isDate(),
+  query('isPublished').isBoolean().optional(),
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
     }
 
-    return res.json(schedule);
-  } catch (err) {
-    return res.status(500).json(err);
-  }
-});
+    const scheduleMonth = new Date(req.params?.month);
+    scheduleMonth.setDate(1);
 
-app.put('/schedules/:month', 
-param('month').isDate(),
-async (req, res) => {
+    const isPublished = req.query!.isPublished;
+
+    try {
+      const schedule = await Schedule.findOne({
+        include: [Duty],
+        where: {
+          month: {
+            [Op.eq]: scheduleMonth,
+          },
+          ...(isPublished !== undefined
+            ? {
+                isPublished: isPublished === 'true',
+              }
+            : {}),
+        },
+      });
+
+      if (!schedule) {
+        return res.json(null);
+      }
+
+      return res.json(schedule);
+    } catch (err) {
+      return res.status(500).json(err);
+    }
+  }
+);
+
+app.put('/schedules/:month', param('month').isDate(), async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
@@ -513,11 +546,11 @@ async (req, res) => {
       });
 
       for (const duty of duties) {
-        duty.memberId = req.body.duties.find(
-          (d: any) =>
-            d.roleId === duty.roleId &&
-            dayjs(d.date).isSame(duty.date, 'day')
-        )?.memberId ?? null;
+        duty.memberId =
+          req.body.duties.find(
+            (d: any) =>
+              d.roleId === duty.roleId && dayjs(d.date).isSame(duty.date, 'day')
+          )?.memberId ?? null;
         await duty.save();
       }
     }
@@ -548,27 +581,29 @@ app.get('/requests', async (req, res) => {
   }
 });
 
-app.get('/requests/:id', 
-param('id').isNumeric({no_symbols: true}), 
-async (req, res) => {
-  try {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+app.get(
+  '/requests/:id',
+  param('id').isNumeric({ no_symbols: true }),
+  async (req, res) => {
+    try {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
+
+      const id = req.params?.id;
+      const requests = await Request.findOne({
+        where: {
+          id: +id,
+        },
+      });
+
+      return res.json(requests);
+    } catch (err) {
+      return res.status(500).json(err);
     }
-
-    const id = req.params?.id;
-    const requests = await Request.findOne({
-      where: {
-        id: +id,
-      },
-    });
-
-    return res.json(requests);
-  } catch (err) {
-    return res.status(500).json(err);
   }
-});
+);
 
 // Not required in MVP
 app.post('/requests/batch', async (req, res) => {
