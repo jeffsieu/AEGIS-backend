@@ -17,3 +17,4 @@ https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 ## Run API in Docker container
 
 `docker build -t aegis-backend .`
+`docker run aegis-backend`
