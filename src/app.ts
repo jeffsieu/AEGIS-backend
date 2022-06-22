@@ -13,7 +13,6 @@ import sequelize, {
   Request,
 } from '../models';
 import { Op } from 'sequelize';
-import { Fn } from 'sequelize/types/utils';
 
 const app = express();
 const corsOptions = {
@@ -413,7 +412,7 @@ app.get(
         return res.status(400).json({ errors: errors.array() });
       }
 
-      const isPublished = req.query!.isPublished;
+      const isPublished = req.query?.isPublished;
       const schedules = await Schedule.findAll({
         include: [Duty],
         where:
@@ -480,7 +479,7 @@ app.get(
     const scheduleMonth = new Date(req.params?.month);
     scheduleMonth.setDate(1);
 
-    const isPublished = req.query!.isPublished;
+    const isPublished = req.query?.isPublished;
 
     try {
       const schedule = await Schedule.findOne({
