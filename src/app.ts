@@ -72,7 +72,7 @@ app.get('/members', async (req, res) => {
 
 app.post(
   '/members',
-  body('callsign').isAlpha(),
+  body('callsign').isAlpha('en-US', {ignore: ' '}),
   body('squadron').isAlphanumeric('en-US', { ignore: ' ' }),
   body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']),
   async (req, res) => {
@@ -92,7 +92,7 @@ app.post(
 
 app.put(
   '/members/:id',
-  body('callsign').isAlpha(),
+  body('callsign').isAlpha('en-US', {ignore: ' '}),
   body('squadron').isAlphanumeric('en-US', { ignore: ' ' }),
   body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']),
   async (req, res) => {
