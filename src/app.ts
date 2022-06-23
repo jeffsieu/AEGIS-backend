@@ -71,7 +71,7 @@ app.get('/members', async (req, res) => {
 
 app.post(
   '/members',
-  body('callsign').isAlpha('en-US', {ignore: ' '}),
+  body('callsign').isAlpha('en-US', { ignore: ' ' }),
   body('squadron').isAlphanumeric('en-US', { ignore: ' ' }),
   body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']),
   async (req, res) => {
@@ -91,7 +91,7 @@ app.post(
 
 app.put(
   '/members/:id',
-  body('callsign').isAlpha('en-US', {ignore: ' '}),
+  body('callsign').isAlpha('en-US', { ignore: ' ' }),
   body('squadron').isAlphanumeric('en-US', { ignore: ' ' }),
   body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']),
   async (req, res) => {
@@ -555,6 +555,55 @@ app.put('/schedules/:month', param('month').isDate(), async (req, res) => {
     }
 
     return res.status(200).send('Schedule updated');
+  } catch (err) {
+    console.log(err);
+    return res.status(500).json(err);
+  }
+});
+
+app.delete('/schedules/:month', param('month').isDate(), async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
+
+  const scheduleMonth = new Date(req.params?.month);
+  scheduleMonth.setDate(1);
+
+  try {
+    const schedules = await Schedule.findAll({
+      where: {
+        month: {
+          [Op.eq]: scheduleMonth,
+        },
+      },
+    });
+
+    if (schedules.length === 0) {
+      return res.status(404).json('Requested schedule not found');
+    }
+
+    await sequelize.transaction(async (t) => {
+      await Duty.destroy({
+        where: {
+          scheduleId: {
+            [Op.in]: schedules.map((s) => s.id),
+          },
+        },
+        transaction: t,
+      });
+
+      await Schedule.destroy({
+        where: {
+          month: {
+            [Op.eq]: scheduleMonth,
+          },
+        },
+        transaction: t,
+      });
+    });
+
+    return res.status(200).send('Schedule deleted');
   } catch (err) {
     console.log(err);
     return res.status(500).json(err);
