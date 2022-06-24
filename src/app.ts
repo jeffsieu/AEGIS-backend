@@ -663,6 +663,23 @@ app.post('/requests/batch', async (req, res) => {
   }
 });
 
+app.delete(
+  '/requests/:id',
+  param('id').isNumeric({ no_symbols: true }),
+  async (req, res) => {
+    const id = req.params?.id
+    try {
+      const request = await Request.findOne({ where: id })
+
+      await request?.destroy()
+      
+      return res.status(200).send('Request deleted');
+    } catch (err) {
+      return res.status(500).json(err);
+    }
+  }
+);
+
 // Truncate all tables
 app.delete('/delete', async (req, res) => {
   try {
