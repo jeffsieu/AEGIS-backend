@@ -8,7 +8,7 @@ import {
   DataType,
 } from 'sequelize-typescript';
 import Member from './member.model';
-import RoleInstance from './roleinstance.model';
+import RoleInstance from './role-instance.model';
 import Schedule from './schedule.model';
 
 @Table
