@@ -22,5 +22,5 @@ export default class Role extends Model<Role> {
   members!: Member[];
 
   @HasMany(() => Role_Instance)
-  role_instances!: Role_Instance[]
+  roleInstances!: Role_Instance[]
 }

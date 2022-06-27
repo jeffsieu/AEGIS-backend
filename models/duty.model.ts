@@ -8,7 +8,7 @@ import {
   DataType,
 } from 'sequelize-typescript';
 import Member from './member.model';
-import Role_Instance from './roleinstance.model';
+import RoleInstance from './roleinstance.model';
 import Schedule from './schedule.model';
 
 @Table
@@ -25,13 +25,13 @@ export default class Duty extends Model<Duty> {
   @Column
   memberId!: number;
 
-  @BelongsTo(() => Role_Instance)
-  role_instance!: Role_Instance;
+  @BelongsTo(() => RoleInstance)
+  roleInstance!: RoleInstance;
 
   @AllowNull(false)
-  @ForeignKey(() => Role_Instance)
+  @ForeignKey(() => RoleInstance)
   @Column
-  role_instanceId!: number;
+  roleInstanceId!: number;
 
   @BelongsTo(() => Schedule)
   schedule!: Schedule;

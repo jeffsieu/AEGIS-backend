@@ -548,7 +548,7 @@ app.put('/schedules/:month', param('month').isDate(), async (req, res) => {
         duty.memberId =
           req.body.duties.find(
             (d: any) =>
-              d.roleId === duty.role_instanceId && dayjs(d.date).isSame(duty.date, 'day')
+              d.roleId === duty.roleInstanceId && dayjs(d.date).isSame(duty.date, 'day')
           )?.memberId ?? null;
         await duty.save();
       }
