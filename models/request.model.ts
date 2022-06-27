@@ -29,6 +29,7 @@ export default class Request extends Model<Request> {
   @Column
   memberId!: number;
 
+  @AllowNull(false)
   @Column(DataTypes.ENUM('Work', 'Personal'))
   type!: 'Work' | 'Personal';
 }
