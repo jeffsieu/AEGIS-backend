@@ -6,6 +6,7 @@ import {
   Model,
   Table,
 } from 'sequelize-typescript';
+import { ENUM } from 'sequelize/types';
 import Member from './member.model';
 
 @Table
@@ -27,4 +28,7 @@ export default class Request extends Model<Request> {
   @ForeignKey(() => Member)
   @Column
   memberId!: number;
+
+  @Column(ENUM('Work', 'Personal'))
+  type!: 'Work' | 'Personal';
 }
