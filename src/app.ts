@@ -11,6 +11,7 @@ import sequelize, {
   Duty,
   Schedule,
   Request,
+  RoleInstance,
 } from '../models';
 import { Op } from 'sequelize';
 
@@ -207,7 +208,6 @@ app.get(
 
       return res.status(200).json(membersWithRequests);
     } catch (err) {
-      console.log(err);
       return res.status(500).json(err);
     }
   }
@@ -280,6 +280,7 @@ app.get('/roles', async (req, res) => {
 app.post(
   '/roles',
   body('name').isAlphanumeric('en-US', { ignore: ' ' }),
+  body('roleInstances').isArray(),
   async (req, res) => {
     try {
       const errors = validationResult(req);
@@ -287,13 +288,36 @@ app.post(
         return res.status(400).json({ errors: errors.array() });
       }
 
-      await Role.create(req.body);
+      await Role.create(req.body, {
+        include: [
+          {
+            association: Role.associations.roleInstances,
+          },
+        ],
+      });
       return res.status(200).send('Role added');
     } catch (err) {
       return res.status(500).json(err);
     }
   }
 );
+
+app.get('/roleInstances', async (req, res) => {
+  try {
+    const roleInstances = await RoleInstance.findAll({
+      include: [Role],
+      raw: true,
+      nest: true,
+    });
+    const roleInstancesWithName = roleInstances.map((roleInstance) => ({
+      ...roleInstance,
+      name: roleInstance.role.name + ' ' + roleInstance.description,
+    }));
+    return res.json(roleInstancesWithName);
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
 
 // Gets all duties
 app.get('/duties', async (req, res) => {
@@ -548,7 +572,8 @@ app.put('/schedules/:month', param('month').isDate(), async (req, res) => {
         duty.memberId =
           req.body.duties.find(
             (d: any) =>
-              d.roleId === duty.roleInstanceId && dayjs(d.date).isSame(duty.date, 'day')
+              d.roleInstanceId === duty.roleInstanceId &&
+              dayjs(d.date).isSame(duty.date, 'day')
           )?.memberId ?? null;
         await duty.save();
       }
@@ -556,7 +581,6 @@ app.put('/schedules/:month', param('month').isDate(), async (req, res) => {
 
     return res.status(200).send('Schedule updated');
   } catch (err) {
-    console.log(err);
     return res.status(500).json(err);
   }
 });
@@ -605,7 +629,6 @@ app.delete('/schedules/:month', param('month').isDate(), async (req, res) => {
 
     return res.status(200).send('Schedule deleted');
   } catch (err) {
-    console.log(err);
     return res.status(500).json(err);
   }
 });
@@ -667,12 +690,12 @@ app.delete(
   '/requests/:id',
   param('id').isNumeric({ no_symbols: true }),
   async (req, res) => {
-    const id = req.params?.id
+    const id = req.params?.id;
     try {
-      const request = await Request.findOne({ where: id })
+      const request = await Request.findOne({ where: id });
 
-      await request?.destroy()
-      
+      await request?.destroy();
+
       return res.status(200).send('Request deleted');
     } catch (err) {
       return res.status(500).json(err);
