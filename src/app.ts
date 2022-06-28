@@ -270,8 +270,19 @@ app.get('/qualifications/:id', async (req, res) => {
 
 app.get('/roles', async (req, res) => {
   try {
-    const roles = await Role.findAll();
-    return res.json(roles);
+    const roles = await Role.findAll({
+      include: [RoleInstance],
+    });
+    const rolesWithInstanceNames = roles
+      .map((role) => role.get({ plain: true }))
+      .map((role) => ({
+        ...role,
+        roleInstances: role.roleInstances.map((roleInstance) => ({
+          ...roleInstance,
+          name: role.name + ' ' + roleInstance.description,
+        })),
+      }));
+    return res.json(rolesWithInstanceNames);
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -306,13 +317,13 @@ app.get('/roleInstances', async (req, res) => {
   try {
     const roleInstances = await RoleInstance.findAll({
       include: [Role],
-      raw: true,
-      nest: true,
     });
-    const roleInstancesWithName = roleInstances.map((roleInstance) => ({
-      ...roleInstance,
-      name: roleInstance.role.name + ' ' + roleInstance.description,
-    }));
+    const roleInstancesWithName = roleInstances
+      .map((roleInstance) => roleInstance.get({ plain: true }))
+      .map((roleInstance) => ({
+        ...roleInstance,
+        name: roleInstance.role.name + ' ' + roleInstance.description,
+      }));
     return res.json(roleInstancesWithName);
   } catch (err) {
     return res.status(500).json(err);
