@@ -16,7 +16,7 @@ export default class RoleInstance extends Model<RoleInstance> {
   roleId!: number;
 
   @BelongsTo(() => Role)
-  role!: Role[];
+  role!: Role;
 
   @AllowNull(false)
   @Column
