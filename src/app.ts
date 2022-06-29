@@ -687,7 +687,6 @@ app.get(
   }
 );
 
-// Not required in MVP
 app.post('/requests/batch', async (req, res) => {
   try {
     await Request.bulkCreate(req.body);
