@@ -28,7 +28,7 @@ export default class Member extends Model<Member> {
 
   @AllowNull(false)
   @Column
-  squadron!: string;
+  sqn!: string;
 
   @AllowNull(false)
   @Column
