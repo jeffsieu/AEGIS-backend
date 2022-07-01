@@ -696,6 +696,22 @@ app.post('/requests/batch', async (req, res) => {
   }
 });
 
+app.delete('/requests/batch', body().isArray(), async (req, res) => {
+  try {
+    await Request.destroy({
+      where: {
+        id: {
+          [Op.in]: req.body,
+        },
+      },
+    });
+
+    return res.status(200).send('Requests deleted');
+  } catch (err) {
+    return res.status(500).json(err);
+  }
+});
+
 app.delete(
   '/requests/:id',
   param('id').isNumeric({ no_symbols: true }),
