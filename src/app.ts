@@ -696,6 +696,29 @@ app.post('/requests/batch', async (req, res) => {
   }
 });
 
+app.put(
+  '/requests/:id',
+  param('id').isNumeric({ no_symbols: true }),
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    const id = req.params?.id;
+    try {
+      await Request.update(req.body, {
+        where: {
+          id: +id,
+        },
+      });
+      return res.status(200).send('Request updated');
+    } catch (err) {
+      return res.status(500).json(err);
+    }
+  }
+);
+
 app.delete('/requests/batch', body().isArray(), async (req, res) => {
   try {
     await Request.destroy({
