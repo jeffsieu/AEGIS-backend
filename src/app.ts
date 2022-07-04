@@ -92,7 +92,7 @@ app.post(
 
 app.put(
   '/members/:id',
-  body('callsign').isAlpha('en-US', { ignore: ' ' }),
+  body('callsign').isAlphanumeric('en-US', { ignore: ' ' }),
   body('sqn').isAlphanumeric('en-US', { ignore: ' ' }),
   body('type').isIn(['member', 'admin', 'Member', 'Admin', 'MEMBER', 'ADMIN']),
   async (req, res) => {
