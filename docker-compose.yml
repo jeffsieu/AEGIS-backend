@@ -1,12 +1,39 @@
 version: '3.9'
 
 services:
-  mssql:
+  db:
     image: mcr.microsoft.com/mssql/server:2019-latest
-    ports:
-      - 1433:1433
-    volumes:
-      - "./data-mssql:/var/opt/mssql/data"
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Secr3tPassw0rd123
+    expose:
+      - 1433
+  
+  aegis:
+    build: .
+    image: aegis
+    command: npm start
+    environment:
+      APP_DB_HOST: db
+      APP_DB_USER: sa
+      APP_DB_PASSWORD: Secr3tPassw0rd123
+      APP_DB_DATABASE: master
+    expose:
+      - 2000
+    depends_on:
+      - db
+  
+  aegis-tests:
+    image: aegis
+    command: dockerize
+        -wait tcp://db:1433 -wait tcp://aegis:2000 -timeout 10s
+        bash -c "npm test"
+    environment:
+      APP_URL: http://aegis:2000
+      APP_DB_HOST: aegis
+      APP_DB_USER: sa
+      APP_DB_PASSWORD: Secr3tPassw0rd123
+      APP_DB_DATABASE: master
+    depends_on:
+      - db
+      - aegis

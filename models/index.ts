@@ -12,7 +12,7 @@ import RoleInstance from './role-instance.model';
 
 type Environment = keyof typeof configJson;
 const environment: Environment =
-  (process.env.NODE_ENV as Environment) || 'development';
+  (process.env.NODE_ENV as Environment) || 'test';
 
 type Config = typeof configJson[Environment] & {
   dialect: Dialect;
