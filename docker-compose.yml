@@ -26,7 +26,7 @@ services:
   aegis-tests:
     image: aegis
     command: dockerize
-        -wait tcp://db:1433 -wait tcp://aegis:2000 -timeout 10s
+        -wait tcp://db:1433 -timeout 10s
         bash -c "npm test"
     environment:
       APP_URL: http://aegis:2000
