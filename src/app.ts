@@ -465,11 +465,11 @@ app.get(
   }
 );
 
-// Return months within the next 12 months that have not yet been planned
+// Return months within the next 3 months that have not yet been planned
 app.get('/schedules/months', async (req, res) => {
   try {
     const startDate = dayjs().startOf('month');
-    const endDate = startDate.clone().add(12, 'month');
+    const endDate = startDate.clone().add(3, 'month');
 
     const plannedMonths = (
       await Schedule.findAll({
@@ -486,7 +486,7 @@ app.get('/schedules/months', async (req, res) => {
 
     const months: Dayjs[] = [];
 
-    for (let i = 0; i < 12; i++) {
+    for (let i = 0; i < 3; i++) {
       const date = startDate.add(i, 'month');
       if (!plannedMonths.some((month) => month.isSame(date, 'month'))) {
         months.push(date);
