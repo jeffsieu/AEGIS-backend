@@ -14,7 +14,7 @@ services:
     container_name: aegis
     build: .
     image: aegis
-    command: yarn start
+    command: npm start
     environment:
       NODE_ENV: test
       DB_HOST: db
@@ -31,7 +31,7 @@ services:
     image: aegis
     command: dockerize
         -wait tcp://db:1433 -timeout 10s
-        bash -c "yarn test"
+        bash -c "npm test"
     environment:
       URL: http://aegis:2000
       DB_HOST: db
