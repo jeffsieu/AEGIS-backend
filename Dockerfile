@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM node:18-buster-slim AS base
+FROM node:16 AS base
 
 ENV DOCKERIZE_VERSION v0.6.0
 RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
@@ -11,7 +11,9 @@ RUN mkdir -p /app
 
 WORKDIR /app
 
-COPY ["package.json", "package-lock.json", "tsconfig.json", "./"]
+COPY package.json .
+COPY package-lock.json .
+COPY tsconfig.json .
 
 FROM base AS dependencies
 
