@@ -12,12 +12,12 @@ RUN mkdir -p /app
 WORKDIR /app
 
 COPY package.json .
-COPY package-lock.json .
+COPY yarn.lock .
 COPY tsconfig.json .
 
 FROM base AS dependencies
 
-RUN npm install
+RUN yarn
 
 FROM dependencies AS runtime
 
