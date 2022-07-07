@@ -7,6 +7,8 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
     && tar -C /usr/local/bin -xzvf dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
     && rm dockerize-alpine-linux-amd64-$DOCKERIZE_VERSION.tar.gz
 
+RUN mkdir -p /app
+
 WORKDIR /app
 
 COPY ["package.json", "package-lock.json*", "tsconfig.json", "./"]
@@ -18,7 +20,3 @@ RUN npm install
 FROM dependencies AS runtime
 
 COPY . .
-
-EXPOSE 2000
-
-CMD [ "npm", "test" ]

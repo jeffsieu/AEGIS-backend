@@ -10,7 +10,7 @@
     "username": "sa",
     "password": "Secr3tPassw0rd123",
     "database": "master",
-    "host": "172.23.0.2",
+    "host": "172.24.0.3",
     "dialect": "mssql"
   },
   "production": {
