@@ -12,7 +12,9 @@ services:
   
   aegis:
     container_name: aegis
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.test
     image: aegis
     command: npm start
     environment:
