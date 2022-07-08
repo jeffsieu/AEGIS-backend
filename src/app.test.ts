@@ -106,8 +106,7 @@ describe('add schedules', () => {
   it('should return a res', async () => {
     const res = await req.post('/schedules')
     .send({
-      "month": "2022-01-01",
-      "isPublished": false});
+      "month": "2022-01-01"});
     expect(res.status).toBe(200);
   });
 });
@@ -131,7 +130,7 @@ describe('edit schedule of a specific month', () => {
     const res = await req.put('/schedules/2022-01-01')
     .send({
       "month": "2022-01-01",
-      "isPublished": true});
+      "isPublished": false});
     expect(res.status).toBe(200);
   });
 });
@@ -150,8 +149,8 @@ describe('add duties', () => {
       "date": "2022-01-01",
       "memberId": "1",
       "roleId": "1",
-      "scheduleId": "1",
-      "callsign": "NANO"});
+      "roleInstanceId": "1",
+      "scheduleId": "1"});
     expect(res.status).toBe(200);
   });
 });
@@ -160,11 +159,30 @@ describe('change duty', () => {
   it('should return a res', async () => {
     const res = await req.put('/duties/1')
     .send({
-      "date": "2022-01-02",
+      "date": "2022-01-01",
       "memberId": "1",
       "roleId": "1",
-      "scheduleId": "1",
-      "callsign": "NANO"});
+      "roleInstanceId": "1",
+      "scheduleId": "1"});
+    expect(res.status).toBe(200);
+  });
+});
+
+describe('add a batch of requests', () => {
+  it('should return a res', async () => {
+    const res = await req.post('/requests/batch')
+    .send([{
+      "startDate": "2022-01-01",
+      "endDate": "2022-01-20",
+      "reason": "Meeting",
+      "type": "Work",
+      "memberId": "1"}, {
+      "startDate": "2022-02-21",
+      "endDate": "2022-02-31",
+      "reason": "Local leave",
+      "type": "Personal",
+      "memberId": "1"
+      }]);
     expect(res.status).toBe(200);
   });
 });
@@ -176,37 +194,29 @@ describe('get requests', () => {
   });
 });
 
-describe('get requests of a member', () => {
+describe('get a specific request', () => {
   it('should return a res', async () => {
     const res = await req.get('/requests/1');
     expect(res.status).toBe(200);
   });
 });
 
-// describe('add a batch of requests', () => {
-//   it('should return a res', async () => {
-//     const res = await req.post('/requests/batch');
-//     expect(res.status).toBe(200);
-//   });
-// });
+describe('edit requests', () => {
+  it('should return a res', async () => {
+    const res = await req.put('/requests/1')
+    .send({
+      "startDate": "2022-01-01",
+      "endDate": "2022-01-11",
+      "reason": "Meeting",
+      "type": "Work",
+      "memberId": "1"});
+    expect(res.status).toBe(200);
+  });
+});
 
-// describe('edit requests', () => {
-//   it('should return a res', async () => {
-//     const res = await req.put('/requests/1');
-//     expect(res.status).toBe(200);
-//   });
-// });
-
-// describe('delete a batch of requests', () => {
-//   it('should return a res', async () => {
-//     const res = await req.delete('/requests/batch');
-//     expect(res.status).toBe(200);
-//   });
-// });
-
-// describe('delete a req', () => {
-//   it('should return a res', async () => {
-//     const res = await req.delete('/requests/1');
-//     expect(res.status).toBe(200);
-//   });
-// });
+describe('delete a batch of requests', () => {
+  it('should return a res', async () => {
+    const res = await req.delete('/requests/batch');
+    expect(res.status).toBe(200);
+  });
+});
