@@ -1,10 +1,9 @@
-jest.useFakeTimers()
-import { Sequelize } from 'sequelize-typescript';
 import app from './app';
 import supertest from 'supertest';
+import { Sequelize } from 'sequelize-typescript';
 import dotenv from "dotenv"
-
 dotenv.config()
+
 const request = supertest(app);
 
 beforeAll(async () => {
@@ -17,10 +16,7 @@ beforeAll(async () => {
   const sequelize = new Sequelize(dbName, dbUser, dbPassword, {
     host: dbHost,
     dialect: dbDialect
-})
-
-  sequelize.addModels([__dirname + '/**/*.model.ts']);
-  sequelize.sync({logging: false})
+  })
 })
 
 describe('/test endpoint', () => {
@@ -38,44 +34,37 @@ describe('test members', () => {
   });
 });
 
-// describe('test qualifications', () => {
-//   it('should return a response', async () => {
-//     const response = await request.get('/qualifications');
-//     expect(response.status).toBe(200);
-//   });
-// });
+describe('test qualifications', () => {
+  it('should return a response', async () => {
+    const response = await request.get('/qualifications');
+    expect(response.status).toBe(200);
+  });
+});
 
-// describe('test roles', () => {
-//   it('should return a response', async () => {
-//     const response = await request.get('/roles');
-//     expect(response.status).toBe(200);
-//   });
-// });
+describe('test roles', () => {
+  it('should return a response', async () => {
+    const response = await request.get('/roles');
+    expect(response.status).toBe(200);
+  });
+});
 
-// describe('test duties', () => {
-//   it('should return a response', async () => {
-//     const response = await request.get('/duties');
-//     expect(response.status).toBe(200);
-//   });
-// });
+describe('test duties', () => {
+  it('should return a response', async () => {
+    const response = await request.get('/duties');
+    expect(response.status).toBe(200);
+  });
+});
 
-// describe('test schedules', () => {
-//   it('should return a response', async () => {
-//     const response = await request.get('/schedules');
-//     expect(response.status).toBe(200);
-//   });
-// });
+describe('test schedules', () => {
+  it('should return a response', async () => {
+    const response = await request.get('/schedules');
+    expect(response.status).toBe(200);
+  });
+});
 
-// describe('test requests', () => {
-//   it('should return a response', async () => {
-//     const response = await request.get('/requests');
-//     expect(response.status).toBe(200);
-//   });
-// });
-
-// describe('test delete', () => {
-//   it('should return a response', async () => {
-//     const response = await request.delete('/delete');
-//     expect(response.status).toBe(200);
-//   });
-// });
+describe('test requests', () => {
+  it('should return a response', async () => {
+    const response = await request.get('/requests');
+    expect(response.status).toBe(200);
+  });
+});
