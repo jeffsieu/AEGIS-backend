@@ -1,2 +1,4 @@
-- name: dep-scan
-  uses: AppThreat/dep-scan-action@v1.0.0
+- uses: AppThreat/dep-scan-action@master
+  env:
+    VULNDB_HOME: ${{ github.workspace }}/db
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
