@@ -1,0 +1,2 @@
+- name: dep-scan
+  uses: AppThreat/dep-scan-action@v1.0.0
