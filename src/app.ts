@@ -341,32 +341,6 @@ app.get('/duties', async (req, res) => {
   }
 });
 
-// Gets a specific member's duties
-app.get('/duties/:callsign', async (req, res) => {
-  try {
-    const result: Member | Response = await getMemberWithId(
-      res,
-      req.params.callsign
-    );
-
-    if (!(result instanceof Member)) {
-      return result;
-    }
-
-    const member = result;
-
-    const duties = Duty.findAll({
-      where: {
-        memberId: member.id,
-      },
-    });
-
-    return res.json(duties);
-  } catch (err) {
-    return res.status(500).json(err);
-  }
-});
-
 // Add duty
 app.post(
   '/duties',
