@@ -8,7 +8,7 @@ https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 ## Set up AEGIS-backend
 1. `npm install`
 2. `ipconfig`
-3. update .env file with your device's ipv4 address
+3. Update DB_HOST in .env file with your device's ipv4 address
 4. `docker-compose up -d`
 5. `npm start`
 
