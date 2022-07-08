@@ -150,6 +150,7 @@ describe('add duties', () => {
       "date": "2022-01-01",
       "memberId": "1",
       "roleId": "1",
+      "scheduleId": "1",
       "callsign": "NANO"});
     expect(res.status).toBe(200);
   });
@@ -162,6 +163,7 @@ describe('change duty', () => {
       "date": "2022-01-02",
       "memberId": "1",
       "roleId": "1",
+      "scheduleId": "1",
       "callsign": "NANO"});
     expect(res.status).toBe(200);
   });
