@@ -7,13 +7,14 @@ https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 
 ## Set up AEGIS-backend
 1. `npm install`
-2. `docker-compose up -d`
-3. `npx sequelize db:create`
-4. `npm start`
+2. `ipconfig`
+3. update .env file with your device's ipv4 address
+4. `docker-compose up -d`
+5. `npm start`
 
 ## Stopping Docker
-
 `docker-compose down`
+
 ## Run API in Docker container
 1. `docker build -t aegis-backend .`
 2. `docker run -p 2000:2000 aegis-backend`
