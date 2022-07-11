@@ -760,12 +760,25 @@ app.put(
 
 app.delete('/requests/batch', body().isArray(), async (req, res) => {
   try {
-    await Request.destroy({
-      where: {
-        id: {
-          [Op.in]: req.body,
+    await sequelize.transaction(async (t) => {
+      // Delete all request date objects
+      await RequestDate.destroy({
+        where: {
+          requestId: {
+            [Op.in]: req.body,
+          },
         },
-      },
+        transaction: t,
+      });
+
+      await Request.destroy({
+        where: {
+          id: {
+            [Op.in]: req.body,
+          },
+        },
+        transaction: t,
+      });
     });
 
     return res.status(200).send('Requests deleted');
