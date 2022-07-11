@@ -13,7 +13,9 @@ import sequelize, {
   Request,
   RoleInstance,
 } from '../models';
-import { Op } from 'sequelize';
+import { Op, Sequelize } from 'sequelize';
+import RequestDate from '../models/request-date.model';
+import { request } from 'http';
 
 const app = express();
 const corsOptions = {
@@ -186,24 +188,37 @@ app.get(
         },
       });
 
+      // Include requests with at least one date that is in the date range
       const relevantRequests = await Request.findAll({
-        where: {
-          startDate: {
-            [Op.lte]: endDate,
+        include: [
+          {
+            model: RequestDate,
+            // Only include requests that are in the date range
+            where: {
+              date: {
+                [Op.between]: [startDate, endDate],
+              },
+            },
           },
-          endDate: {
-            [Op.gte]: startDate,
-          },
-        },
+        ],
       });
+
+      const relevantRequestsWithFlattenedDates = relevantRequests.map(
+        (request) => ({
+          ...request.get({ plain: true }),
+          dates: request.dates.map((date) => date.date),
+        })
+      );
 
       const membersWithRequests = members.map((member) => {
         const memberWithRequests = member.get({ plain: true });
-        const requests = relevantRequests.filter(
+        const requests = relevantRequestsWithFlattenedDates.filter(
           (request) => request.memberId === member.id
         );
-        memberWithRequests.requests = requests;
-        return memberWithRequests;
+        return {
+          ...memberWithRequests,
+          requests,
+        };
       });
 
       return res.status(200).json(membersWithRequests);
@@ -623,7 +638,7 @@ app.get('/requests', async (req, res) => {
     const memberId = req.query.memberId;
 
     const requests = await Request.findAll({
-      include: [Member],
+      include: [Member, RequestDate],
       where:
         memberId !== undefined
           ? {
@@ -631,7 +646,15 @@ app.get('/requests', async (req, res) => {
             }
           : undefined,
     });
-    return res.json(requests);
+
+    const requestsWithFlattenedDates = requests
+      .map((request) => request.get({ plain: true }))
+      .map((request) => ({
+        ...request,
+        dates: request.dates.map((date) => date.date),
+      }));
+
+    return res.json(requestsWithFlattenedDates);
   } catch (err) {
     return res.status(500).json(err);
   }
@@ -648,13 +671,23 @@ app.get(
       }
 
       const id = req.params?.id;
-      const requests = await Request.findOne({
+      const request = await Request.findOne({
         where: {
           id: +id,
         },
+        include: [RequestDate],
       });
 
-      return res.json(requests);
+      if (!request) {
+        return res.status(404).json('Request not found');
+      }
+
+      const requestWithFlattenedDates = {
+        ...request.get({ plain: true }),
+        dates: request.dates.map((date) => date.date),
+      };
+
+      return res.json(requestWithFlattenedDates);
     } catch (err) {
       return res.status(500).json(err);
     }
@@ -663,7 +696,20 @@ app.get(
 
 app.post('/requests/batch', async (req, res) => {
   try {
-    await Request.bulkCreate(req.body);
+    await Request.bulkCreate(
+      req.body.map((request: any) => ({
+        ...request,
+        dates: request.dates.map((date: any) => ({ date })),
+      })),
+      {
+        include: [
+          {
+            model: RequestDate,
+            as: 'dates',
+          },
+        ],
+      }
+    );
     return res.status(200).send('Requests added');
   } catch (err) {
     return res.status(500).json(err);
@@ -681,10 +727,29 @@ app.put(
 
     const id = req.params?.id;
     try {
-      await Request.update(req.body, {
-        where: {
-          id: +id,
-        },
+      await sequelize.transaction(async (t) => {
+        await Request.update(req.body, {
+          where: {
+            id: +id,
+          },
+          transaction: t,
+        });
+
+        // Update dates
+        await RequestDate.destroy({
+          where: {
+            requestId: +id,
+          },
+          transaction: t,
+        });
+
+        await RequestDate.bulkCreate(
+          req.body.dates.map((date: string) => ({
+            date,
+            requestId: +id,
+          })),
+          { transaction: t }
+        );
       });
       return res.status(200).send('Request updated');
     } catch (err) {
