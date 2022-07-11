@@ -3,23 +3,22 @@ import {
   BelongsTo,
   Column,
   ForeignKey,
+  HasMany,
   Model,
   Table,
 } from 'sequelize-typescript';
 import { DataTypes } from 'sequelize';
 import Member from './member.model';
+import RequestDate from './request-date.model';
 
 @Table
 export default class Request extends Model<Request> {
-  @Column
-  startDate!: Date;
-
-  @Column
-  endDate!: Date;
-
   @AllowNull(false)
   @Column
   reason!: string;
+
+  @HasMany(() => RequestDate)
+  dates!: RequestDate[];
 
   @BelongsTo(() => Member)
   member!: Member;
