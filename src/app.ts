@@ -10,12 +10,11 @@ import sequelize, {
   Role,
   Duty,
   Schedule,
-  Request,
+  Request, 
+  RequestDate,
   RoleInstance,
 } from '../models';
-import { Op, Sequelize } from 'sequelize';
-import RequestDate from '../models/request-date.model';
-import { request } from 'http';
+import { Op } from 'sequelize';
 
 const app = express();
 const corsOptions = {
