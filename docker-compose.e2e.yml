@@ -3,19 +3,19 @@ version: '3.9'
 services:
   db:
     container_name: mssql
-    image: mcr.microsoft.com/mssql/server:2022-latest
+    image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Secr3tPassw0rd123
     expose:
       - 1433
   
-  aegis:
-    container_name: aegis
+  aegis-backend:
+    container_name: aegis-backend
     build:
       context: .
       dockerfile: Dockerfile.test
-    image: aegis
+    image: aegis-backend
     command: npm start
     environment:
       NODE_ENV: test
@@ -28,18 +28,18 @@ services:
     depends_on:
       - db
 
-  aegis-tests:
-    container_name: aegis-tests
-    image: aegis
+  aegis-backend-tests:
+    container_name: aegis-backend-tests
+    image: aegis-backend
     command: dockerize
         -wait tcp://db:1433 -timeout 10s
         bash -c "npm test"
     environment:
-      URL: http://aegis:2000
+      URL: http://aegis-backend:2000
       DB_HOST: db
       DB_USER: sa
       DB_PASSWORD: Secr3tPassw0rd123
       DB_NAME: master
     depends_on:
       - db
-      - aegis
+      - aegis-backend
