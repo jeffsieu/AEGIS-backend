@@ -172,17 +172,10 @@ describe('add a batch of requests', () => {
   it('should return a res', async () => {
     const res = await req.post('/requests/batch')
     .send([{
-      "startDate": "2022-01-01",
-      "endDate": "2022-01-20",
+      "dates": ["2022-01-01", "2022-01-02", "2022-01-03"],
       "reason": "Meeting",
       "type": "Work",
-      "memberId": "1"}, {
-      "startDate": "2022-02-21",
-      "endDate": "2022-02-31",
-      "reason": "Local leave",
-      "type": "Personal",
-      "memberId": "1"
-      }]);
+      "memberId": "1"}]);
     expect(res.status).toBe(200);
   });
 });
@@ -205,8 +198,7 @@ describe('edit requests', () => {
   it('should return a res', async () => {
     const res = await req.put('/requests/1')
     .send({
-      "startDate": "2022-01-01",
-      "endDate": "2022-01-11",
+      "dates": ["2022-01-01", "2022-01-02", "2022-01-03"],
       "reason": "Meeting",
       "type": "Work",
       "memberId": "1"});
