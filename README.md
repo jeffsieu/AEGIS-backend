@@ -20,4 +20,5 @@ https://docs.google.com/document/d/1MpZSeAPzID8Ty8JN6WoDGnBWmu1AueXSeQ3tYDeit2k
 2. `docker run -p 2000:2000 aegis-backend`
 
 # Run API tests
-`docker-compose -f docker-compose.e2e.yml up --build --abort-on-container-exit --remove-orphans`
+1. `docker build -t aegis-backend .`
+2. `docker-compose -f docker-compose.e2e.yml up --build --abort-on-container-exit --remove-orphans`
