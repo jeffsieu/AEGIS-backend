@@ -7,8 +7,6 @@ import Schedule from './schedule.model';
 import Request from './request.model';
 import RequestDate from './request-date.model';
 import RoleInstance from './role-instance.model';
-import { Dialect } from 'sequelize/types';
-import configJson from '../config/config.json';
 import dotenv from "dotenv"
 dotenv.config()
 
