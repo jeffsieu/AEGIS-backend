@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM node:18-buster-slim
+FROM node:18.6.0-slim
 
 WORKDIR /app
 
